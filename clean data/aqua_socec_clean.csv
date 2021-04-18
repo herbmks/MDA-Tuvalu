@@ -1,0 +1,1341 @@
+,country,variable,1998-2002,2003-2007,2008-2012,2013-2017
+0,Afghanistan,Rural population (1000 inhab),17086.91,20464.923,23280.663,26558.609
+1,Afghanistan,Urban population (1000 inhab),4893.013,6151.869,7416.295,8971.472
+2,Afghanistan,Population density (inhab/km2),34.6180957633,41.5104861686,47.73056398,55.5955534111
+3,Afghanistan,GDP per capita (current US$/inhab),194.958382,389.985586,694.885618,605.557362
+4,Afghanistan,Human Development Index (HDI) [highest = 1] (-),0.378,0.431,0.479,0.493
+5,Afghanistan,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.7338,0.71,0.6934
+6,Afghanistan,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),899.0304312641,751.7526590618,653.7869187805,561.2970182234
+7,Afghanistan,Total population with access to safe drinking-water (JMP) (%),33.8,42.6,51.6,55.3
+8,Afghanistan,Rural population with access to safe drinking-water (JMP) (%),27.6,35.6,43.7,47.0
+9,Afghanistan,Urban population with access to safe drinking-water (JMP) (%),55.9,65.2,74.5,78.2
+11,Albania,Rural population (1000 inhab),1762.229,1545.166,1333.585,1190.155
+12,Albania,Urban population (1000 inhab),1356.8,1478.741,1586.454,1740.032
+13,Albania,Population density (inhab/km2),108.7369391304,105.5303652174,101.3598608696,104.0089794446
+14,Albania,GDP per capita (current US$/inhab),1396.545492,3530.969114,4219.046254,4445.132198
+15,Albania,Human Development Index (HDI) [highest = 1] (-),0.68,0.718,0.771,0.789
+16,Albania,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.3278,0.253,0.2174
+17,Albania,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),531.9963265153,417.9435846695,410.2095469744,492.2735110183
+18,Albania,Total population with access to safe drinking-water (JMP) (%),96.1,95.9,95.4,95.1
+19,Albania,Rural population with access to safe drinking-water (JMP) (%),93.5,94.2,94.9,95.2
+20,Albania,Urban population with access to safe drinking-water (JMP) (%),99.5,97.6,95.7,94.9
+22,Algeria,Rural population (1000 inhab),12317.847,11885.693,11677.502,11547.532
+23,Algeria,Urban population (1000 inhab),19677.199,22414.383,25888.345,29770.61
+24,Algeria,Population density (inhab/km2),13.3747214222,14.3453827874,15.6960436488,17.3777108333
+25,Algeria,GDP per capita (current US$/inhab),1775.875268,3935.183362,5565.136948,4051.244377
+26,Algeria,Human Development Index (HDI) [highest = 1] (-),0.666,0.708,0.737,0.758
+27,Algeria,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5934,0.5332,0.4516666667,0.4131
+28,Algeria,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),190.2553860546,211.9825845352,225.364424975,252.7713215159
+29,Algeria,Total population with access to safe drinking-water (JMP) (%),88.8,87.0,84.9,83.6
+30,Algeria,Rural population with access to safe drinking-water (JMP) (%),83.7,83.0,82.2,81.8
+31,Algeria,Urban population with access to safe drinking-water (JMP) (%),92.0,89.1,86.1,84.3
+66,Argentina,Rural population (1000 inhab),3974.741,3850.764,3737.979,3652.804
+67,Argentina,Urban population (1000 inhab),33914.629,36119.46,38358.76,40618.237
+68,Argentina,Population density (inhab/km2),13.5526359517,14.2728726083,15.017693857,15.8024528845
+69,Argentina,GDP per capita (current US$/inhab),2918.591423,7249.274928,13811.780157,14517.291248
+70,Argentina,Human Development Index (HDI) [highest = 1] (-),0.77,0.806,0.823,0.832
+71,Argentina,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.4074,0.3822,0.382,0.3756
+72,Argentina,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),843.6279059128,884.9218563666,904.7975729775,859.8647977542
+73,Argentina,Total population with access to safe drinking-water (JMP) (%),96.7,97.7,98.6,99.1
+74,Argentina,Rural population with access to safe drinking-water (JMP) (%),83.7,90.0,96.2,100.0
+75,Argentina,Urban population with access to safe drinking-water (JMP) (%),98.2,98.5,98.8,99.0
+77,Armenia,Rural population (1000 inhab),1085.046,1063.546,1059.405,1081.248
+78,Armenia,Urban population (1000 inhab),1948.851,1869.51,1822.517,1849.202
+79,Armenia,Population density (inhab/km2),102.0167451244,98.6085406859,96.9816408877,99.0178547411
+80,Armenia,GDP per capita (current US$/inhab),835.283238,3347.296067,3684.805034,3933.682101
+81,Armenia,Human Development Index (HDI) [highest = 1] (-),0.663,0.724,0.737,0.758
+82,Armenia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.4316,0.37,0.329,0.3176
+83,Armenia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),571.3291263154,962.6211119212,1019.6814821544,973.1760250558
+84,Armenia,Total population with access to safe drinking-water (JMP) (%),93.7,96.7,99.7,100.0
+85,Armenia,Rural population with access to safe drinking-water (JMP) (%),84.7,92.0,99.4,100.0
+86,Armenia,Urban population with access to safe drinking-water (JMP) (%),98.7,99.3,99.8,100.0
+88,Australia,Rural population (1000 inhab),3072.827,3179.302,3331.639,3446.638
+89,Australia,Urban population (1000 inhab),16402.364,17767.362,19490.21,21003.923
+90,Australia,Population density (inhab/km2),2.5062416518,2.701944138,2.9587000499,3.1758069142
+91,Australia,GDP per capita (current US$/inhab),22344.906046,47030.849175,69701.081584,57917.093685
+92,Australia,Human Development Index (HDI) [highest = 1] (-),0.903,0.908,0.932,0.937
+93,Australia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.1504,0.137,0.12,0.1101
+94,Australia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),1080.6325615802,784.6256496833,699.3990730332,673.3478085079
+95,Australia,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+96,Australia,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+97,Australia,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+99,Austria,Rural population (1000 inhab),3281.833,3470.218,3650.043,3660.707
+100,Austria,Urban population (1000 inhab),4852.579,4841.565,4867.505,5074.746
+101,Austria,Population density (inhab/km2),96.9767763472,99.1146518836,101.3617906533,105.1502879147
+102,Austria,GDP per capita (current US$/inhab),26232.686226,46761.506621,48068.438729,47887.17438
+103,Austria,Human Development Index (HDI) [highest = 1] (-),0.838,0.881,0.899,0.912
+104,Austria,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.1476,0.1258,0.0776666667,0.0528
+105,Austria,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),440.0359034351,411.1279587293,410.7276834646,395.9341493742
+106,Austria,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+107,Austria,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+108,Austria,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+132,Bahrain,Rural population (1000 inhab),85.478,119.256,146.117,161.409
+133,Bahrain,Urban population (1000 inhab),649.67,916.635,1154.1,1331.175
+134,Bahrain,Population density (inhab/km2),1035.4169014084,1381.2253333333,1688.238961039,1915.482051282
+135,Bahrain,GDP per capita (current US$/inhab),13049.765634,20977.122529,23649.385091,23739.143918
+136,Bahrain,Human Development Index (HDI) [highest = 1] (-),0.792,0.796,0.8,0.839
+137,Bahrain,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.3128,0.2593333333,0.2649
+138,Bahrain,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),481.2021641332,370.0008486097,319.748039496,290.7482618019
+139,Bahrain,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+140,Bahrain,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+141,Bahrain,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+154,Barbados,Rural population (1000 inhab),180.72,186.537,192.736,196.693
+155,Barbados,Urban population (1000 inhab),90.758,89.613,88.849,89.026
+156,Barbados,Population density (inhab/km2),635.8720930233,648.1395348837,659.7697674419,665.6558139535
+157,Barbados,GDP per capita (current US$/inhab),11789.822696,16925.583922,16371.951613,17423.251128
+158,Barbados,Human Development Index (HDI) [highest = 1] (-),0.774,0.796,0.811,0.813
+159,Barbados,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.3544,0.3522,0.3523333333,0.357
+160,Barbados,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),296.2421139252,290.6350914962,285.5118593167,282.9872271444
+161,Barbados,Total population with access to safe drinking-water (JMP) (%),97.9,98.7,99.4,99.7
+162,Barbados,Rural population with access to safe drinking-water (JMP) (%),97.9,98.7,99.4,99.7
+163,Barbados,Urban population with access to safe drinking-water (JMP) (%),97.9,98.7,99.4,99.7
+176,Belgium,Rural population (1000 inhab),285.916,266.907,250.039,233.097
+177,Belgium,Urban population (1000 inhab),10078.969,10430.928,10833.511,11196.239
+178,Belgium,Population density (inhab/km2),339.4983622666,350.3954143465,363.0972158533,374.050049132
+179,Belgium,GDP per capita (current US$/inhab),24811.613253,43962.176891,44767.358857,44118.925664
+180,Belgium,Human Development Index (HDI) [highest = 1] (-),0.879,0.899,0.905,0.917
+181,Belgium,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.1154,0.0996,0.0763333333,0.0633
+182,Belgium,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),650.0795715534,581.1879555473,450.5041695541,349.7450206432
+183,Belgium,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+184,Belgium,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+185,Belgium,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+187,Belize,Rural population (1000 inhab),143.26,163.292,184.356,203.824
+188,Belize,Urban population (1000 inhab),118.946,135.115,152.345,170.857
+189,Belize,Population density (inhab/km2),11.4226382238,13.018067044,14.7148454506,16.3591205921
+190,Belize,GDP per capita (current US$/inhab),3528.001707,4261.293912,4523.003466,4901.752333
+191,Belize,Human Development Index (HDI) [highest = 1] (-),0.655,0.678,0.706,0.719
+192,Belize,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5106,0.4742,0.4406666667,0.4257
+193,Belize,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),384.9408105863,337.7644009698,298.8165680473,268.7821507362
+194,Belize,Total population with access to safe drinking-water (JMP) (%),87.5,93.5,99.3,99.5
+195,Belize,Rural population with access to safe drinking-water (JMP) (%),82.2,91.5,100.0,100.0
+196,Belize,Urban population with access to safe drinking-water (JMP) (%),93.4,95.9,98.4,98.9
+198,Benin,Rural population (1000 inhab),4447.579,4941.169,5436.123,5949.046
+199,Benin,Urban population (1000 inhab),2847.815,3513.622,4293.037,5226.646
+200,Benin,Population density (inhab/km2),63.5708783548,73.6736929244,84.7790955037,97.37886023
+201,Benin,GDP per capita (current US$/inhab),418.702507,706.041722,834.303975,829.419035
+202,Benin,Human Development Index (HDI) [highest = 1] (-),0.419,0.455,0.489,0.515
+203,Benin,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.634,0.6126666667,0.6143
+204,Benin,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),19.0139539707,21.5600446144,23.2142422151,20.9392263117
+205,Benin,Total population with access to safe drinking-water (JMP) (%),67.7,72.0,76.2,77.9
+206,Benin,Rural population with access to safe drinking-water (JMP) (%),60.5,65.3,70.2,72.1
+207,Benin,Urban population with access to safe drinking-water (JMP) (%),79.1,81.6,84.2,85.2
+220,Bolivia (Plurinational State of),Rural population (1000 inhab),3220.542,3296.72,3346.648,3417.155
+221,Bolivia (Plurinational State of),Urban population (1000 inhab),5432.803,6144.724,6892.356,7634.445
+222,Bolivia (Plurinational State of),Population density (inhab/km2),7.9582861512,8.7007218409,9.4464454113,10.1884751224
+223,Bolivia (Plurinational State of),GDP per capita (current US$/inhab),913.575635,1389.626895,2645.227747,3393.959523
+224,Bolivia (Plurinational State of),Human Development Index (HDI) [highest = 1] (-),0.625,0.638,0.663,0.7
+225,Bolivia (Plurinational State of),Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5624,0.5164,0.474,0.4443
+226,Bolivia (Plurinational State of),Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),228.5755981305,216.9546172495,201.2011167047,186.5475787902
+227,Bolivia (Plurinational State of),Total population with access to safe drinking-water (JMP) (%),80.3,84.6,88.5,90.0
+228,Bolivia (Plurinational State of),Rural population with access to safe drinking-water (JMP) (%),58.0,65.3,72.7,75.6
+229,Bolivia (Plurinational State of),Urban population with access to safe drinking-water (JMP) (%),93.6,94.9,96.2,96.7
+242,Botswana,Rural population (1000 inhab),808.627,805.426,736.104,717.29
+243,Botswana,Urban population (1000 inhab),971.326,1108.988,1353.211,1574.371
+244,Botswana,Population density (inhab/km2),2.9302975607,3.2239337837,3.5060182559,3.7905557561
+245,Botswana,GDP per capita (current US$/inhab),3055.615173,5714.033395,6901.907802,7595.147598
+246,Botswana,Human Development Index (HDI) [highest = 1] (-),0.576,0.625,0.687,0.724
+247,Botswana,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5314,0.5198,0.4896666667,0.4801
+248,Botswana,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),116.1790196203,107.603557639,95.2658323674,87.5251691549
+249,Botswana,Total population with access to safe drinking-water (JMP) (%),95.0,95.5,96.1,96.2
+250,Botswana,Rural population with access to safe drinking-water (JMP) (%),89.7,90.9,92.0,92.3
+251,Botswana,Urban population with access to safe drinking-water (JMP) (%),99.4,99.3,99.2,99.2
+253,Brazil,Rural population (1000 inhab),32643.261,31618.718,30238.865,28654.406
+254,Brazil,Urban population (1000 inhab),147507.76,159407.919,170322.118,180633.872
+255,Brazil,Population density (inhab/km2),21.0829461106,22.3268645114,23.4021467231,24.4057581405
+256,Brazil,GDP per capita (current US$/inhab),2842.227202,7313.714303,12291.664395,9812.31098
+257,Brazil,Human Development Index (HDI) [highest = 1] (-),0.698,0.705,0.734,0.76
+258,Brazil,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.4982,0.4622,0.4426666667,0.4569
+259,Brazil,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),316.3127127967,327.4593958633,350.9004354563,316.0265208613
+260,Brazil,Total population with access to safe drinking-water (JMP) (%),94.2,95.9,97.5,98.1
+261,Brazil,Rural population with access to safe drinking-water (JMP) (%),77.3,81.3,85.4,87.0
+262,Brazil,Urban population with access to safe drinking-water (JMP) (%),97.9,98.8,99.6,100.0
+275,Bulgaria,Rural population (1000 inhab),2397.299,2173.353,1975.613,1794.614
+276,Bulgaria,Urban population (1000 inhab),5468.787,5393.596,5334.77,5289.957
+277,Bulgaria,Population density (inhab/km2),70.8734030093,68.2583063063,66.0720990991,63.985981982
+278,Bulgaria,GDP per capita (current US$/inhab),2085.285881,5868.092253,7388.398564,8321.113046
+279,Bulgaria,Human Development Index (HDI) [highest = 1] (-),0.729,0.764,0.786,0.813
+280,Bulgaria,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.2252,0.2146666667,0.2116
+281,Bulgaria,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),837.6302830362,818.5651959066,779.2470223969,796.6975874783
+282,Bulgaria,Total population with access to safe drinking-water (JMP) (%),99.7,99.6,99.5,99.4
+283,Bulgaria,Rural population with access to safe drinking-water (JMP) (%),99.4,99.2,99.0,99.0
+284,Bulgaria,Urban population with access to safe drinking-water (JMP) (%),99.8,99.7,99.6,99.6
+297,Burundi,Rural population (1000 inhab),6156.269,7156.384,8276.416,9483.827
+298,Burundi,Urban population (1000 inhab),585.3,783.189,1043.294,1380.418
+299,Burundi,Population density (inhab/km2),240.8951850521,282.5085878548,332.2309737693,389.0412863816
+300,Burundi,GDP per capita (current US$/inhab),93.168453,170.815038,249.72898,296.110481
+301,Burundi,Human Development Index (HDI) [highest = 1] (-),0.304,0.363,0.416,0.421
+302,Burundi,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.571,0.5216,0.5026666667,0.4916
+303,Burundi,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),42.4873506756,35.6260971782,30.2942205852,25.8704635135
+304,Burundi,Total population with access to safe drinking-water (JMP) (%),72.4,73.8,75.3,75.9
+305,Burundi,Rural population with access to safe drinking-water (JMP) (%),70.4,71.8,73.2,73.8
+306,Burundi,Urban population with access to safe drinking-water (JMP) (%),93.5,92.5,91.5,91.1
+319,Cambodia,Rural population (1000 inhab),10256.921,11021.653,11668.224,12327.338
+320,Cambodia,Urban population (1000 inhab),2377.808,2655.04,3108.642,3678.035
+321,Cambodia,Population density (inhab/km2),69.8062693327,75.5632015024,81.6419244366,88.4302308882
+322,Cambodia,GDP per capita (current US$/inhab),339.493035,631.676141,951.111743,1385.609732
+323,Cambodia,Human Development Index (HDI) [highest = 1] (-),0.453,0.516,0.548,0.578
+324,Cambodia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5802,0.5288,0.5013333333,0.4775
+325,Cambodia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),,159.649566278,147.76271419,136.4197766451
+326,Cambodia,Total population with access to safe drinking-water (JMP) (%),46.1,57.4,68.8,75.5
+327,Cambodia,Rural population with access to safe drinking-water (JMP) (%),42.2,52.6,62.9,69.1
+328,Cambodia,Urban population with access to safe drinking-water (JMP) (%),62.9,77.4,91.9,100.0
+330,Cameroon,Rural population (1000 inhab),8567.125,9244.465,9957.503,10637.19
+331,Cameroon,Urban population (1000 inhab),7517.761,9150.924,11124.88,13416.537
+332,Cameroon,Population density (inhab/km2),34.4051867744,39.3956797914,45.1902763756,51.6701855124
+333,Cameroon,GDP per capita (current US$/inhab),731.699952,1215.808257,1380.509379,1455.460927
+334,Cameroon,Human Development Index (HDI) [highest = 1] (-),0.457,0.481,0.524,0.56
+335,Cameroon,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.6536,0.6263333333,0.5873
+336,Cameroon,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),62.0628867239,58.1091090887,50.6579741977,44.3050055253
+337,Cameroon,Total population with access to safe drinking-water (JMP) (%),63.8,69.0,74.1,75.6
+338,Cameroon,Rural population with access to safe drinking-water (JMP) (%),43.5,47.7,51.9,52.7
+339,Cameroon,Urban population with access to safe drinking-water (JMP) (%),86.9,90.5,94.1,94.8
+341,Canada,Rural population (1000 inhab),6299.155,6473.183,6583.389,6830.253
+342,Canada,Urban population (1000 inhab),25021.734,26546.749,28317.316,29793.946
+343,Canada,Population density (inhab/km2),3.1226132661,3.2981354416,3.4975647668,3.7179174574
+344,Canada,GDP per capita (current US$/inhab),24285.404157,44482.932593,52396.830577,45057.287226
+345,Canada,Human Development Index (HDI) [highest = 1] (-),0.877,0.891,0.906,0.921
+346,Canada,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.1402,0.137,0.1292
+347,Canada,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),1307.4661603029,1254.7526184762,1104.4188554534,969.0980054364
+348,Canada,Total population with access to safe drinking-water (JMP) (%),99.8,99.8,99.8,99.8
+349,Canada,Rural population with access to safe drinking-water (JMP) (%),99.0,99.0,99.0,99.0
+350,Canada,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+352,Central African Republic,Rural population (1000 inhab),2430.45,2636.499,2721.724,2749.797
+353,Central African Republic,Urban population (1000 inhab),1477.162,1639.301,1768.692,1909.283
+354,Central African Republic,Population density (inhab/km2),6.1031301165,6.7385951395,7.1212815821,7.377480818
+355,Central African Republic,GDP per capita (current US$/inhab),265.450795,410.432816,498.116431,428.701433
+356,Central African Republic,Human Development Index (HDI) [highest = 1] (-),0.314,0.334,0.37,0.376
+357,Central African Republic,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.675,0.6575,0.6549
+358,Central African Republic,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),18.0740890365,17.2700874938,16.3420202253,15.7745076559
+359,Central African Republic,Total population with access to safe drinking-water (JMP) (%),63.4,65.7,68.2,68.5
+360,Central African Republic,Rural population with access to safe drinking-water (JMP) (%),50.4,52.4,54.4,54.4
+361,Central African Republic,Urban population with access to safe drinking-water (JMP) (%),84.8,87.2,89.6,89.6
+374,Chile,Rural population (1000 inhab),2092.618,2160.337,2217.485,2258.558
+375,Chile,Urban population (1000 inhab),13531.017,14331.35,15092.261,15796.168
+376,Chile,Population density (inhab/km2),20.7438288586,21.8624454437,23.0132879249,24.4286955625
+377,Chile,GDP per capita (current US$/inhab),4486.664579,10526.878133,15431.902825,15383.587714
+378,Chile,Human Development Index (HDI) [highest = 1] (-),0.767,0.801,0.818,0.845
+379,Chile,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.4206,0.3828,0.3576666667,0.3376
+380,Chile,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),1983.1340609828,2143.4108914021,2036.2237603652,1918.2543522653
+381,Chile,Total population with access to safe drinking-water (JMP) (%),95.6,97.3,98.7,99.0
+382,Chile,Rural population with access to safe drinking-water (JMP) (%),71.7,81.5,91.3,93.3
+383,Chile,Urban population with access to safe drinking-water (JMP) (%),99.3,99.5,99.6,99.7
+385,China,Rural population (1000 inhab),806104.331,738685.151,669007.424,597816.52
+386,China,Urban population (1000 inhab),521893.97,628350.588,737124.022,843314.783
+387,China,Population density (inhab/km2),139.24637,143.3610030208,147.4129358333,151.314959354
+388,China,GDP per capita (current US$/inhab),1259.120525,2812.2728,6390.956972,8843.579277
+389,China,Human Development Index (HDI) [highest = 1] (-),0.61,0.67,0.719,0.753
+390,China,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.4308,0.215,0.2043333333,0.1907
+391,China,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),412.5870570271,415.1088190839,426.3109587007,411.7373028387
+392,China,Total population with access to safe drinking-water (JMP) (%),82.8,88.5,93.2,95.5
+393,China,Rural population with access to safe drinking-water (JMP) (%),73.8,81.2,88.5,93.0
+394,China,Urban population with access to safe drinking-water (JMP) (%),97.3,97.4,97.5,97.5
+396,Colombia,Rural population (1000 inhab),10477.378,10287.615,9985.405,9594.518
+397,Colombia,Urban population (1000 inhab),31095.113,34086.957,36896.07,39471.097
+398,Colombia,Population density (inhab/km2),35.8006218524,38.3074368294,40.3553474929,42.8376455771
+399,Colombia,GDP per capita (current US$/inhab),2334.165707,4635.692195,7904.495734,6354.5494
+400,Colombia,Human Development Index (HDI) [highest = 1] (-),0.667,0.713,0.736,0.76
+401,Colombia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5156,0.49,0.462,0.4285
+402,Colombia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),214.0959737113,257.544918646,275.394514742,278.287565003
+403,Colombia,Total population with access to safe drinking-water (JMP) (%),90.1,90.7,91.2,91.4
+404,Colombia,Rural population with access to safe drinking-water (JMP) (%),71.4,72.5,73.6,73.8
+405,Colombia,Urban population with access to safe drinking-water (JMP) (%),97.1,97.0,96.9,96.8
+418,Congo,Rural population (1000 inhab),1375.924,1515.245,1660.183,1764.522
+419,Congo,Urban population (1000 inhab),2031.256,2461.001,2973.18,3496.228
+420,Congo,Population density (inhab/km2),9.679494152,11.3336812865,13.1877163743,14.9435526316
+421,Congo,GDP per capita (current US$/inhab),924.637953,2205.875176,3818.807922,2086.959331
+422,Congo,Human Development Index (HDI) [highest = 1] (-),0.504,0.523,0.571,0.609
+423,Congo,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.615,0.6188,0.618,0.5934
+424,Congo,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),13.8956563085,23.6576844003,20.3316971158,17.9427651229
+425,Congo,Total population with access to safe drinking-water (JMP) (%),70.1,72.8,75.3,76.5
+426,Congo,Rural population with access to safe drinking-water (JMP) (%),32.7,35.8,38.8,40.0
+427,Congo,Urban population with access to safe drinking-water (JMP) (%),95.3,95.5,95.7,95.8
+440,Costa Rica,Rural population (1000 inhab),1554.034,1390.626,1212.562,1051.813
+441,Costa Rica,Urban population (1000 inhab),2509.17,2978.843,3441.56,3853.956
+442,Costa Rica,Population density (inhab/km2),80.2529354207,86.1962426614,91.7416829746,96.8679843444
+443,Costa Rica,GDP per capita (current US$/inhab),4062.042919,6120.623515,9985.370345,11858.39574
+444,Costa Rica,Human Development Index (HDI) [highest = 1] (-),0.717,0.742,0.774,0.792
+445,Costa Rica,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.424,0.375,0.3463333333,0.3492
+446,Costa Rica,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),,,498.933447099,645.2585215943
+447,Costa Rica,Total population with access to safe drinking-water (JMP) (%),95.5,96.6,97.5,97.8
+448,Costa Rica,Rural population with access to safe drinking-water (JMP) (%),89.3,90.5,91.7,91.9
+449,Costa Rica,Urban population with access to safe drinking-water (JMP) (%),99.4,99.5,99.5,99.6
+451,Côte d'Ivoire,Rural population (1000 inhab),9728.117,10292.928,11100.787,12068.187
+452,Côte d'Ivoire,Urban population (1000 inhab),7638.4,8793.013,10317.816,12226.563
+453,Côte d'Ivoire,Population density (inhab/km2),53.437756621,59.4530701482,66.8212739565,75.7845004032
+454,Côte d'Ivoire,GDP per capita (current US$/inhab),710.964717,1065.803927,1250.655107,1570.209076
+455,Côte d'Ivoire,Human Development Index (HDI) [highest = 1] (-),0.409,0.435,0.467,0.512
+456,Côte d'Ivoire,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.6618,0.647,0.6789
+457,Côte d'Ivoire,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),85.0162019771,76.265872208,57.9214533444,47.5499304961
+458,Côte d'Ivoire,Total population with access to safe drinking-water (JMP) (%),78.5,79.8,81.2,81.9
+459,Côte d'Ivoire,Rural population with access to safe drinking-water (JMP) (%),67.7,68.2,68.6,68.8
+460,Côte d'Ivoire,Urban population with access to safe drinking-water (JMP) (%),91.7,92.3,92.8,93.1
+462,Croatia,Rural population (1000 inhab),2030.408,1978.228,1911.684,1815.373
+463,Croatia,Urban population (1000 inhab),2365.411,2384.038,2384.842,2373.98
+464,Croatia,Population density (inhab/km2),77.7467102936,77.0882841491,75.9123166637,73.1013107305
+465,Croatia,GDP per capita (current US$/inhab),6100.292071,13793.600259,13148.882911,13204.751536
+466,Croatia,Human Development Index (HDI) [highest = 1] (-),0.767,0.801,0.82,0.835
+467,Croatia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.2024,0.19,0.176,0.1489
+468,Croatia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),130.4654739673,149.2223429283,162.076297325,170.9357981877
+469,Croatia,Total population with access to safe drinking-water (JMP) (%),98.4,98.9,99.4,99.6
+470,Croatia,Rural population with access to safe drinking-water (JMP) (%),96.6,97.9,99.2,99.7
+471,Croatia,Urban population with access to safe drinking-water (JMP) (%),99.8,99.7,99.7,99.6
+473,Cuba,Rural population (1000 inhab),2716.433,2676.725,2642.849,2644.108
+474,Cuba,Urban population (1000 inhab),8501.565,8626.962,8739.297,8840.528
+475,Cuba,Population density (inhab/km2),101.9169260169,102.3853125853,102.4490717146,105.5108774542
+476,Cuba,GDP per capita (current US$/inhab),2994.339988,5184.485381,6425.941119,8433.092699
+477,Cuba,Human Development Index (HDI) [highest = 1] (-),0.693,0.768,0.764,0.777
+478,Cuba,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.403,0.3718,0.3536666667,0.3559
+479,Cuba,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),468.4486475191,438.7740173824,590.3635014239,613.7088030659
+480,Cuba,Total population with access to safe drinking-water (JMP) (%),91.2,92.7,94.1,94.9
+481,Cuba,Rural population with access to safe drinking-water (JMP) (%),79.0,83.1,87.3,89.8
+482,Cuba,Urban population with access to safe drinking-water (JMP) (%),95.1,95.6,96.1,96.4
+484,Cyprus,Rural population (1000 inhab),305.847,340.577,371.602,391.192
+485,Cyprus,Urban population (1000 inhab),671.119,723.135,763.46,788.359
+486,Cyprus,Population density (inhab/km2),105.6177297297,114.996,122.7076756757,127.5327567568
+487,Cyprus,GDP per capita (current US$/inhab),16041.793267,31353.202656,28912.42884,26473.007605
+488,Cyprus,Human Development Index (HDI) [highest = 1] (-),0.814,0.844,0.852,0.871
+489,Cyprus,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.1452,0.1366666667,0.1239
+490,Cyprus,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),216.4723718435,203.6263541012,223.7794767789,263.6312620902
+491,Cyprus,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+492,Cyprus,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+493,Cyprus,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+495,Czechia,Rural population (1000 inhab),2685.263,2748.296,2837.581,2795.276
+496,Czechia,Urban population (1000 inhab),7567.176,7608.29,7749.174,7823.027
+497,Czechia,Population density (inhab/km2),129.9893622417,131.3241790288,134.1611892988,134.9186509446
+498,Czechia,GDP per capita (current US$/inhab),7989.413672,18271.210375,19588.289993,20334.091525
+499,Czechia,Human Development Index (HDI) [highest = 1] (-),0.813,0.85,0.865,0.888
+500,Czechia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.1842,0.1462,0.1033333333,0.0914
+501,Czechia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),186.1052893601,190.1030920669,173.9862982719,153.2181928937
+502,Czechia,Total population with access to safe drinking-water (JMP) (%),99.8,99.9,100.0,100.0
+503,Czechia,Rural population with access to safe drinking-water (JMP) (%),99.6,99.8,100.0,100.0
+504,Czechia,Urban population with access to safe drinking-water (JMP) (%),99.9,99.9,100.0,100.0
+517,Democratic Republic of the Congo,Rural population (1000 inhab),31867.429,35944.533,40641.055,45647.604
+518,Democratic Republic of the Congo,Urban population (1000 inhab),17968.327,22473.029,28337.627,35692.384
+519,Democratic Republic of the Congo,Population density (inhab/km2),21.2685047295,24.9284319746,29.4349116792,34.7136988989
+520,Democratic Republic of the Congo,GDP per capita (current US$/inhab),175.135745,286.508198,424.859809,462.779322
+521,Democratic Republic of the Congo,Human Development Index (HDI) [highest = 1] (-),0.34,0.382,0.423,0.456
+522,Democratic Republic of the Congo,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.6726,0.67,0.673
+523,Democratic Republic of the Congo,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),12.5101094477,11.6947293124,9.9042683499,8.398161918
+524,Democratic Republic of the Congo,Total population with access to safe drinking-water (JMP) (%),47.9,49.7,51.4,52.4
+525,Democratic Republic of the Congo,Rural population with access to safe drinking-water (JMP) (%),27.4,28.8,30.3,31.2
+526,Democratic Republic of the Congo,Urban population with access to safe drinking-water (JMP) (%),84.3,83.1,81.8,81.1
+528,Denmark,Rural population (1000 inhab),792.499,749.746,721.427,701.971
+529,Denmark,Urban population (1000 inhab),4580.302,4720.211,4889.233,5031.58
+530,Denmark,Population density (inhab/km2),124.6878858204,126.9417730332,130.7315936626,140.0506718788
+531,Denmark,GDP per capita (current US$/inhab),33247.991084,58395.947397,58308.452118,57454.289221
+532,Denmark,Human Development Index (HDI) [highest = 1] (-),0.883,0.904,0.924,0.929
+533,Denmark,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.0746,0.068,0.06,0.0484
+534,Denmark,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),124.3113229022,104.3525125866,127.5173765817,129.285515661
+535,Denmark,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+536,Denmark,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+537,Denmark,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+561,Dominican Republic,Rural population (1000 inhab),3235.194,2849.396,2457.254,2123.575
+562,Dominican Republic,Urban population (1000 inhab),5597.091,6654.957,7697.696,8643.423
+563,Dominican Republic,Population density (inhab/km2),179.268029587,191.8812615574,204.0459420588,216.0078898706
+564,Dominican Republic,GDP per capita (current US$/inhab),2904.654716,4606.383677,5973.229563,7059.653433
+565,Dominican Republic,Human Development Index (HDI) [highest = 1] (-),0.662,0.689,0.708,0.741
+566,Dominican Republic,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.52,0.5108,0.5053333333,0.4773
+567,Dominican Republic,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),585.3311900607,657.9389071108,797.9888260056,863.484276385
+568,Dominican Republic,Total population with access to safe drinking-water (JMP) (%),86.7,86.3,85.4,84.7
+569,Dominican Republic,Rural population with access to safe drinking-water (JMP) (%),78.7,79.9,81.2,81.9
+570,Dominican Republic,Urban population with access to safe drinking-water (JMP) (%),91.3,89.0,86.8,85.4
+572,Ecuador,Rural population (1000 inhab),5082.637,5383.366,5707.115,6039.811
+573,Ecuador,Urban population (1000 inhab),7989.423,8822.087,9712.551,10585.047
+574,Ecuador,Population density (inhab/km2),51.2675625073,55.7653274564,60.3584701798,65.4731871904
+575,Ecuador,GDP per capita (current US$/inhab),2183.966796,3590.718086,5702.104313,6273.488892
+576,Ecuador,Human Development Index (HDI) [highest = 1] (-),0.679,0.706,0.74,0.757
+577,Ecuador,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.4982,0.4698,0.435,0.4073
+578,Ecuador,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),729.5108253417,693.7334632387,640.9419196631,590.8720104381
+579,Ecuador,Total population with access to safe drinking-water (JMP) (%),80.8,83.3,85.9,86.9
+580,Ecuador,Rural population with access to safe drinking-water (JMP) (%),68.4,71.4,74.3,75.5
+581,Ecuador,Urban population with access to safe drinking-water (JMP) (%),88.6,90.6,92.6,93.4
+583,Egypt,Rural population (1000 inhab),41457.204,45274.468,50100.764,55893.406
+584,Egypt,Urban population (1000 inhab),31132.914,34262.785,37712.493,41659.745
+585,Egypt,Population density (inhab/km2),71.3815397673,78.1188536622,86.2971121873,96.30295172
+586,Egypt,GDP per capita (current US$/inhab),1191.921608,1661.678543,3149.140561,2000.297246
+587,Egypt,Human Development Index (HDI) [highest = 1] (-),0.621,0.651,0.676,0.696
+588,Egypt,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.6376,0.598,0.583,0.5726
+589,Egypt,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),982.5831677824,959.8358607818,836.5901819975,803.5868716966
+590,Egypt,Total population with access to safe drinking-water (JMP) (%),96.4,97.6,98.8,99.4
+591,Egypt,Rural population with access to safe drinking-water (JMP) (%),94.8,96.4,98.0,99.0
+592,Egypt,Urban population with access to safe drinking-water (JMP) (%),98.4,99.2,99.9,100.0
+594,El Salvador,Rural population (1000 inhab),2375.312,2264.614,2041.361,1832.049
+595,El Salvador,Urban population (1000 inhab),3564.991,3818.861,4179.885,4545.804
+596,El Salvador,Population density (inhab/km2),283.3714828897,290.200095057,296.479230038,303.6181558935
+597,El Salvador,GDP per capita (current US$/inhab),2131.909815,2796.387074,3437.599641,3908.521206
+598,El Salvador,Human Development Index (HDI) [highest = 1] (-),0.619,0.644,0.66,0.665
+599,El Salvador,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.4966,0.4493333333,0.4269
+600,El Salvador,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),280.5605239465,346.8827231768,339.536092382,331.5526337458
+601,El Salvador,Total population with access to safe drinking-water (JMP) (%),83.4,87.7,91.6,93.8
+602,El Salvador,Rural population with access to safe drinking-water (JMP) (%),67.9,75.0,82.2,86.5
+603,El Salvador,Urban population with access to safe drinking-water (JMP) (%),93.8,95.2,96.6,97.5
+627,Estonia,Rural population (1000 inhab),427.045,423.663,424.323,409.687
+628,Estonia,Urban population (1000 inhab),955.687,920.409,900.611,899.945
+629,Estonia,Population density (inhab/km2),30.5711253593,29.7213353969,29.2540128233,29.0999117777
+630,Estonia,GDP per capita (current US$/inhab),5331.870189,16696.11391,17504.803438,20508.891852
+631,Estonia,Human Development Index (HDI) [highest = 1] (-),0.799,0.839,0.859,0.879
+632,Estonia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.2704,0.21925,0.164875,0.1638
+633,Estonia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),1021.8899974832,1364.2828662735,1232.6560904623,1352.8221375029
+634,Estonia,Total population with access to safe drinking-water (JMP) (%),99.1,99.3,99.5,99.6
+635,Estonia,Rural population with access to safe drinking-water (JMP) (%),97.6,98.2,98.7,99.0
+636,Estonia,Urban population with access to safe drinking-water (JMP) (%),99.8,99.8,99.9,100.0
+638,Eswatini,Rural population (1000 inhab),838.528,889.921,962.964,1044.238
+639,Eswatini,Urban population (1000 inhab),242.402,248.513,285.194,323.016
+640,Eswatini,Population density (inhab/km2),58.7015552995,60.0605990783,62.1709677419,64.7929147465
+641,Eswatini,GDP per capita (current US$/inhab),1324.990322,3047.496058,3915.065544,3251.938239
+642,Eswatini,Human Development Index (HDI) [highest = 1] (-),0.445,0.482,0.542,0.603
+643,Eswatini,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5986,0.563,0.5333333333,0.5572
+644,Eswatini,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),1032.7174383426,1024.3110836597,989.5412531224,949.4979129716
+645,Eswatini,Total population with access to safe drinking-water (JMP) (%),55.6,64.8,74.2,74.1
+646,Eswatini,Rural population with access to safe drinking-water (JMP) (%),45.7,57.3,68.9,68.9
+647,Eswatini,Urban population with access to safe drinking-water (JMP) (%),89.6,91.6,93.6,93.6
+671,Fiji,Rural population (1000 inhab),418.511,411.92,408.88,400.76
+672,Fiji,Urban population (1000 inhab),397.18,422.892,464.716,504.742
+673,Fiji,Population density (inhab/km2),44.6227148331,45.7684729064,47.3491516147,48.0273125342
+674,Fiji,GDP per capita (current US$/inhab),2288.98694,4046.764379,4546.755785,5912.155229
+675,Fiji,Human Development Index (HDI) [highest = 1] (-),0.678,0.691,0.702,0.721
+676,Fiji,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.3939111111,0.4111888889,0.4181
+677,Fiji,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),101.7838546618,101.5319484806,98.1424603124,96.756657576
+678,Fiji,Total population with access to safe drinking-water (JMP) (%),91.6,93.8,95.6,95.7
+679,Fiji,Rural population with access to safe drinking-water (JMP) (%),86.3,89.0,91.2,91.2
+680,Fiji,Urban population with access to safe drinking-water (JMP) (%),97.2,98.5,99.5,99.5
+682,Finland,Rural population (1000 inhab),912.167,891.744,820.527,810.547
+683,Finland,Urban population (1000 inhab),4301.206,4406.27,4592.453,4712.684
+684,Finland,Population density (inhab/km2),15.4173177584,15.6543318953,16.0001477454,16.2841512779
+685,Finland,GDP per capita (current US$/inhab),26805.051927,48327.433191,47719.525035,46180.40861
+686,Finland,Human Development Index (HDI) [highest = 1] (-),0.867,0.901,0.908,0.924
+687,Finland,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.0884,0.0842,0.0756666667,0.0747
+688,Finland,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),434.0670511206,395.369874528,355.0736968315,338.7541865717
+689,Finland,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+690,Finland,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+691,Finland,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+693,France,Rural population (1000 inhab),14224.922,13866.281,13442.096,12879.012
+694,France,Urban population (1000 inhab),46000.154,48094.669,50197.777,52100.536
+695,France,Population density (inhab/km2),108.9137318108,112.675931086,115.7628457994,118.0915028037
+696,France,GDP per capita (current US$/inhab),24044.598089,41504.468752,40790.635786,38566.566085
+697,France,Human Development Index (HDI) [highest = 1] (-),0.845,0.867,0.878,0.89
+698,France,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.172,0.1442,0.095,0.0884
+699,France,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),541.223037651,507.6190785445,441.4905045403,407.7263574116
+700,France,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+701,France,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+702,France,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+704,Gabon,Rural population (1000 inhab),254.12,242.107,234.816,223.245
+705,Gabon,Urban population (1000 inhab),1040.289,1247.086,1522.001,1801.892
+706,Gabon,Population density (inhab/km2),4.8130720664,5.501457018,6.5367131169,7.7140620914
+707,Gabon,GDP per capita (current US$/inhab),4174.348162,8352.817404,9774.192338,7372.081131
+708,Gabon,Human Development Index (HDI) [highest = 1] (-),0.632,0.643,0.672,0.7
+709,Gabon,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.535,0.511,0.5137
+710,Gabon,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),99.2148659295,94.4603840212,79.5001606006,67.366549094
+711,Gabon,Total population with access to safe drinking-water (JMP) (%),85.6,89.3,92.2,93.2
+712,Gabon,Rural population with access to safe drinking-water (JMP) (%),44.4,53.7,63.0,66.7
+713,Gabon,Urban population with access to safe drinking-water (JMP) (%),94.9,95.8,96.8,97.2
+715,Gambia,Rural population (1000 inhab),659.831,715.979,773.029,827.654
+716,Gambia,Urban population (1000 inhab),651.518,823.137,1029.096,1272.914
+717,Gambia,Population density (inhab/km2),124.2708849558,145.1192920354,168.5852212389,195.919380531
+718,Gambia,GDP per capita (current US$/inhab),732.822338,831.45327,785.18679,716.451019
+719,Gambia,Human Development Index (HDI) [highest = 1] (-),0.392,0.424,0.441,0.459
+720,Gambia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.6764,0.6176,0.6236666667,0.6224
+721,Gambia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),67.6085143716,61.9569618648,53.3329693813,45.8920930543
+722,Gambia,Total population with access to safe drinking-water (JMP) (%),84.0,87.1,90.1,90.2
+723,Gambia,Rural population with access to safe drinking-water (JMP) (%),77.6,81.0,84.4,84.4
+724,Gambia,Urban population with access to safe drinking-water (JMP) (%),90.4,92.3,94.2,94.2
+737,Germany,Rural population (1000 inhab),20097.558,19215.385,18507.405,18672.1
+738,Germany,Urban population (1000 inhab),61514.31,62129.072,62558.823,63442.124
+739,Germany,Population density (inhab/km2),228.3641104638,227.6052366284,226.7061287342,231.3741329601
+740,Germany,GDP per capita (current US$/inhab),25348.252377,42056.381691,43511.891834,44642.742052
+741,Germany,Human Development Index (HDI) [highest = 1] (-),0.883,0.914,0.927,0.938
+742,Germany,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.126,0.109,0.063,0.0407
+743,Germany,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),463.0468444308,397.4023420655,324.8953872824,295.6468712094
+744,Germany,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+745,Germany,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+746,Germany,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+748,Ghana,Rural population (1000 inhab),10903.66,11652.304,12333.058,12857.864
+749,Ghana,Urban population (1000 inhab),9020.862,11047.908,13399.991,15975.765
+750,Ghana,Population density (inhab/km2),84.8762513625,96.2687431877,108.9815125346,122.0821036304
+751,Ghana,GDP per capita (current US$/inhab),656.474772,1443.611449,2157.25583,2046.043362
+752,Ghana,Human Development Index (HDI) [highest = 1] (-),0.487,0.529,0.57,0.591
+753,Ghana,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.5768,0.5556666667,0.5537
+754,Ghana,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),51.1819865486,51.0310815049,50.6030631105,50.2927994866
+755,Ghana,Total population with access to safe drinking-water (JMP) (%),73.1,79.5,85.4,88.7
+756,Ghana,Rural population with access to safe drinking-water (JMP) (%),60.7,69.7,78.6,84.0
+757,Ghana,Urban population with access to safe drinking-water (JMP) (%),88.2,89.9,91.6,92.6
+759,Greece,Rural population (1000 inhab),2994.553,2822.571,2616.562,2374.332
+760,Greece,Urban population (1000 inhab),8222.246,8558.326,8761.695,8785.441
+761,Greece,Population density (inhab/km2),84.7401106396,84.2706729312,81.6999469536,80.0958623825
+762,Greece,GDP per capita (current US$/inhab),13714.959542,27983.874204,21591.239031,18243.102459
+763,Greece,Human Development Index (HDI) [highest = 1] (-),0.818,0.849,0.856,0.871
+764,Greece,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.1714,0.1506666667,0.1464
+765,Greece,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),828.0046019135,865.952337146,921.5179306427,1063.4706630903
+766,Greece,Total population with access to safe drinking-water (JMP) (%),99.1,99.7,100.0,100.0
+767,Greece,Rural population with access to safe drinking-water (JMP) (%),97.0,98.9,100.0,100.0
+768,Greece,Urban population with access to safe drinking-water (JMP) (%),99.8,99.9,100.0,100.0
+781,Guatemala,Rural population (1000 inhab),6592.165,7191.525,7788.239,8341.671
+782,Guatemala,Urban population (1000 inhab),5616.683,6508.761,7482.817,8571.832
+783,Guatemala,Population density (inhab/km2),112.1209293783,125.8180457342,140.2403434659,155.3399761227
+784,Guatemala,GDP per capita (current US$/inhab),1701.761695,2489.954536,3299.603276,4470.96539
+785,Guatemala,Human Development Index (HDI) [highest = 1] (-),0.56,0.588,0.613,0.649
+786,Guatemala,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.565,0.531,0.5332
+787,Guatemala,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),213.5122081328,242.6292452728,217.6772868901,196.5182320749
+788,Guatemala,Total population with access to safe drinking-water (JMP) (%),85.2,88.7,92.0,92.8
+789,Guatemala,Rural population with access to safe drinking-water (JMP) (%),77.6,81.8,86.0,86.8
+790,Guatemala,Urban population with access to safe drinking-water (JMP) (%),94.3,96.2,98.0,98.4
+814,Guyana,Rural population (1000 inhab),537.46,543.379,554.275,571.434
+815,Guyana,Urban population (1000 inhab),214.424,204.49,198.816,206.425
+816,Guyana,Population density (inhab/km2),3.4646183188,3.4724566219,3.5139740429,3.6061869098
+817,Guyana,GDP per capita (current US$/inhab),1540.077335,2327.061326,3785.935048,4570.504571
+818,Guyana,Human Development Index (HDI) [highest = 1] (-),0.612,0.627,0.652,0.668
+819,Guyana,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5292,0.533,0.528,0.5153
+820,Guyana,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),2160.7193446735,2030.6132564564,1912.4992222653,1863.5952024065
+821,Guyana,Total population with access to safe drinking-water (JMP) (%),87.8,91.8,95.9,98.3
+822,Guyana,Rural population with access to safe drinking-water (JMP) (%),84.9,90.1,95.2,98.3
+823,Guyana,Urban population with access to safe drinking-water (JMP) (%),95.2,96.3,97.5,98.2
+825,Haiti,Rural population (1000 inhab),5394.951,5296.958,5198.418,5013.421
+826,Haiti,Urban population (1000 inhab),3439.782,4259.931,5090.792,5967.808
+827,Haiti,Population density (inhab/km2),315.4648648649,342.173981982,369.4028828829,395.7609369369
+828,Haiti,GDP per capita (current US$/inhab),363.85699,646.054228,759.782595,775.972532
+829,Haiti,Human Development Index (HDI) [highest = 1] (-),0.444,0.46,0.478,0.501
+830,Haiti,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.5828,0.598,0.6026
+831,Haiti,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),156.1887790362,150.2182366498,141.4505805815,132.0298376506
+832,Haiti,Total population with access to safe drinking-water (JMP) (%),60.8,60.2,58.5,57.7
+833,Haiti,Rural population with access to safe drinking-water (JMP) (%),49.0,48.4,47.9,47.6
+834,Haiti,Urban population with access to safe drinking-water (JMP) (%),79.2,73.2,67.3,64.9
+847,Honduras,Rural population (1000 inhab),3664.258,3861.301,3980.456,4034.31
+848,Honduras,Urban population (1000 inhab),3198.899,3846.671,4525.19,5230.757
+849,Honduras,Population density (inhab/km2),61.5989421282,69.4152191306,76.8129700418,83.8208996355
+850,Honduras,GDP per capita (current US$/inhab),1145.247701,1603.697792,2178.383025,2493.320528
+851,Honduras,Human Development Index (HDI) [highest = 1] (-),0.564,0.595,0.6,0.621
+852,Honduras,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.5112,0.4893333333,0.4796
+853,Honduras,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),,205.8008958934,185.9804962358,170.4314120683
+854,Honduras,Total population with access to safe drinking-water (JMP) (%),82.3,85.9,89.3,91.2
+855,Honduras,Rural population with access to safe drinking-water (JMP) (%),71.4,76.1,80.9,83.8
+856,Honduras,Urban population with access to safe drinking-water (JMP) (%),94.8,95.8,96.8,97.4
+858,Hungary,Rural population (1000 inhab),3550.56,3265.684,2992.731,2813.212
+859,Hungary,Urban population (1000 inhab),6617.312,6758.203,6876.953,6908.347
+860,Hungary,Population density (inhab/km2),109.2903686983,107.7517897452,106.0341610233,104.5880146189
+861,Hungary,GDP per capita (current US$/inhab),6648.666822,13963.24361,12984.579021,14556.367247
+862,Hungary,Human Development Index (HDI) [highest = 1] (-),0.784,0.814,0.826,0.841
+863,Hungary,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.2528,0.2583333333,0.2089
+864,Hungary,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),562.5593386158,557.3706722303,512.0454874002,462.6086209379
+865,Hungary,Total population with access to safe drinking-water (JMP) (%),98.6,99.7,100.0,100.0
+866,Hungary,Rural population with access to safe drinking-water (JMP) (%),97.1,99.2,100.0,100.0
+867,Hungary,Urban population with access to safe drinking-water (JMP) (%),99.4,99.8,100.0,100.0
+869,Iceland,Rural population (1000 inhab),20.939,20.516,20.834,20.862
+870,Iceland,Urban population (1000 inhab),264.39,284.684,304.692,314.163
+871,Iceland,Population density (inhab/km2),2.770184466,2.9629417476,3.1616699029,3.2465339806
+872,Iceland,GDP per capita (current US$/inhab),32575.221133,70494.636086,45231.650511,73108.083207
+873,Iceland,Human Development Index (HDI) [highest = 1] (-),0.876,0.899,0.908,0.935
+874,Iceland,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.1324,0.111,0.0906666667,0.0869
+875,Iceland,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),578.2798103242,705.806024582,903.7254492526,832.2542636957
+876,Iceland,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+877,Iceland,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+878,Iceland,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+880,India,Rural population (1000 inhab),782001.968,826881.86,863513.505,889216.746
+881,India,Urban population (1000 inhab),307805.144,352799.379,399552.347,449963.381
+882,India,Population density (inhab/km2),332.5922467344,359.9379032994,385.0563225909,407.2319172295
+883,India,GDP per capita (current US$/inhab),470.518693,1004.275095,1473.301833,1960.222536
+884,India,Human Development Index (HDI) [highest = 1] (-),0.508,0.558,0.6,0.643
+885,India,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.6086,0.572,0.5629
+886,India,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),585.8501141703,604.9816342241,601.2102035907,568.4717988144
+887,India,Total population with access to safe drinking-water (JMP) (%),82.5,87.4,92.2,94.1
+888,India,Rural population with access to safe drinking-water (JMP) (%),78.4,84.4,90.3,92.6
+889,India,Urban population with access to safe drinking-water (JMP) (%),93.0,94.7,96.4,97.1
+891,Indonesia,Rural population (1000 inhab),122744.187,122237.436,121265.363,119696.518
+892,Indonesia,Urban population (1000 inhab),94763.872,110751.705,127617.869,144294.861
+893,Indonesia,Population density (inhab/km2),113.7445081714,121.602698686,130.0161293192,133.6939054694
+894,Indonesia,GDP per capita (current US$/inhab),957.780616,1975.167375,3687.95401,3846.426581
+895,Indonesia,Human Development Index (HDI) [highest = 1] (-),0.616,0.644,0.682,0.704
+896,Indonesia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.5338,0.5026666667,0.494
+897,Indonesia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),614.831943411,758.4004297582,830.7603163597,841.2400902543
+898,Indonesia,Total population with access to safe drinking-water (JMP) (%),79.3,82.6,85.7,87.4
+899,Indonesia,Rural population with access to safe drinking-water (JMP) (%),69.7,73.5,77.2,79.5
+900,Indonesia,Urban population with access to safe drinking-water (JMP) (%),91.7,92.7,93.6,94.2
+902,Iran (Islamic Republic of),Rural population (1000 inhab),23475.745,22427.746,21594.353,20782.6
+903,Iran (Islamic Republic of),Urban population (1000 inhab),44507.585,49603.357,54859.221,60380.188
+904,Iran (Islamic Republic of),Population density (inhab/km2),38.5553081397,40.8769876515,43.2856075409,46.2274778672
+905,Iran (Islamic Republic of),GDP per capita (current US$/inhab),2207.160338,4857.368423,7887.233696,5679.648509
+906,Iran (Islamic Republic of),Human Development Index (HDI) [highest = 1] (-),0.683,0.736,0.782,0.799
+907,Iran (Islamic Republic of),Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.584,0.5302,0.5183333333,0.5146
+908,Iran (Islamic Republic of),Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),1350.9738515073,1307.8863232309,1235.1092227075,1156.5081105616
+909,Iran (Islamic Republic of),Total population with access to safe drinking-water (JMP) (%),94.5,95.4,96.0,96.2
+910,Iran (Islamic Republic of),Rural population with access to safe drinking-water (JMP) (%),87.6,89.6,91.7,92.1
+911,Iran (Islamic Republic of),Urban population with access to safe drinking-water (JMP) (%),98.2,98.0,97.7,97.7
+913,Iraq,Rural population (1000 inhab),7829.905,8837.116,10019.158,11375.936
+914,Iraq,Urban population (1000 inhab),17109.394,19553.317,22757.413,26898.682
+915,Iraq,Population density (inhab/km2),56.880632871,63.6777879175,73.2699453175,86.3179137207
+916,Iraq,GDP per capita (current US$/inhab),977.977863,3129.224876,6651.12261,4980.948425
+917,Iraq,Human Development Index (HDI) [highest = 1] (-),0.616,0.639,0.662,0.684
+918,Iraq,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.6974,0.544,0.5388
+919,Iraq,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),2498.2318563491,1898.8760373596,1370.7830240098,1026.5551304975
+920,Iraq,Total population with access to safe drinking-water (JMP) (%),81.3,83.7,86.1,86.6
+921,Iraq,Rural population with access to safe drinking-water (JMP) (%),52.2,60.3,68.5,70.1
+922,Iraq,Urban population with access to safe drinking-water (JMP) (%),94.7,94.3,93.9,93.8
+924,Ireland,Rural population (1000 inhab),1604.488,1717.899,1780.388,1764.335
+925,Ireland,Urban population (1000 inhab),2371.8,2680.174,2897.729,2997.322
+926,Ireland,Population density (inhab/km2),55.6061183836,61.5344479226,65.569123506,67.6334519067
+927,Ireland,GDP per capita (current US$/inhab),32179.605831,61368.715316,48096.164328,70492.921726
+928,Ireland,Human Development Index (HDI) [highest = 1] (-),0.871,0.899,0.899,0.939
+929,Ireland,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.2004,0.1846,0.133,0.1129
+930,Ireland,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),254.1139793513,168.8001385549,186.1899163187,181.1381153936
+931,Ireland,Total population with access to safe drinking-water (JMP) (%),96.6,97.1,97.7,97.9
+932,Ireland,Rural population with access to safe drinking-water (JMP) (%),97.1,97.4,97.7,97.8
+933,Ireland,Urban population with access to safe drinking-water (JMP) (%),96.2,96.9,97.6,97.9
+935,Israel,Rural population (1000 inhab),540.933,578.65,619.009,637.763
+936,Israel,Urban population (1000 inhab),5698.352,6344.035,7080.096,7683.807
+937,Israel,Population density (inhab/km2),279.5338921613,310.2465337562,345.0363389216,373.5318531944
+938,Israel,GDP per capita (current US$/inhab),19412.992072,25851.249172,33403.901948,42450.331893
+939,Israel,Human Development Index (HDI) [highest = 1] (-),0.865,0.881,0.893,0.904
+940,Israel,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.1836,0.1598,0.115,0.1009
+941,Israel,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),296.7915552348,275.0344998007,262.7725033592,279.4811355086
+942,Israel,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+943,Israel,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+944,Israel,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+946,Italy,Rural population (1000 inhab),18853.502,18995.609,18706.111,17722.588
+947,Italy,Urban population (1000 inhab),38948.261,40317.902,41027.723,41637.312
+948,Italy,Population density (inhab/km2),189.7607984337,194.9554025353,198.7106623747,201.3463230902
+949,Italy,GDP per capita (current US$/inhab),21984.971489,37262.659984,34939.612824,33049.354269
+950,Italy,Human Development Index (HDI) [highest = 1] (-),0.842,0.866,0.874,0.881
+951,Italy,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.1804,0.1542,0.0856666667,0.0676
+952,Italy,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),733.977386064,571.9121481651,569.9243607341,563.4731265198
+953,Italy,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+954,Italy,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+955,Italy,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+957,Jamaica,Rural population (1000 inhab),1287.06,1299.356,1303.108,1289.697
+958,Jamaica,Urban population (1000 inhab),1408.386,1476.111,1537.884,1600.602
+959,Jamaica,Population density (inhab/km2),245.0268425842,251.8859872611,258.6107370337,265.7732484076
+960,Jamaica,GDP per capita (current US$/inhab),3605.711991,4611.691572,5211.875688,5122.769551
+961,Jamaica,Human Development Index (HDI) [highest = 1] (-),0.683,0.71,0.722,0.725
+962,Jamaica,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.4602,0.4642,0.459,0.43
+963,Jamaica,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),322.1765190984,365.2558518904,491.6943750186,463.5640060695
+964,Jamaica,Total population with access to safe drinking-water (JMP) (%),93.5,93.7,93.8,93.8
+965,Jamaica,Rural population with access to safe drinking-water (JMP) (%),89.0,89.2,89.4,89.4
+966,Jamaica,Urban population with access to safe drinking-water (JMP) (%),97.7,97.6,97.5,97.5
+968,Japan,Rural population (1000 inhab),23473.865,15233.582,11368.012,10791.174
+969,Japan,Urban population (1000 inhab),104428.752,113271.669,117058.372,116693.276
+970,Japan,Population density (inhab/km2),338.4399640107,339.9943296378,339.7808524712,337.3355689605
+971,Japan,GDP per capita (current US$/inhab),32173.819008,35136.800721,48301.703498,38121.908661
+972,Japan,Human Development Index (HDI) [highest = 1] (-),0.862,0.88,0.895,0.913
+973,Japan,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.1412,0.1382,0.1326666667,0.1326
+974,Japan,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),661.8810128254,645.7886219594,634.2293658849,638.8098764164
+975,Japan,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+976,Japan,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+977,Japan,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+979,Jordan,Rural population (1000 inhab),1147.614,1091.804,944.332,897.788
+980,Jordan,Urban population (1000 inhab),4139.874,5101.387,7048.241,8804.565
+981,Jordan,Population density (inhab/km2),59.89531426,70.4582113089,90.5727944469,109.5593708016
+982,Jordan,GDP per capita (current US$/inhab),1831.211668,2791.649653,3870.49539,4195.802289
+983,Jordan,Human Development Index (HDI) [highest = 1] (-),0.706,0.735,0.726,0.722
+984,Jordan,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.6122,0.544,0.4926666667,0.4734
+985,Jordan,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),151.0106429593,148.9941297592,104.9448687151,106.694946976
+986,Jordan,Total population with access to safe drinking-water (JMP) (%),96.8,96.9,96.9,96.9
+987,Jordan,Rural population with access to safe drinking-water (JMP) (%),91.2,91.7,92.1,92.3
+988,Jordan,Urban population with access to safe drinking-water (JMP) (%),98.2,98.0,97.9,97.8
+990,Kazakhstan,Rural population (1000 inhab),6609.578,6873.733,7280.687,7766.771
+991,Kazakhstan,Urban population (1000 inhab),8496.067,8967.622,9640.492,10437.728
+992,Kazakhstan,Population density (inhab/km2),5.4960504973,5.7624514661,6.1475742229,6.6351079782
+993,Kazakhstan,GDP per capita (current US$/inhab),1630.952973,6618.74665,12292.203094,9162.888194
+994,Kazakhstan,Human Development Index (HDI) [highest = 1] (-),0.713,0.758,0.782,0.813
+995,Kazakhstan,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.3918,0.3566,0.328,0.2672
+996,Kazakhstan,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),1486.7601822306,1452.6078798102,1277.1374546496,1352.3768973915
+997,Kazakhstan,Total population with access to safe drinking-water (JMP) (%),93.7,93.4,93.1,92.9
+998,Kazakhstan,Rural population with access to safe drinking-water (JMP) (%),88.1,87.0,86.0,85.6
+999,Kazakhstan,Urban population with access to safe drinking-water (JMP) (%),98.2,98.7,99.2,99.4
+1001,Kenya,Rural population (1000 inhab),26374.762,29547.088,33007.2,36498.515
+1002,Kenya,Urban population (1000 inhab),6839.247,8538.821,10639.429,13201.347
+1003,Kenya,Population density (inhab/km2),58.1555542154,66.691820735,76.405512001,86.5329737926
+1004,Kenya,GDP per capita (current US$/inhab),454.39481,839.137441,1154.961092,1584.659911
+1005,Kenya,Human Development Index (HDI) [highest = 1] (-),0.45,0.507,0.545,0.574
+1006,Kenya,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.666,0.6276,0.5673333333,0.5522
+1007,Kenya,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),61.230653201,73.1966060691,72.587919208,80.2849126768
+1008,Kenya,Total population with access to safe drinking-water (JMP) (%),53.5,57.7,61.6,63.2
+1009,Kenya,Rural population with access to safe drinking-water (JMP) (%),44.9,49.9,54.8,56.8
+1010,Kenya,Urban population with access to safe drinking-water (JMP) (%),86.6,84.6,82.5,81.6
+1023,Kuwait,Rural population (1000 inhab),0.0,0.0,0.0,0.0
+1024,Kuwait,Urban population (1000 inhab),2143.833,2503.41,3395.556,4136.528
+1025,Kuwait,Population density (inhab/km2),119.9212682379,140.5173400673,187.9266554433,227.614983165
+1026,Kuwait,GDP per capita (current US$/inhab),17788.585601,45791.727107,51257.349198,28897.241961
+1027,Kuwait,Human Development Index (HDI) [highest = 1] (-),0.788,0.789,0.8,0.809
+1028,Kuwait,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.4978,0.3294,0.28,0.3873
+1029,Kuwait,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),427.3286298483,414.8407942469,332.6626942235,308.177882246
+1030,Kuwait,Total population with access to safe drinking-water (JMP) (%),99.0,99.0,99.0,99.0
+1031,Kuwait,Rural population with access to safe drinking-water (JMP) (%),99.0,99.0,99.0,99.0
+1032,Kuwait,Urban population with access to safe drinking-water (JMP) (%),99.0,99.0,99.0,99.0
+1034,Kyrgyzstan,Rural population (1000 inhab),3229.231,3358.424,3612.53,3860.7
+1035,Kyrgyzstan,Urban population (1000 inhab),1761.456,1831.296,1981.578,2184.417
+1036,Kyrgyzstan,Population density (inhab/km2),24.963655914,25.9284421105,28.1149087272,30.956404101
+1037,Kyrgyzstan,GDP per capita (current US$/inhab),321.73864,732.712087,1180.730955,1274.241408
+1038,Kyrgyzstan,Human Development Index (HDI) [highest = 1] (-),0.604,0.628,0.649,0.671
+1039,Kyrgyzstan,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5644,0.5452,0.3483333333,0.3528
+1040,Kyrgyzstan,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),1881.004102388,1531.0570651293,1362.6072119278,1237.5331860033
+1041,Kyrgyzstan,Total population with access to safe drinking-water (JMP) (%),80.0,83.8,87.6,90.0
+1042,Kyrgyzstan,Rural population with access to safe drinking-water (JMP) (%),71.1,76.9,82.7,86.2
+1043,Kyrgyzstan,Urban population with access to safe drinking-water (JMP) (%),96.2,96.4,96.6,96.7
+1045,Lao People's Democratic Republic,Rural population (1000 inhab),4175.525,4265.018,4409.554,4501.174
+1046,Lao People's Democratic Republic,Urban population (1000 inhab),1321.748,1684.769,2005.615,2356.986
+1047,Lao People's Democratic Republic,Population density (inhab/km2),23.1978293919,25.1053547297,27.2150760135,29.3624788851
+1048,Lao People's Democratic Republic,GDP per capita (current US$/inhab),346.875223,768.096132,1588.633919,2457.379901
+1049,Lao People's Democratic Republic,Human Development Index (HDI) [highest = 1] (-),0.48,0.521,0.569,0.602
+1050,Lao People's Democratic Republic,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5896,0.5576,0.5366666667,0.534
+1051,Lao People's Democratic Republic,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),,739.9560097077,1034.0552375425,1052.7776719087
+1052,Lao People's Democratic Republic,Total population with access to safe drinking-water (JMP) (%),50.1,61.2,71.5,75.7
+1053,Lao People's Democratic Republic,Rural population with access to safe drinking-water (JMP) (%),42.4,53.7,64.9,69.4
+1054,Lao People's Democratic Republic,Urban population with access to safe drinking-water (JMP) (%),74.1,78.9,83.7,85.6
+1056,Latvia,Rural population (1000 inhab),749.886,705.716,663.369,622.436
+1057,Latvia,Urban population (1000 inhab),1582.606,1492.802,1403.005,1327.234
+1058,Latvia,Population density (inhab/km2),36.1296468401,34.0472273854,32.0877171216,30.216772495
+1059,Latvia,GDP per capita (current US$/inhab),4085.70217,14054.779299,13635.782216,15527.246924
+1060,Latvia,Human Development Index (HDI) [highest = 1] (-),0.76,0.818,0.825,0.849
+1061,Latvia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.2656,0.2292,0.232,0.1666
+1062,Latvia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),109.8806874938,99.2680460163,125.7602647829,92.8195779092
+1063,Latvia,Total population with access to safe drinking-water (JMP) (%),98.3,98.7,99.1,99.3
+1064,Latvia,Rural population with access to safe drinking-water (JMP) (%),95.6,96.7,97.7,98.3
+1065,Latvia,Urban population with access to safe drinking-water (JMP) (%),99.6,99.7,99.8,99.8
+1078,Lesotho,Rural population (1000 inhab),1510.496,1520.337,1552.732,1614.034
+1079,Lesotho,Urban population (1000 inhab),391.816,461.95,537.196,619.305
+1080,Lesotho,Population density (inhab/km2),66.8586627141,65.4453886693,66.3700263505,68.8911067194
+1081,Lesotho,GDP per capita (current US$/inhab),393.503601,918.545265,1281.625455,1154.64483
+1082,Lesotho,Human Development Index (HDI) [highest = 1] (-),0.44,0.441,0.48,0.514
+1083,Lesotho,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5928,0.5736,0.5583333333,0.5406
+1084,Lesotho,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),21.5781723485,22.0441466751,21.7370374304,20.9415672898
+1085,Lesotho,Total population with access to safe drinking-water (JMP) (%),79.3,80.3,81.2,81.8
+1086,Lesotho,Rural population with access to safe drinking-water (JMP) (%),75.7,76.2,76.7,77.0
+1087,Lesotho,Urban population with access to safe drinking-water (JMP) (%),93.3,93.8,94.3,94.6
+1089,Liberia,Rural population (1000 inhab),1684.052,1870.927,2150.015,2332.953
+1090,Liberia,Urban population (1000 inhab),1378.811,1642.005,2031.548,2398.953
+1091,Liberia,Population density (inhab/km2),27.1592798779,31.0847714824,37.1344078298,42.2216575379
+1092,Liberia,GDP per capita (current US$/inhab),224.196403,270.144711,414.677478,453.383621
+1093,Liberia,Human Development Index (HDI) [highest = 1] (-),0.423,0.431,0.455,0.466
+1094,Liberia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.6828,0.6678,0.6556666667,0.6512
+1095,Liberia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),45.2404165795,42.1443532199,35.2785372295,31.0278578699
+1096,Liberia,Total population with access to safe drinking-water (JMP) (%),64.2,68.5,72.9,75.6
+1097,Liberia,Rural population with access to safe drinking-water (JMP) (%),52.9,56.7,60.4,62.6
+1098,Liberia,Urban population with access to safe drinking-water (JMP) (%),77.9,82.0,86.2,88.6
+1100,Libya,Rural population (1000 inhab),1291.813,1347.074,1331.872,1286.565
+1101,Libya,Urban population (1000 inhab),4235.702,4623.288,4866.386,5088.051
+1102,Libya,Population density (inhab/km2),3.1434857974,3.3956528411,3.5723814179,3.7400252339
+1103,Libya,GDP per capita (current US$/inhab),3964.286023,10496.525432,16321.621458,3940.67063
+1104,Libya,Human Development Index (HDI) [highest = 1] (-),0.737,0.754,0.742,0.704
+1105,Libya,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.315,0.2363333333,0.134
+1106,Libya,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),821.3934001062,860.8794637485,927.495025254,885.9207588709
+1107,Libya,Total population with access to safe drinking-water (JMP) (%),71.2,71.2,71.2,71.2
+1108,Libya,Rural population with access to safe drinking-water (JMP) (%),68.3,68.3,68.3,68.3
+1109,Libya,Urban population with access to safe drinking-water (JMP) (%),72.1,72.1,72.1,72.1
+1122,Lithuania,Rural population (1000 inhab),1142.699,1083.093,1006.428,938.898
+1123,Lithuania,Urban population (1000 inhab),2302.055,2176.998,2030.818,1951.399
+1124,Lithuania,Population density (inhab/km2),52.7528790199,49.9078101072,46.639525268,43.583831143
+1125,Lithuania,GDP per capita (current US$/inhab),4144.097841,12187.262977,14105.718512,16521.107737
+1126,Lithuania,Human Development Index (HDI) [highest = 1] (-),0.778,0.826,0.835,0.866
+1127,Lithuania,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.1826,0.133,0.1247
+1128,Lithuania,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),753.2197313831,696.230108807,230.0226713315,91.0236612317
+1129,Lithuania,Total population with access to safe drinking-water (JMP) (%),91.8,93.8,95.8,96.6
+1130,Lithuania,Rural population with access to safe drinking-water (JMP) (%),81.3,85.1,88.9,90.4
+1131,Lithuania,Urban population with access to safe drinking-water (JMP) (%),97.0,98.1,99.2,99.7
+1133,Luxembourg,Rural population (1000 inhab),65.234,59.77,57.239,54.103
+1134,Luxembourg,Urban population (1000 inhab),378.492,414.952,475.148,529.352
+1135,Luxembourg,Population density (inhab/km2),171.3227799228,183.3648648649,204.9640926641,228.5366795367
+1136,Luxembourg,GDP per capita (current US$/inhab),53225.195448,107190.150392,106460.078452,110003.247419
+1137,Luxembourg,Human Development Index (HDI) [highest = 1] (-),0.869,0.888,0.892,0.908
+1138,Luxembourg,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.1718,0.1768,0.162,0.0999
+1139,Luxembourg,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),127.242733333,104.7115608248,83.8267179297,77.0387389975
+1140,Luxembourg,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1141,Luxembourg,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1142,Luxembourg,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1155,Malawi,Rural population (1000 inhab),10237.35,11732.355,13551.942,15509.514
+1156,Malawi,Urban population (1000 inhab),1776.361,2108.614,2545.363,3112.59
+1157,Malawi,Population density (inhab/km2),98.8661715057,112.6080857529,129.9461090479,149.1407494936
+1158,Malawi,GDP per capita (current US$/inhab),290.967701,320.276526,355.428098,340.870048
+1159,Malawi,Human Development Index (HDI) [highest = 1] (-),0.363,0.394,0.452,0.482
+1160,Malawi,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.632,0.5936666667,0.6111
+1161,Malawi,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),114.2272819162,101.6953776723,88.1267003182,76.7846604531
+1162,Malawi,Total population with access to safe drinking-water (JMP) (%),66.2,75.5,84.7,90.2
+1163,Malawi,Rural population with access to safe drinking-water (JMP) (%),61.6,72.2,82.8,89.1
+1164,Malawi,Urban population with access to safe drinking-water (JMP) (%),93.3,94.2,95.1,95.7
+1166,Malaysia,Rural population (1000 inhab),8746.392,8424.428,8087.429,7764.814
+1167,Malaysia,Urban population (1000 inhab),15452.419,18201.417,21083.027,23859.45
+1168,Malaysia,Population density (inhab/km2),73.1813512696,80.775,87.8723972189,94.0285550181
+1169,Malaysia,GDP per capita (current US$/inhab),4167.375261,7269.235885,10779.504483,10085.77479
+1170,Malaysia,Human Development Index (HDI) [highest = 1] (-),0.724,0.751,0.782,0.802
+1171,Malaysia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.302,0.2816,0.2296666667,0.209
+1172,Malaysia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),226.6982551628,205.386377509,188.7974513995,176.4366647992
+1173,Malaysia,Total population with access to safe drinking-water (JMP) (%),94.8,96.4,97.9,98.2
+1174,Malaysia,Rural population with access to safe drinking-water (JMP) (%),89.3,90.8,92.4,93.0
+1175,Malaysia,Urban population with access to safe drinking-water (JMP) (%),97.9,99.0,100.0,100.0
+1177,Maldives,Rural population (1000 inhab),205.915,217.772,242.277,264.503
+1178,Maldives,Urban population (1000 inhab),88.426,118.298,143.926,171.827
+1179,Maldives,Population density (inhab/km2),980.62,1117.23,1324.1233333333,1654.6733333333
+1180,Maldives,GDP per capita (current US$/inhab),3102.950282,5559.506828,7473.178449,10854.169233
+1181,Maldives,Human Development Index (HDI) [highest = 1] (-),0.619,0.647,0.688,0.716
+1182,Maldives,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.3944,0.3053333333,0.2427
+1183,Maldives,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),21.330042898,17.2478731057,14.8525942951,11.8855282614
+1184,Maldives,Total population with access to safe drinking-water (JMP) (%),95.9,97.5,98.6,98.6
+1185,Maldives,Rural population with access to safe drinking-water (JMP) (%),94.2,96.3,97.9,97.9
+1186,Maldives,Urban population with access to safe drinking-water (JMP) (%),99.8,99.7,99.5,99.5
+1188,Mali,Rural population (1000 inhab),8169.81,9078.96,9988.283,10833.712
+1189,Mali,Urban population (1000 inhab),3469.119,4596.646,6018.387,7708.268
+1190,Mali,Population density (inhab/km2),9.3670219886,11.0075585193,12.8847160516,14.9270918166
+1191,Mali,GDP per capita (current US$/inhab),334.2024,595.636854,777.347632,829.238323
+1192,Mali,Human Development Index (HDI) [highest = 1] (-),0.33,0.367,0.408,0.426
+1193,Mali,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.7066,0.698,0.6773333333,0.6767
+1194,Mali,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),439.2969612164,379.88599611,324.5408991623,280.136103148
+1195,Mali,Total population with access to safe drinking-water (JMP) (%),50.6,60.8,70.9,77.0
+1196,Mali,Rural population with access to safe drinking-water (JMP) (%),40.8,49.7,58.7,64.1
+1197,Mali,Urban population with access to safe drinking-water (JMP) (%),73.9,82.6,91.3,96.5
+1199,Malta,Rural population (1000 inhab),28.474,25.207,24.36,23.498
+1200,Malta,Urban population (1000 inhab),372.829,385.117,396.429,407.337
+1201,Malta,Population density (inhab/km2),1245.99375,1274.5375,1318.153125,1368.540625
+1202,Malta,GDP per capita (current US$/inhab),11131.599034,19327.066778,21892.388462,29664.307806
+1203,Malta,Human Development Index (HDI) [highest = 1] (-),0.797,0.831,0.854,0.883
+1204,Malta,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.2688,0.2356666667,0.2266
+1205,Malta,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),135.29074971,115.2106374099,94.5925762608,145.684385511
+1206,Malta,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1207,Malta,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1208,Malta,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1221,Mauritania,Rural population (1000 inhab),1738.864,1858.724,1976.397,2085.278
+1222,Mauritania,Urban population (1000 inhab),1134.364,1453.941,1853.842,2334.906
+1223,Mauritania,Population density (inhab/km2),2.6953517027,3.1071281653,3.5961530998,4.1550111575
+1224,Mauritania,GDP per capita (current US$/inhab),592.611716,1294.647068,1642.687687,1597.806534
+1225,Mauritania,Human Development Index (HDI) [highest = 1] (-),0.451,0.479,0.503,0.524
+1226,Mauritania,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.7406,0.6846,0.6463333333,0.6105
+1227,Mauritania,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),530.2546813486,421.6058806245,364.2735639968,315.2779756081
+1228,Mauritania,Total population with access to safe drinking-water (JMP) (%),44.6,50.7,56.7,57.9
+1229,Mauritania,Rural population with access to safe drinking-water (JMP) (%),41.7,48.7,55.7,57.1
+1230,Mauritania,Urban population with access to safe drinking-water (JMP) (%),47.3,52.4,57.4,58.4
+1232,Mauritius,Rural population (1000 inhab),691.683,717.043,735.323,748.44
+1233,Mauritius,Urban population (1000 inhab),510.129,516.868,518.048,516.698
+1234,Mauritius,Population density (inhab/km2),589.1235294118,604.8475490196,614.4549019608,619.8524509804
+1235,Mauritius,GDP per capita (current US$/inhab),4206.230126,6605.136144,9309.850416,10480.55486
+1236,Mauritius,Human Development Index (HDI) [highest = 1] (-),0.688,0.728,0.768,0.793
+1237,Mauritius,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.366,0.377,0.4188
+1238,Mauritius,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),571.3594694234,510.5807734731,464.3044049883,487.1494560296
+1239,Mauritius,Total population with access to safe drinking-water (JMP) (%),99.3,99.6,99.8,99.9
+1240,Mauritius,Rural population with access to safe drinking-water (JMP) (%),99.0,99.4,99.7,99.8
+1241,Mauritius,Urban population with access to safe drinking-water (JMP) (%),99.8,99.8,99.9,99.9
+1243,Mexico,Rural population (1000 inhab),25708.164,25812.028,26092.527,26004.525
+1244,Mexico,Urban population (1000 inhab),78647.444,86024.318,94735.78,103158.751
+1245,Mexico,Population density (inhab/km2),51.7643012045,55.5750425071,59.7003405655,63.5199523514
+1246,Mexico,GDP per capita (current US$/inhab),7398.832947,9412.835117,9940.500012,8967.170167
+1247,Mexico,Human Development Index (HDI) [highest = 1] (-),0.714,0.738,0.752,0.765
+1248,Mexico,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.4676,0.4196,0.3863333333,0.3728
+1249,Mexico,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),713.9713112166,723.1806994897,705.4666051527,704.006122138
+1250,Mexico,Total population with access to safe drinking-water (JMP) (%),89.7,92.5,95.1,96.1
+1251,Mexico,Rural population with access to safe drinking-water (JMP) (%),75.7,82.6,89.4,92.1
+1252,Mexico,Urban population with access to safe drinking-water (JMP) (%),94.3,95.5,96.7,97.2
+1276,Mongolia,Rural population (1000 inhab),994.464,918.387,899.714,973.037
+1277,Mongolia,Urban population (1000 inhab),1449.195,1673.283,1914.512,2102.61
+1278,Mongolia,Population density (inhab/km2),1.5620738818,1.6583254482,1.8059343273,1.9907638576
+1279,Mongolia,GDP per capita (current US$/inhab),662.654194,1894.711774,4368.07713,3717.473332
+1280,Mongolia,Human Development Index (HDI) [highest = 1] (-),0.609,0.671,0.719,0.729
+1281,Mongolia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.403,0.3486666667,0.3254
+1282,Mongolia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),206.9105152635,209.6007690074,173.5760778674,148.5008924827
+1283,Mongolia,Total population with access to safe drinking-water (JMP) (%),58.0,61.5,63.7,64.4
+1284,Mongolia,Rural population with access to safe drinking-water (JMP) (%),36.0,44.9,53.8,59.2
+1285,Mongolia,Urban population with access to safe drinking-water (JMP) (%),73.1,70.6,68.0,66.4
+1298,Morocco,Rural population (1000 inhab),13578.75,13640.554,13619.442,13613.878
+1299,Morocco,Urban population (1000 inhab),15933.618,17585.327,19714.347,22125.702
+1300,Morocco,Population density (inhab/km2),65.960738999,69.7876452805,74.4416078827,79.680338148
+1301,Morocco,GDP per capita (current US$/inhab),1439.020782,2531.264795,2947.934765,3069.826908
+1302,Morocco,Human Development Index (HDI) [highest = 1] (-),0.553,0.596,0.636,0.675
+1303,Morocco,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.6036,0.5022,0.4686666667,0.5249
+1304,Morocco,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),503.00854517,387.4824061978,313.7907279668,293.1599798827
+1305,Morocco,Total population with access to safe drinking-water (JMP) (%),79.3,81.9,84.6,85.4
+1306,Morocco,Rural population with access to safe drinking-water (JMP) (%),59.4,62.1,64.8,65.3
+1307,Morocco,Urban population with access to safe drinking-water (JMP) (%),96.3,97.4,98.5,98.7
+1309,Mozambique,Rural population (1000 inhab),13501.744,15451.006,17242.761,19149.788
+1310,Mozambique,Urban population (1000 inhab),5637.914,6737.381,8433.845,10519.046
+1311,Mozambique,Population density (inhab/km2),23.4733856239,27.1126573094,31.1024343866,35.839047762
+1312,Mozambique,GDP per capita (current US$/inhab),287.918273,462.340614,636.798114,445.554402
+1313,Mozambique,Human Development Index (HDI) [highest = 1] (-),0.32,0.372,0.398,0.442
+1314,Mozambique,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.6764,0.6762,0.66,0.5907
+1315,Mozambique,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),50.6311863535,53.8334130056,54.6263149551,51.4153748656
+1316,Mozambique,Total population with access to safe drinking-water (JMP) (%),42.6,46.3,50.1,51.1
+1317,Mozambique,Rural population with access to safe drinking-water (JMP) (%),28.8,32.5,36.3,37.0
+1318,Mozambique,Urban population with access to safe drinking-water (JMP) (%),75.7,77.9,80.1,80.6
+1320,Myanmar,Rural population (1000 inhab),34228.006,35246.67,36064.794,37187.526
+1321,Myanmar,Urban population (1000 inhab),12912.214,13924.916,14921.72,16183.083
+1322,Myanmar,Population density (inhab/km2),70.5038073279,73.3405385832,75.9894529922,78.8947031613
+1323,Myanmar,GDP per capita (current US$/inhab),219.963624,370.793923,1196.664441,1245.826398
+1324,Myanmar,Human Development Index (HDI) [highest = 1] (-),0.441,0.49,0.541,0.577
+1325,Myanmar,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,,0.4396666667,0.4134
+1326,Myanmar,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),697.9082775918,672.9223587167,649.4649753303,625.5118365237
+1327,Myanmar,Total population with access to safe drinking-water (JMP) (%),68.9,74.6,80.3,80.6
+1328,Myanmar,Rural population with access to safe drinking-water (JMP) (%),62.3,68.4,74.4,74.4
+1329,Myanmar,Urban population with access to safe drinking-water (JMP) (%),86.0,89.3,92.7,92.7
+1331,Namibia,Rural population (1000 inhab),1299.607,1277.117,1274.757,1292.108
+1332,Namibia,Urban population (1000 inhab),662.54,802.798,989.177,1241.686
+1333,Namibia,Population density (inhab/km2),2.2462033993,2.4342330976,2.6626345097,2.914790911
+1334,Namibia,GDP per capita (current US$/inhab),1669.424049,4202.531843,5749.426723,5354.102245
+1335,Namibia,Human Development Index (HDI) [highest = 1] (-),0.54,0.558,0.612,0.643
+1336,Namibia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5126,0.4902,0.457,0.401
+1337,Namibia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),155.5476221467,143.5325145999,131.2202618664,119.8684942727
+1338,Namibia,Total population with access to safe drinking-water (JMP) (%),80.3,84.8,88.8,91.0
+1339,Namibia,Rural population with access to safe drinking-water (JMP) (%),71.0,76.3,81.5,84.6
+1340,Namibia,Urban population with access to safe drinking-water (JMP) (%),98.5,98.4,98.2,98.2
+1353,Nepal,Rural population (1000 inhab),21068.143,22078.011,22822.896,23638.57
+1354,Nepal,Urban population (1000 inhab),3498.199,4136.836,4827.029,5666.428
+1355,Nepal,Population density (inhab/km2),167.9958350319,179.2538456312,183.3752072292,187.7475268379
+1356,Nepal,GDP per capita (current US$/inhab),240.15081,418.036765,648.364406,873.142986
+1357,Nepal,Human Development Index (HDI) [highest = 1] (-),0.456,0.49,0.548,0.574
+1358,Nepal,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.6468,0.5764,0.4846666667,0.4886
+1359,Nepal,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),385.6864782438,359.976152447,351.8856809305,343.6908637276
+1360,Nepal,Total population with access to safe drinking-water (JMP) (%),79.2,84.1,88.9,91.6
+1361,Nepal,Rural population with access to safe drinking-water (JMP) (%),76.8,82.5,88.3,91.8
+1362,Nepal,Urban population with access to safe drinking-water (JMP) (%),93.8,92.7,91.6,90.9
+1364,Netherlands,Rural population (1000 inhab),3364.924,2552.168,1915.976,1520.119
+1365,Netherlands,Urban population (1000 inhab),12745.431,13954.888,14873.119,15515.819
+1366,Netherlands,Population density (inhab/km2),387.9209005538,397.3677178623,404.2330284064,455.2379513239
+1367,Netherlands,GDP per capita (current US$/inhab),29275.296448,51337.92634,49971.204939,48947.679998
+1368,Netherlands,Human Development Index (HDI) [highest = 1] (-),0.879,0.904,0.921,0.932
+1369,Netherlands,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.0744,0.0614,0.0546666667,0.0624
+1370,Netherlands,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),593.8633878645,663.3021650964,638.595889432,944.4904683513
+1371,Netherlands,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1372,Netherlands,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1373,Netherlands,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1375,New Zealand,Rural population (1000 inhab),548.484,578.237,618.306,636.894
+1376,New Zealand,Urban population (1000 inhab),3414.722,3654.914,3849.437,4068.924
+1377,New Zealand,Population density (inhab/km2),14.8041014531,15.8120578238,16.6914086138,17.5639087072
+1378,New Zealand,GDP per capita (current US$/inhab),15775.204078,32438.85871,39436.665572,43651.468216
+1379,New Zealand,Human Development Index (HDI) [highest = 1] (-),0.882,0.894,0.905,0.92
+1380,New Zealand,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.1918,0.195,0.1893333333,0.1572
+1381,New Zealand,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),817.7025896519,1176.7530993048,1163.9364550224,1106.1170548746
+1382,New Zealand,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1383,New Zealand,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1384,New Zealand,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1386,Nicaragua,Rural population (1000 inhab),2302.257,2411.595,2508.971,2592.801
+1387,Nicaragua,Urban population (1000 inhab),2869.477,3110.511,3368.137,3624.78
+1388,Nicaragua,Population density (inhab/km2),40.0347319169,42.8783845977,45.888824116,48.9748101557
+1389,Nicaragua,GDP per capita (current US$/inhab),1006.686197,1344.301422,1792.04082,2226.522932
+1390,Nicaragua,Human Development Index (HDI) [highest = 1] (-),0.581,0.602,0.625,0.653
+1391,Nicaragua,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.5188,0.4736666667,0.4485
+1392,Nicaragua,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),279.1793448177,274.0760153523,258.1852548572,241.916563062
+1393,Nicaragua,Total population with access to safe drinking-water (JMP) (%),80.1,83.1,86.2,87.0
+1394,Nicaragua,Rural population with access to safe drinking-water (JMP) (%),61.6,65.1,68.7,69.4
+1395,Nicaragua,Urban population with access to safe drinking-water (JMP) (%),95.1,97.0,98.9,99.3
+1397,Niger,Rural population (1000 inhab),10221.895,12287.148,14856.997,17965.903
+1398,Niger,Urban population (1000 inhab),1984.107,2381.19,2874.637,3511.445
+1399,Niger,Population density (inhab/km2),9.6211389108,11.5906858721,14.0451539069,17.0500252565
+1400,Niger,GDP per capita (current US$/inhab),234.133939,389.140907,521.714768,520.085384
+1401,Niger,Human Development Index (HDI) [highest = 1] (-),0.263,0.295,0.338,0.373
+1402,Niger,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.7824,0.71525,0.680875,0.7132
+1403,Niger,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),74.9894401001,72.1818350063,70.3035629625,81.0512470338
+1404,Niger,Total population with access to safe drinking-water (JMP) (%),45.7,50.8,56.2,58.2
+1405,Niger,Rural population with access to safe drinking-water (JMP) (%),38.7,42.8,47.0,48.6
+1406,Niger,Urban population with access to safe drinking-water (JMP) (%),81.3,89.7,98.2,100.0
+1441,Norway,Rural population (1000 inhab),1057.72,1027.294,1008.706,961.814
+1442,Norway,Urban population (1000 inhab),3488.299,3692.354,4003.301,4343.569
+1443,Norway,Population density (inhab/km2),11.802323589,12.2524585908,13.0165351264,13.749262736
+1444,Norway,GDP per capita (current US$/inhab),43010.094074,84951.119269,101657.143964,75092.402428
+1445,Norway,Human Development Index (HDI) [highest = 1] (-),0.918,0.938,0.942,0.953
+1446,Norway,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.0976,0.081,0.0703333333,0.0674
+1447,Norway,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),561.8416590742,641.2041186574,544.8860314789,508.1258215601
+1448,Norway,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1449,Norway,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1450,Norway,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1463,Pakistan,Rural population (1000 inhab),96368.659,105200.045,114917.348,125220.255
+1464,Pakistan,Urban population (1000 inhab),48285.484,55132.929,62994.185,71795.7
+1465,Pakistan,Population density (inhab/km2),187.8529079261,210.7877213918,235.2469903278,261.1558962442
+1466,Pakistan,GDP per capita (current US$/inhab),555.48465,948.800465,1206.451626,1538.413187
+1467,Pakistan,Human Development Index (HDI) [highest = 1] (-),0.464,0.511,0.533,0.558
+1468,Pakistan,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.5922,0.5623333333,0.5359
+1469,Pakistan,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),1170.9251172018,1084.2518601828,979.5486631686,882.3690301621
+1470,Pakistan,Total population with access to safe drinking-water (JMP) (%),88.9,89.9,90.9,91.4
+1471,Pakistan,Rural population with access to safe drinking-water (JMP) (%),85.7,87.3,88.9,89.9
+1472,Pakistan,Urban population with access to safe drinking-water (JMP) (%),95.2,94.7,94.2,93.9
+1507,Papua New Guinea,Rural population (1000 inhab),5090.608,5761.463,6466.137,7170.073
+1508,Papua New Guinea,Urban population (1000 inhab),771.708,866.459,964.699,1081.089
+1509,Papua New Guinea,Population density (inhab/km2),13.176521044,14.710297295,16.4873411978,18.2309999136
+1510,Papua New Guinea,GDP per capita (current US$/inhab),781.255839,1440.108045,2865.806766,2667.000159
+1511,Papua New Guinea,Human Development Index (HDI) [highest = 1] (-),0.446,0.486,0.508,0.543
+1512,Papua New Guinea,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.6728,0.6812,0.636,0.6113
+1513,Papua New Guinea,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),52.4184073744,57.5896590651,51.3825119404,46.4681591783
+1514,Papua New Guinea,Total population with access to safe drinking-water (JMP) (%),35.9,37.9,39.9,40.0
+1515,Papua New Guinea,Rural population with access to safe drinking-water (JMP) (%),28.1,30.4,32.8,32.8
+1516,Papua New Guinea,Urban population with access to safe drinking-water (JMP) (%),87.6,87.8,88.0,88.0
+1518,Paraguay,Rural population (1000 inhab),2390.764,2488.72,2557.635,2635.972
+1519,Paraguay,Urban population (1000 inhab),3117.847,3477.439,3821.584,4175.325
+1520,Paraguay,Population density (inhab/km2),13.600398279,14.7472083589,15.7873706208,16.8826729801
+1521,Paraguay,GDP per capita (current US$/inhab),1486.280687,2992.94229,5217.445724,5727.088492
+1522,Paraguay,Human Development Index (HDI) [highest = 1] (-),0.658,0.671,0.697,0.722
+1523,Paraguay,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5318,0.5028,0.4646666667,0.4718
+1524,Paraguay,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),148.9470999565,276.5548266894,375.7681406236,351.3875877905
+1525,Paraguay,Total population with access to safe drinking-water (JMP) (%),77.1,85.4,93.4,98.0
+1526,Paraguay,Rural population with access to safe drinking-water (JMP) (%),57.4,71.8,86.3,94.9
+1527,Paraguay,Urban population with access to safe drinking-water (JMP) (%),92.3,95.3,98.4,100.0
+1540,Philippines,Rural population (1000 inhab),43958.821,48629.037,52586.504,55939.801
+1541,Philippines,Urban population (1000 inhab),37393.239,40664.453,44280.138,48978.289
+1542,Philippines,Population density (inhab/km2),271.2175266667,298.0182733333,324.0421433333,350.5764166667
+1543,Philippines,GDP per capita (current US$/inhab),1000.068814,1672.685731,2581.81887,2989.185417
+1544,Philippines,Human Development Index (HDI) [highest = 1] (-),0.639,0.663,0.684,0.709
+1545,Philippines,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.4694,0.4468,0.414,0.4196
+1546,Philippines,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),,911.5324718008,866.6362460694,881.8714512314
+1547,Philippines,Total population with access to safe drinking-water (JMP) (%),87.7,89.2,90.8,91.8
+1548,Philippines,Rural population with access to safe drinking-water (JMP) (%),83.5,86.1,88.7,90.3
+1549,Philippines,Urban population with access to safe drinking-water (JMP) (%),92.2,92.8,93.4,93.7
+1551,Poland,Rural population (1000 inhab),14706.001,14860.895,15076.293,15228.329
+1552,Poland,Urban population (1000 inhab),23778.471,23468.69,23241.111,22942.383
+1553,Poland,Population density (inhab/km2),123.0888323899,122.6600294231,122.2561212741,121.3724976015
+1554,Poland,GDP per capita (current US$/inhab),5162.582435,11193.854549,13058.150151,13790.05371
+1555,Poland,Human Development Index (HDI) [highest = 1] (-),0.799,0.819,0.836,0.868
+1556,Poland,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.1888,0.1616,0.1473333333,0.1378
+1557,Poland,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),304.7651947859,313.6623988243,300.3109526334,265.6167414694
+1558,Poland,Total population with access to safe drinking-water (JMP) (%),96.3,97.1,98.0,98.3
+1559,Poland,Rural population with access to safe drinking-water (JMP) (%),91.8,93.9,96.0,96.9
+1560,Poland,Urban population with access to safe drinking-water (JMP) (%),99.1,99.2,99.3,99.3
+1562,Portugal,Rural population (1000 inhab),4630.074,4385.066,4046.172,3651.305
+1563,Portugal,Urban population (1000 inhab),5813.594,6245.054,6535.649,6678.201
+1564,Portugal,Population density (inhab/km2),112.7441055145,114.8131501792,114.155818241,111.5582549748
+1565,Portugal,GDP per capita (current US$/inhab),12846.271459,22594.145282,20434.725627,21429.667084
+1566,Portugal,Human Development Index (HDI) [highest = 1] (-),0.792,0.81,0.829,0.848
+1567,Portugal,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.1814,0.1572,0.1233333333,0.111
+1568,Portugal,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),1083.9880421847,865.4947729355,1061.5782855679,1086.4626199649
+1569,Portugal,Total population with access to safe drinking-water (JMP) (%),98.3,99.1,99.9,100.0
+1570,Portugal,Rural population with access to safe drinking-water (JMP) (%),97.5,98.7,100.0,100.0
+1571,Portugal,Urban population with access to safe drinking-water (JMP) (%),98.9,99.4,99.9,100.0
+1584,Qatar,Rural population (1000 inhab),21.361,24.776,27.484,24.338
+1585,Qatar,Urban population (1000 inhab),624.298,1164.857,2082.084,2614.873
+1586,Qatar,Population density (inhab/km2),55.1996554694,104.9469422911,189.1535745047,237.1390774587
+1587,Qatar,GDP per capita (current US$/inhab),29990.654918,67005.514297,88564.816286,63249.46732
+1588,Qatar,Human Development Index (HDI) [highest = 1] (-),0.822,0.838,0.85,0.848
+1589,Qatar,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,,0.5316666667,0.5241
+1590,Qatar,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),552.2822172429,422.6942124071,340.3290783139,334.9325143647
+1591,Qatar,Total population with access to safe drinking-water (JMP) (%),99.4,99.9,100.0,100.0
+1592,Qatar,Rural population with access to safe drinking-water (JMP) (%),99.4,99.9,100.0,100.0
+1593,Qatar,Urban population with access to safe drinking-water (JMP) (%),99.4,99.9,100.0,100.0
+1595,Republic of Korea,Rural population (1000 inhab),9457.554,9012.35,9065.944,9429.948
+1596,Republic of Korea,Urban population (1000 inhab),38547.232,40050.079,40886.3,41552.264
+1597,Republic of Korea,Population density (inhab/km2),481.9715533688,491.7249298034,499.8566050924,509.3850563254
+1598,Republic of Korea,GDP per capita (current US$/inhab),13066.341281,23900.450076,25592.996478,31852.31481
+1599,Republic of Korea,Human Development Index (HDI) [highest = 1] (-),0.832,0.869,0.89,0.904
+1600,Republic of Korea,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.1104,0.1013333333,0.1247
+1601,Republic of Korea,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),607.5682339252,559.1447291334,551.8596045976,530.0176147387
+1602,Republic of Korea,Total population with access to safe drinking-water (JMP) (%),94.5,97.1,97.6,97.6
+1603,Republic of Korea,Rural population with access to safe drinking-water (JMP) (%),78.5,86.4,87.9,87.9
+1604,Republic of Korea,Urban population with access to safe drinking-water (JMP) (%),98.5,99.5,99.7,99.7
+1606,Republic of Moldova,Rural population (1000 inhab),2347.732,2365.195,2340.031,2327.145
+1607,Republic of Moldova,Urban population (1000 inhab),1828.884,1763.454,1733.672,1724.067
+1608,Republic of Moldova,Population density (inhab/km2),123.4701536643,122.0128803545,120.4079172821,119.9315805022
+1609,Republic of Moldova,GDP per capita (current US$/inhab),477.622483,1279.389356,2137.892416,2386.876265
+1610,Republic of Moldova,Human Development Index (HDI) [highest = 1] (-),0.628,0.672,0.693,0.709
+1611,Republic of Moldova,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.3146,0.308,0.2482
+1612,Republic of Moldova,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),307.1270065859,245.1762148053,217.3529491303,206.912656256
+1613,Republic of Moldova,Total population with access to safe drinking-water (JMP) (%),85.5,86.7,87.9,88.4
+1614,Republic of Moldova,Rural population with access to safe drinking-water (JMP) (%),76.1,78.3,80.5,81.4
+1615,Republic of Moldova,Urban population with access to safe drinking-water (JMP) (%),96.7,96.8,96.9,96.9
+1617,Romania,Rural population (1000 inhab),10319.721,9795.242,9283.979,9065.003
+1618,Romania,Urban population (1000 inhab),11534.955,11240.869,10887.276,10614.303
+1619,Romania,Population density (inhab/km2),91.6702588196,88.2343596627,84.8503250975,82.4411451342
+1620,Romania,GDP per capita (current US$/inhab),2112.772429,8299.48002,8487.140188,10757.282696
+1621,Romania,Human Development Index (HDI) [highest = 1] (-),0.724,0.78,0.796,0.813
+1622,Romania,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.3304,0.3236666667,0.333
+1623,Romania,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),421.9962840349,327.2767017545,320.4553174695,344.6123274134
+1624,Romania,Total population with access to safe drinking-water (JMP) (%),87.6,93.5,99.0,100.0
+1625,Romania,Rural population with access to safe drinking-water (JMP) (%),76.9,87.4,97.9,100.0
+1626,Romania,Urban population with access to safe drinking-water (JMP) (%),97.2,98.7,100.0,100.0
+1628,Russian Federation,Rural population (1000 inhab),38707.217,37859.367,37589.599,37017.128
+1629,Russian Federation,Urban population (1000 inhab),106487.665,105290.775,105830.998,106972.626
+1630,Russian Federation,Population density (inhab/km2),8.4930203343,8.379003453,8.4215572939,8.511402161
+1631,Russian Federation,GDP per capita (current US$/inhab),2396.423038,9168.185708,15410.999366,10983.02208
+1632,Russian Federation,Human Development Index (HDI) [highest = 1] (-),0.733,0.767,0.797,0.822
+1633,Russian Federation,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.3954,0.3414,0.3183333333,0.2758
+1634,Russian Federation,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),452.8895062081,443.9288169356,426.638466952,442.5889074947
+1635,Russian Federation,Total population with access to safe drinking-water (JMP) (%),95.2,95.9,96.6,96.9
+1636,Russian Federation,Rural population with access to safe drinking-water (JMP) (%),86.4,88.4,90.4,91.2
+1637,Russian Federation,Urban population with access to safe drinking-water (JMP) (%),98.3,98.6,98.8,98.9
+1639,Rwanda,Rural population (1000 inhab),7104.058,7848.805,8960.938,10117.663
+1640,Rwanda,Urban population (1000 inhab),1432.147,1598.597,1827.915,2090.744
+1641,Rwanda,Population density (inhab/km2),319.9339407745,352.0788534548,400.5190964313,454.8580485953
+1642,Rwanda,GDP per capita (current US$/inhab),196.411115,404.853304,679.890277,748.350053
+1643,Rwanda,Human Development Index (HDI) [highest = 1] (-),0.361,0.446,0.504,0.529
+1644,Rwanda,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5152,0.4544,0.416,0.4005
+1645,Rwanda,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),19.408904173,19.8301508224,17.4318199247,15.3493530277
+1646,Rwanda,Total population with access to safe drinking-water (JMP) (%),67.7,71.1,74.3,76.1
+1647,Rwanda,Rural population with access to safe drinking-water (JMP) (%),64.1,67.1,70.1,71.9
+1648,Rwanda,Urban population with access to safe drinking-water (JMP) (%),85.7,86.0,86.4,86.6
+1716,Saudi Arabia,Rural population (1000 inhab),4314.583,4690.056,5084.189,5394.59
+1717,Saudi Arabia,Urban population (1000 inhab),17591.725,20562.513,24002.168,27543.623
+1718,Saudi Arabia,Population density (inhab/km2),10.1434685931,11.7154552517,13.5623741098,15.398117403
+1719,Saudi Arabia,GDP per capita (current US$/inhab),8655.313226,16472.168948,25303.094621,20905.391689
+1720,Saudi Arabia,Human Development Index (HDI) [highest = 1] (-),0.749,0.784,0.837,0.856
+1721,Saudi Arabia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.6734,0.4326666667,0.2843
+1722,Saudi Arabia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),995.7366812391,921.3965186737,716.1746395975,705.4129401252
+1723,Saudi Arabia,Total population with access to safe drinking-water (JMP) (%),95.7,97.0,97.0,97.0
+1724,Saudi Arabia,Rural population with access to safe drinking-water (JMP) (%),95.7,97.0,97.0,97.0
+1725,Saudi Arabia,Urban population with access to safe drinking-water (JMP) (%),95.7,97.0,97.0,97.0
+1727,Senegal,Rural population (1000 inhab),6175.004,6823.185,7591.27,8442.004
+1728,Senegal,Urban population (1000 inhab),4221.857,5050.372,6112.243,7408.563
+1729,Senegal,Population density (inhab/km2),52.278475929,59.4127395659,68.1307101825,78.3862284581
+1730,Senegal,GDP per capita (current US$/inhab),663.807708,1229.725537,1342.390237,1321.086287
+1731,Senegal,Human Development Index (HDI) [highest = 1] (-),0.41,0.448,0.489,0.51
+1732,Senegal,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.6094,0.5768,0.5426666667,0.5282
+1733,Senegal,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),215.9728712402,190.0389147674,165.7216330229,144.0397474473
+1734,Senegal,Total population with access to safe drinking-water (JMP) (%),68.9,72.6,76.3,78.5
+1735,Senegal,Rural population with access to safe drinking-water (JMP) (%),53.8,59.0,64.2,67.3
+1736,Senegal,Urban population with access to safe drinking-water (JMP) (%),90.9,91.7,92.5,92.9
+1760,Sierra Leone,Rural population (1000 inhab),3167.216,3748.249,4083.903,4410.71
+1761,Sierra Leone,Urban population (1000 inhab),1790.0,2267.168,2682.2,3146.502
+1762,Sierra Leone,Population density (inhab/km2),68.6827939142,82.8441632089,92.8434854772,103.5743153527
+1763,Sierra Leone,GDP per capita (current US$/inhab),252.827454,358.827468,561.898418,494.765953
+1764,Sierra Leone,Human Development Index (HDI) [highest = 1] (-),0.319,0.368,0.413,0.435
+1765,Sierra Leone,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.6544,0.645,0.6501
+1766,Sierra Leone,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),39.9173058094,35.4278801389,31.6122673474,28.3370744414
+1767,Sierra Leone,Total population with access to safe drinking-water (JMP) (%),49.2,54.3,59.5,62.6
+1768,Sierra Leone,Rural population with access to safe drinking-water (JMP) (%),33.5,39.0,44.5,47.8
+1769,Sierra Leone,Urban population with access to safe drinking-water (JMP) (%),77.0,80.0,83.1,84.9
+1782,Slovakia,Rural population (1000 inhab),2375.345,2415.132,2476.704,2519.468
+1783,Slovakia,Urban population (1000 inhab),3024.809,2983.194,2940.366,2928.194
+1784,Slovakia,Population density (inhab/km2),110.1391393025,110.1099734856,110.4178017945,111.113603916
+1785,Slovakia,GDP per capita (current US$/inhab),4594.443541,14274.149052,17429.455862,17526.283687
+1786,Slovakia,Human Development Index (HDI) [highest = 1] (-),0.772,0.814,0.841,0.854
+1787,Slovakia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.2274,0.195,0.1743333333,0.1636
+1788,Slovakia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),202.6620880047,127.4382757898,122.864937767,102.1127406891
+1789,Slovakia,Total population with access to safe drinking-water (JMP) (%),99.9,99.9,100.0,100.0
+1790,Slovakia,Rural population with access to safe drinking-water (JMP) (%),99.7,99.9,100.0,100.0
+1791,Slovakia,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1793,Slovenia,Rural population (1000 inhab),977.096,966.833,966.153,951.104
+1794,Slovenia,Urban population (1000 inhab),1011.168,1046.706,1094.237,1128.872
+1795,Slovenia,Population density (inhab/km2),98.0398125308,99.2658115442,101.5206216083,102.4549994079
+1796,Slovenia,GDP per capita (current US$/inhab),11813.822898,23840.565884,22607.59248,23347.227276
+1797,Slovenia,Human Development Index (HDI) [highest = 1] (-),0.843,0.873,0.876,0.899
+1798,Slovenia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.137,0.0576666667,0.0164
+1799,Slovenia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),452.4807184943,464.6347778808,451.0106068403,448.5661199175
+1800,Slovenia,Total population with access to safe drinking-water (JMP) (%),99.6,99.6,99.5,99.5
+1801,Slovenia,Rural population with access to safe drinking-water (JMP) (%),99.4,99.4,99.4,99.4
+1802,Slovenia,Urban population with access to safe drinking-water (JMP) (%),99.8,99.7,99.7,99.7
+1826,South Africa,Rural population (1000 inhab),19799.101,19647.368,19465.377,19369.002
+1827,South Africa,Urban population (1000 inhab),27227.072,30239.813,33532.836,37348.154
+1828,South Africa,Population density (inhab/km2),37.8568547031,40.2921515229,43.3377831005,46.7641896825
+1829,South Africa,GDP per capita (current US$/inhab),2455.693281,6001.879534,7478.165487,6153.459018
+1830,South Africa,Human Development Index (HDI) [highest = 1] (-),0.618,0.631,0.673,0.704
+1831,South Africa,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.5106,0.4922,0.464,0.4071
+1832,South Africa,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),286.2048554622,290.1104186231,289.4363616476,339.9418162744
+1833,South Africa,Total population with access to safe drinking-water (JMP) (%),87.4,89.8,92.0,93.2
+1834,South Africa,Rural population with access to safe drinking-water (JMP) (%),72.0,75.6,79.2,81.4
+1835,South Africa,Urban population with access to safe drinking-water (JMP) (%),98.7,99.0,99.4,99.6
+1848,Spain,Rural population (1000 inhab),9852.597,10104.737,9886.091,9233.918
+1849,Spain,Urban population (1000 inhab),32132.923,35289.121,36971.313,37120.403
+1850,Spain,Population density (inhab/km2),82.9565127048,89.8927043552,93.0210301617,92.2003949004
+1851,Spain,GDP per capita (current US$/inhab),16801.659305,32428.518588,28273.441934,28315.627921
+1852,Spain,Human Development Index (HDI) [highest = 1] (-),0.83,0.853,0.873,0.891
+1853,Spain,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.1186,0.116,0.1043333333,0.0954
+1854,Spain,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),857.2365399133,783.0447619053,778.5511609317,669.1901641394
+1855,Spain,Total population with access to safe drinking-water (JMP) (%),99.9,100.0,100.0,100.0
+1856,Spain,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1857,Spain,Urban population with access to safe drinking-water (JMP) (%),99.9,100.0,100.0,100.0
+1859,Sri Lanka,Rural population (1000 inhab),15562.028,16190.874,16708.167,17038.849
+1860,Sri Lanka,Urban population (1000 inhab),3497.272,3619.915,3716.388,3838.068
+1861,Sri Lanka,Population density (inhab/km2),290.542325865,302.4240816949,312.9492455418,322.0245694254
+1862,Sri Lanka,GDP per capita (current US$/inhab),1026.943884,1868.856716,3350.595979,4216.125203
+1863,Sri Lanka,Human Development Index (HDI) [highest = 1] (-),0.699,0.734,0.762,0.776
+1864,Sri Lanka,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.4302,0.3913333333,0.3698
+1865,Sri Lanka,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),681.1683809065,652.4529428521,630.5095311846,612.7404577956
+1866,Sri Lanka,Total population with access to safe drinking-water (JMP) (%),82.0,87.6,93.3,95.6
+1867,Sri Lanka,Rural population with access to safe drinking-water (JMP) (%),78.9,85.6,92.3,95.0
+1868,Sri Lanka,Urban population with access to safe drinking-water (JMP) (%),95.4,96.7,98.0,98.5
+1892,Sweden,Rural population (1000 inhab),1415.408,1412.213,1371.997,1273.943
+1893,Sweden,Urban population (1000 inhab),7505.286,7751.03,8168.91,8636.758
+1894,Sweden,Population density (inhab/km2),19.810592938,20.348520986,21.3285324751,22.1373086293
+1895,Sweden,GDP per capita (current US$/inhab),29743.858567,53253.52945,57743.66925,54541.574444
+1896,Sweden,Human Development Index (HDI) [highest = 1] (-),0.903,0.905,0.908,0.935
+1897,Sweden,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.0584,0.0518,0.0526666667,0.0547
+1898,Sweden,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),299.9761229768,287.0258112599,268.6210312013,239.7804075883
+1899,Sweden,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1900,Sweden,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1901,Sweden,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1903,Switzerland,Rural population (1000 inhab),1926.831,2001.241,2116.141,2224.037
+1904,Switzerland,Urban population (1000 inhab),5317.083,5559.117,5915.529,6251.968
+1905,Switzerland,Population density (inhab/km2),174.8698716396,182.5377088884,193.9455558247,204.7886687435
+1906,Switzerland,GDP per capita (current US$/inhab),41609.461379,63479.360948,83176.178077,80220.632483
+1907,Switzerland,Human Development Index (HDI) [highest = 1] (-),0.891,0.915,0.935,0.943
+1908,Switzerland,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.0936,0.0772,0.0423333333,0.0278
+1909,Switzerland,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),348.7352530207,300.0405201976,250.3492752009,205.0425955947
+1910,Switzerland,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1911,Switzerland,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1912,Switzerland,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+1914,Syrian Arab Republic,Rural population (1000 inhab),8085.687,8930.863,9484.477,8495.489
+1915,Syrian Arab Republic,Urban population (1000 inhab),9002.214,10701.943,10936.224,9774.379
+1916,Syrian Arab Republic,Population density (inhab/km2),92.2595960687,107.3455772762,110.3729128416,92.3192461389
+1917,Syrian Arab Republic,GDP per capita (current US$/inhab),1274.705738,2051.249403,2293.655875,721.520956
+1918,Syrian Arab Republic,Human Development Index (HDI) [highest = 1] (-),0.6,0.649,0.631,0.544
+1919,Syrian Arab Republic,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.555,0.5526666667,0.5329
+1920,Syrian Arab Republic,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),957.5272092486,843.1525223493,820.0263263267,980.3881425469
+1921,Syrian Arab Republic,Total population with access to safe drinking-water (JMP) (%),88.0,89.1,90.1,90.1
+1922,Syrian Arab Republic,Rural population with access to safe drinking-water (JMP) (%),80.4,83.8,87.2,87.2
+1923,Syrian Arab Republic,Urban population with access to safe drinking-water (JMP) (%),94.8,93.5,92.3,92.3
+1925,Tajikistan,Rural population (1000 inhab),4738.751,5256.003,5872.805,6514.203
+1926,Tajikistan,Urban population (1000 inhab),1708.937,1896.382,2122.257,2407.14
+1927,Tajikistan,Population density (inhab/km2),45.0850017538,49.5452262364,55.2426166257,62.8113453105
+1928,Tajikistan,GDP per capita (current US$/inhab),189.375435,520.02752,954.718846,802.326545
+1929,Tajikistan,Human Development Index (HDI) [highest = 1] (-),0.559,0.602,0.639,0.651
+1930,Tajikistan,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.4252,0.383,0.382,0.3573
+1931,Tajikistan,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),1836.809962511,1627.5426637397,1459.6877267905,1294.4203936188
+1932,Tajikistan,Total population with access to safe drinking-water (JMP) (%),61.5,66.6,71.7,73.8
+1933,Tajikistan,Rural population with access to safe drinking-water (JMP) (%),50.5,57.2,64.0,66.7
+1934,Tajikistan,Urban population with access to safe drinking-water (JMP) (%),92.4,92.7,93.0,93.1
+1936,Thailand,Rural population (1000 inhab),42458.762,39750.794,37012.171,35071.057
+1937,Thailand,Urban population (1000 inhab),21614.402,26444.821,30831.808,33966.456
+1938,Thailand,Population density (inhab/km2),124.8618003586,128.9797065014,132.2029193951,134.8803593701
+1939,Thailand,GDP per capita (current US$/inhab),2096.055431,3972.206958,5859.89206,6594.608057
+1940,Thailand,Human Development Index (HDI) [highest = 1] (-),0.665,0.71,0.733,0.762
+1941,Thailand,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.4368,0.3946,0.369,0.3796
+1942,Thailand,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),,865.8841072462,844.7731602892,828.0040069464
+1943,Thailand,Total population with access to safe drinking-water (JMP) (%),92.9,95.2,97.1,97.8
+1944,Thailand,Rural population with access to safe drinking-water (JMP) (%),90.9,93.8,96.8,98.0
+1945,Thailand,Urban population with access to safe drinking-water (JMP) (%),96.8,97.1,97.5,97.6
+1958,Togo,Rural population (1000 inhab),3476.016,3831.357,4215.435,4588.034
+1959,Togo,Urban population (1000 inhab),1775.456,2166.028,2644.047,3209.66
+1960,Togo,Population density (inhab/km2),91.5131361155,104.2500264131,119.2782003874,135.5603803487
+1961,Togo,GDP per capita (current US$/inhab),323.467149,443.375771,564.697109,593.975597
+1962,Togo,Human Development Index (HDI) [highest = 1] (-),0.428,0.441,0.484,0.51
+1963,Togo,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.6154,0.5843333333,0.5881
+1964,Togo,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),32.518566851,37.6666347429,32.9209164297,28.9667796501
+1965,Togo,Total population with access to safe drinking-water (JMP) (%),54.8,57.9,61.1,63.1
+1966,Togo,Rural population with access to safe drinking-water (JMP) (%),39.3,41.2,43.1,44.2
+1967,Togo,Urban population with access to safe drinking-water (JMP) (%),85.1,87.5,89.9,91.4
+1991,Trinidad and Tobago,Rural population (1000 inhab),568.249,594.531,621.549,640.679
+1992,Trinidad and Tobago,Urban population (1000 inhab),709.588,714.729,720.039,728.446
+1993,Trinidad and Tobago,Population density (inhab/km2),248.9693957115,255.0586744639,262.1479532164,269.7970760234
+1994,Trinidad and Tobago,GDP per capita (current US$/inhab),7068.592881,16574.582127,19203.520412,16415.40548
+1995,Trinidad and Tobago,Human Development Index (HDI) [highest = 1] (-),0.73,0.777,0.784,0.799
+1996,Trinidad and Tobago,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.3394,0.3223333333,0.3714
+1997,Trinidad and Tobago,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),255.5564342048,273.4021628119,284.9454090104,276.8668098687
+1998,Trinidad and Tobago,Total population with access to safe drinking-water (JMP) (%),93.6,94.5,95.1,95.1
+1999,Trinidad and Tobago,Rural population with access to safe drinking-water (JMP) (%),93.6,94.5,95.1,95.1
+2000,Trinidad and Tobago,Urban population with access to safe drinking-water (JMP) (%),93.6,94.5,95.1,95.1
+2002,Tunisia,Rural population (1000 inhab),3531.202,3521.038,3568.906,3616.197
+2003,Tunisia,Urban population (1000 inhab),6333.124,6777.049,7317.762,7915.93
+2004,Tunisia,Population density (inhab/km2),60.3340321496,62.9834728929,66.2979157753,69.8822993705
+2005,Tunisia,GDP per capita (current US$/inhab),2346.00236,3778.360077,4137.570216,3452.359126
+2006,Tunisia,Human Development Index (HDI) [highest = 1] (-),0.666,0.701,0.721,0.738
+2007,Tunisia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.3175,0.27375,0.2404
+2008,Tunisia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),293.3265499986,303.0648267601,328.8158946285,426.3807498756
+2009,Tunisia,Total population with access to safe drinking-water (JMP) (%),91.1,94.1,96.9,97.7
+2010,Tunisia,Rural population with access to safe drinking-water (JMP) (%),78.8,84.8,90.8,93.2
+2011,Tunisia,Urban population with access to safe drinking-water (JMP) (%),98.0,99.0,100.0,100.0
+2013,Turkey,Rural population (1000 inhab),22165.676,21537.953,20899.302,20473.563
+2014,Turkey,Urban population (1000 inhab),42977.378,48059.328,53670.565,60271.457
+2015,Turkey,Population density (inhab/km2),82.9507442542,88.5997937225,95.0544979945,103.2870057936
+2016,Turkey,GDP per capita (current US$/inhab),3660.005677,9709.489709,11720.307702,10560.02154
+2017,Turkey,Human Development Index (HDI) [highest = 1] (-),0.672,0.709,0.765,0.805
+2018,Turkey,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.4788,0.38,0.3588
+2019,Turkey,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),589.4970244008,564.3282138756,676.5879381469,726.9055783383
+2020,Turkey,Total population with access to safe drinking-water (JMP) (%),93.8,96.9,99.5,100.0
+2021,Turkey,Rural population with access to safe drinking-water (JMP) (%),87.0,92.5,98.1,100.0
+2022,Turkey,Urban population with access to safe drinking-water (JMP) (%),97.4,98.9,100.0,100.0
+2046,Uganda,Rural population (1000 inhab),21699.29,25115.006,28891.6,32920.646
+2047,Uganda,Urban population (1000 inhab),4018.758,5475.481,7415.196,9942.312
+2048,Uganda,Population density (inhab/km2),104.1906727386,122.0713641068,143.0706023598,170.4267770648
+2049,Uganda,GDP per capita (current US$/inhab),288.232982,492.229335,673.309135,634.769133
+2050,Uganda,Human Development Index (HDI) [highest = 1] (-),0.418,0.457,0.497,0.522
+2051,Uganda,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.6192,0.58,0.5375,0.5381
+2052,Uganda,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),14.3658881856,20.0462894601,18.4324041781,15.4737137797
+2053,Uganda,Total population with access to safe drinking-water (JMP) (%),59.6,67.7,75.8,79.0
+2054,Uganda,Rural population with access to safe drinking-water (JMP) (%),55.8,64.1,72.5,75.8
+2055,Uganda,Urban population with access to safe drinking-water (JMP) (%),86.8,90.4,94.1,95.5
+2057,Ukraine,Rural population (1000 inhab),15697.688,14775.381,14157.02,13600.408
+2058,Ukraine,Urban population (1000 inhab),32281.904,31610.974,31192.313,30622.539
+2059,Ukraine,Population density (inhab/km2),79.4963780963,76.82272057,75.3107547014,73.7100637892
+2060,Ukraine,GDP per capita (current US$/inhab),916.142922,3206.414071,3876.148163,2536.92565
+2061,Ukraine,Human Development Index (HDI) [highest = 1] (-),0.689,0.729,0.742,0.747
+2062,Ukraine,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.3546,0.3343333333,0.2864
+2063,Ukraine,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),354.3640304252,323.2516475902,289.2387053353,206.3491289246
+2064,Ukraine,Total population with access to safe drinking-water (JMP) (%),97.4,97.0,96.5,96.2
+2065,Ukraine,Rural population with access to safe drinking-water (JMP) (%),93.7,95.2,96.8,97.8
+2066,Ukraine,Urban population with access to safe drinking-water (JMP) (%),99.3,97.8,96.4,95.5
+2068,United Arab Emirates,Rural population (1000 inhab),664.034,1026.131,1357.387,1292.709
+2069,United Arab Emirates,Urban population (1000 inhab),2843.198,5017.936,7543.066,8107.436
+2070,United Arab Emirates,Population density (inhab/km2),41.6121650718,73.7899282297,109.3492344498,133.584947902
+2071,United Arab Emirates,GDP per capita (current US$/inhab),31720.544451,43230.270183,42086.695776,40180.344045
+2072,United Arab Emirates,Human Development Index (HDI) [highest = 1] (-),0.793,0.819,0.832,0.864
+2073,United Arab Emirates,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.6166,0.456,0.2406666667,0.2322
+2074,United Arab Emirates,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),926.1971472541,648.0961244241,437.3415758036,421.409766398
+2075,United Arab Emirates,Total population with access to safe drinking-water (JMP) (%),99.7,99.6,99.6,99.6
+2076,United Arab Emirates,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+2077,United Arab Emirates,Urban population with access to safe drinking-water (JMP) (%),99.6,99.6,99.6,99.6
+2079,United Kingdom,Rural population (1000 inhab),12435.493,11988.805,11669.597,11156.164
+2080,United Kingdom,Urban population (1000 inhab),46913.46,49425.855,52580.733,55025.421
+2081,United Kingdom,Population density (inhab/km2),243.5297976274,252.2686342925,264.8713599606,273.9110094003
+2082,United Kingdom,GDP per capita (current US$/inhab),30066.436326,50493.777054,42099.202889,40286.571861
+2083,United Kingdom,Human Development Index (HDI) [highest = 1] (-),0.874,0.892,0.897,0.919
+2084,United Kingdom,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.2232,0.2084,0.1943333333,0.1774
+2085,United Kingdom,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),234.8368499135,138.5237581832,127.2988807865,126.1849300695
+2086,United Kingdom,Total population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+2087,United Kingdom,Rural population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+2088,United Kingdom,Urban population with access to safe drinking-water (JMP) (%),100.0,100.0,100.0,100.0
+2090,United Republic of Tanzania,Rural population (1000 inhab),27785.622,30972.693,34606.978,38367.191
+2091,United Republic of Tanzania,Urban population (1000 inhab),8320.186,10951.022,14476.019,18942.828
+2092,United Republic of Tanzania,Population density (inhab/km2),37.3005257046,42.9445941096,49.6706745487,57.7011918083
+2093,United Republic of Tanzania,GDP per capita (current US$/inhab),372.611276,534.339064,822.572401,954.877401
+2094,United Republic of Tanzania,Human Development Index (HDI) [highest = 1] (-),0.412,0.461,0.501,0.522
+2095,United Republic of Tanzania,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.5734,0.554,0.5469
+2096,United Republic of Tanzania,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),146.7109410703,127.4291989949,110.1735637429,94.8402460512
+2097,United Republic of Tanzania,Total population with access to safe drinking-water (JMP) (%),54.4,54.9,55.4,55.6
+2098,United Republic of Tanzania,Rural population with access to safe drinking-water (JMP) (%),45.4,45.4,45.5,45.5
+2099,United Republic of Tanzania,Urban population with access to safe drinking-water (JMP) (%),84.7,81.8,78.9,77.2
+2101,United States of America,Rural population (1000 inhab),59200.835,59309.491,59160.759,58215.947
+2102,United States of America,Urban population (1000 inhab),228306.012,241285.684,254174.664,266243.516
+2103,United States of America,Population density (inhab/km2),29.8254176949,31.2092496597,31.9425891852,33.0594442987
+2104,United States of America,GDP per capita (current US$/inhab),38038.808864,48077.484943,51692.230789,60159.823417
+2105,United States of America,Human Development Index (HDI) [highest = 1] (-),0.886,0.902,0.916,0.919
+2106,United States of America,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.2868,0.2696666667,0.28
+2107,United States of America,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),1951.2577650995,1768.7461451721,1493.644749682,1366.6897379833
+2108,United States of America,Total population with access to safe drinking-water (JMP) (%),98.9,99.0,99.1,99.2
+2109,United States of America,Rural population with access to safe drinking-water (JMP) (%),96.2,97.1,98.0,98.2
+2110,United States of America,Urban population with access to safe drinking-water (JMP) (%),99.6,99.5,99.4,99.4
+2112,Uruguay,Rural population (1000 inhab),247.27,207.762,178.688,164.541
+2113,Uruguay,Urban population (1000 inhab),3080.503,3131.979,3218.089,3292.209
+2114,Uruguay,Population density (inhab/km2),18.8743615935,18.9067585972,19.1747531495,19.5019918284
+2115,Uruguay,GDP per capita (current US$/inhab),4088.771652,7009.69532,15092.093698,17221.407798
+2116,Uruguay,Human Development Index (HDI) [highest = 1] (-),0.747,0.763,0.788,0.807
+2117,Uruguay,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.3962,0.3744,0.3616666667,0.3128
+2118,Uruguay,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),1100.4076920302,1098.5221275672,1083.1687124054,1064.9934048974
+2119,Uruguay,Total population with access to safe drinking-water (JMP) (%),97.3,98.4,99.3,99.7
+2120,Uruguay,Rural population with access to safe drinking-water (JMP) (%),79.3,84.9,90.5,93.9
+2121,Uruguay,Urban population with access to safe drinking-water (JMP) (%),98.7,99.2,99.8,100.0
+2145,Venezuela (Bolivarian Republic of),Rural population (1000 inhab),3080.534,3321.466,3550.466,3778.814
+2146,Venezuela (Bolivarian Republic of),Urban population (1000 inhab),22328.166,24370.499,26342.614,28198.251
+2147,Venezuela (Bolivarian Republic of),Population density (inhab/km2),27.5208683734,29.8751274601,32.1921352996,32.2377983663
+2148,Venezuela (Bolivarian Republic of),GDP per capita (current US$/inhab),3655.812536,8318.81122,12754.991815,7756.479109
+2149,Venezuela (Bolivarian Republic of),Human Development Index (HDI) [highest = 1] (-),0.688,0.743,0.767,0.735
+2150,Venezuela (Bolivarian Republic of),Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.472,0.4656666667,0.4759
+2151,Venezuela (Bolivarian Republic of),Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),519.2337909408,830.3957668214,770.6285757453,769.5370227903
+2152,Venezuela (Bolivarian Republic of),Total population with access to safe drinking-water (JMP) (%),91.5,92.2,92.9,93.1
+2153,Venezuela (Bolivarian Republic of),Rural population with access to safe drinking-water (JMP) (%),73.3,75.4,77.5,77.9
+2154,Venezuela (Bolivarian Republic of),Urban population with access to safe drinking-water (JMP) (%),93.8,94.4,94.9,95.0
+2156,Viet Nam,Rural population (1000 inhab),61048.895,61408.016,61731.739,61898.302
+2157,Viet Nam,Urban population (1000 inhab),20907.601,24481.574,28720.142,33642.498
+2158,Viet Nam,Population density (inhab/km2),247.5991709687,257.9016062317,271.3295041847,285.6041059083
+2159,Viet Nam,GDP per capita (current US$/inhab),427.838026,901.324893,1722.683931,2342.244006
+2160,Viet Nam,Human Development Index (HDI) [highest = 1] (-),0.594,0.632,0.668,0.69
+2161,Viet Nam,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.3506,0.3308,0.3243333333,0.3078
+2162,Viet Nam,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),930.9002517183,960.3183419598,913.4547960586,867.1187960573
+2163,Viet Nam,Total population with access to safe drinking-water (JMP) (%),80.3,87.3,93.8,97.6
+2164,Viet Nam,Rural population with access to safe drinking-water (JMP) (%),75.5,83.7,91.9,96.9
+2165,Viet Nam,Urban population with access to safe drinking-water (JMP) (%),94.4,96.2,98.0,99.1
+2167,Yemen,Rural population (1000 inhab),13751.457,15215.074,16700.108,18075.808
+2168,Yemen,Urban population (1000 inhab),5167.722,6536.531,8209.861,10174.612
+2169,Yemen,Population density (inhab/km2),34.9332177965,40.3100839063,46.3533496221,52.7204557077
+2170,Yemen,GDP per capita (current US$/inhab),647.337193,1178.472796,1287.627793,854.926716
+2171,Yemen,Human Development Index (HDI) [highest = 1] (-),0.456,0.486,0.501,0.463
+2172,Yemen,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),0.7996,0.764,0.7363333333,0.744
+2173,Yemen,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),187.9233392058,167.508398326,145.6696796795,128.0769959381
+2174,Yemen,Total population with access to safe drinking-water (JMP) (%),58.5,55.0,54.9,54.9
+2175,Yemen,Rural population with access to safe drinking-water (JMP) (%),50.5,47.2,46.5,46.5
+2176,Yemen,Urban population with access to safe drinking-water (JMP) (%),79.9,73.3,72.0,72.0
+2178,Zambia,Rural population (1000 inhab),7175.419,7905.217,8767.868,9747.709
+2179,Zambia,Urban population (1000 inhab),3944.99,4820.757,5932.069,7346.421
+2180,Zambia,Population density (inhab/km2),14.5781985358,16.6127981292,19.2199811323,22.3935358286
+2181,Zambia,GDP per capita (current US$/inhab),377.129939,1104.582234,1690.361466,1513.27609
+2182,Zambia,Human Development Index (HDI) [highest = 1] (-),0.445,0.492,0.552,0.589
+2183,Zambia,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.6266,0.616,0.5868
+2184,Zambia,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),143.277731487,125.7302471943,108.6749878155,93.2738461381
+2185,Zambia,Total population with access to safe drinking-water (JMP) (%),54.7,59.0,63.0,65.4
+2186,Zambia,Rural population with access to safe drinking-water (JMP) (%),36.9,42.5,48.0,51.3
+2187,Zambia,Urban population with access to safe drinking-water (JMP) (%),87.1,86.5,85.9,85.6
+2189,Zimbabwe,Rural population (1000 inhab),8177.189,8831.989,9880.721,11201.138
+2190,Zimbabwe,Urban population (1000 inhab),4323.336,4497.92,4830.105,5328.766
+2191,Zimbabwe,Population density (inhab/km2),30.5924096632,31.3643208107,33.5631845634,36.4330919234
+2192,Zimbabwe,GDP per capita (current US$/inhab),657.209841,522.006175,1163.418688,1333.395663
+2193,Zimbabwe,Human Development Index (HDI) [highest = 1] (-),0.444,0.434,0.516,0.553
+2194,Zimbabwe,Gender Inequality Index (GII) [equality = 0; inequality = 1) (-),,0.5704,0.5313333333,0.504
+2195,Zimbabwe,Total water withdrawal per capita (m<sup>3</sup>/year per inhabitant),351.7565660529,291.2877546055,263.8980492026,234.5434424453
+2196,Zimbabwe,Total population with access to safe drinking-water (JMP) (%),79.4,78.4,77.5,76.9
+2197,Zimbabwe,Rural population with access to safe drinking-water (JMP) (%),69.3,68.5,67.8,67.3
+2198,Zimbabwe,Urban population with access to safe drinking-water (JMP) (%),98.4,97.8,97.3,97.0
