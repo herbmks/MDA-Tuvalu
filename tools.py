@@ -39,9 +39,9 @@ class data_cleaner():
     
         name = df.Month.unique()
         number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+        months = dict(zip(name, number))
 
-        for i in range(0,12):
-            df = df.replace(name[i], number[i])
+        df = df.replace('Month': months)
     
         if names_years is False:    
             return df
@@ -49,7 +49,7 @@ class data_cleaner():
         country_codes = np.asarray(pd.unique(df.Code))
         years = np.asarray(pd.unique(df.Year))
     
-        return clean_data, country_codes, years
+        return df, country_codes, years
     
     def socioecon_factors(aquastat_file_name, unicef_file_name):
         """Imports and cleans the socio econimic factor datasets - aquastat and unicef """
@@ -93,7 +93,7 @@ class data_cleaner():
         df_aqua['Country'] = coco.convert(names = df_aqua['Country'], to = 'ISO3', not_found = 'XXX')
         df_aqua = df_aqua[~df_aqua.isin(['XXX']).any(axis = 1)]
         
-        df_unicef = coco.convert(names = df_unicef['Country'], to = 'IOS3', not_found = 'XXX')
+        df_unicef = coco.convert(names = df_unicef['Country'], to = 'ISO3', not_found = 'XXX')
         df_unicef = df_unicef[~df_unicef['Country'].isin(['XXX'])]
         
         # Removing countries that only exist in one of the two datasets
@@ -103,12 +103,49 @@ class data_cleaner():
         
         return df_aqua, df_unicef
     
-    def climate_factors(file_name):
+    def climate_factors(rainfall_file_name, water_inflow_file_name):
         """Imports and cleans the climate factor dataset"""
+
+        df_rain = pd.read_csv(rainfall_file_name, skipinitialspace = True).rename(columns = {'Rainfall - (MM)':'Total Rainfall (mm)'})
+        df_rain.replace(to_replace = 'Congo (Republic of the)', value = 'Congo', inplace = True)
+        df_rain['Country'] = coco.convert(names = df_rain['Country'], to = 'ISO3')
+        
+        df_inflow = pd.read_csv(water_inflow_file_name, nrows = 835, index_col = False).rename(columns = {'Area':'Country'})
+        df_inflow.replace(to_replace = 'Grenade', value = 'Grenada', inplace = True)
+        df_inflow['Country'] = coco.convert(names = df_inflow['Country'], to = 'ISO3')
+        df_inflow = df_inflow.pivot(index = 'Country', columns = 'Variable Name', values = 'Value').rename(columns = {'Water resources: total external renewable':'Total external renewable water resources (ERWR)'})
+        df_inflow = df_inflow[['Total internal renewable water resources (IRWR)','Total external renewable water resources (ERWR)','Total renewable water resources','Dependency ratio','Total exploitable water resources']]
         
         
+        return df_rain, df_inflow
+    
+
+def rainfall_time(df_rain, adjustment = None):
+    possible_adjustment = ['Monthly', 'Yearly', 'Average']
+    
+    if adjustment not in possible_adjustment:
+        raise ValueError('adjustment must be one of - Monthly, Yearly, Average')
         
-        return df_climate
+    df_monthly = df_rain[['Country', 'Year', 'Statistics', 'Total Rainfall (mm)']]
+    df_monthly = df_monthly.rename(columns = {'Statistics':'Month'})
+    df_montlhy['Month'] = df_monthly['Month'].map(lambda x: x.split(' ')[0])
+    df_monthly.set_index(['Country','Year','Month'],inplace = True)
+    
+    if adjustment is 'Monthly':
+         return df_monthly
+    
+    df_yearly = df_monthly.groupby(['Country', 'Year']).sum()
+    
+    if adjustment is 'Yearly':
+        return df_yearly
+    
+    if adjustemnt is 'Average':
+        df_average = df_yearly.groupby(['Country']).mean()
+        df_average['Standard Deviation'] = df_yearly.groupby(['Country']).std()
+        
+        return df_average
+        
+    
     
     
     
