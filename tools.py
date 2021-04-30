@@ -11,13 +11,13 @@ import country_converter as coco
 class data_cleaner():
     """ Class that includes different methods which import and perform data cleaning on specific datasets. """
 
-    def temp_forecast(self, file_name):
+    def temp_proj(self, file_name):
         """Imports and cleans the forecasted temperatures"""
 
         df = pd.read_csv(file_name, sep = ',', header = 0, usecols = range(0,6))
-        df.rename({df.columns[0]: "Temperature", df.columns[1]: "Year", df.columns[2]: "Model", df.columns[3]: "Month", df.columns[4]: "Country", df.columns[5]: "Code"}, axis = 1, inplace = True)
+        df.rename({df.columns[0]: "Temperature", df.columns[1]: "Year", df.columns[2]: "Model", df.columns[3]: "Month", df.columns[4]: "Name", df.columns[5]: "Country"}, axis = 1, inplace = True)
 
-        df['Code'] = df['Code'].str.strip()
+        df['Name'] = df['Name'].str.strip()
         df['Country'] = df['Country'].str.strip()
         df['Model'] = df['Model'].str.strip()
 
@@ -32,9 +32,9 @@ class data_cleaner():
     def temp_hist(self, file_name, names_years = False):
         """Imports and cleans the historical temperatures"""
         df = pd.read_csv(file_name, sep = ',', header = 0, usecols = range(0,5))
-        df.rename({df.columns[0]: "Temperature", df.columns[1]: "Year", df.columns[2]: "Month", df.columns[3]: "Country", df.columns[4]: "Code"}, axis = 1, inplace = True)
+        df.rename({df.columns[0]: "Temperature", df.columns[1]: "Year", df.columns[2]: "Month", df.columns[3]: "Name", df.columns[4]: "Country"}, axis = 1, inplace = True)
 
-        df['Code'] = df['Code'].str.strip()
+        df['Name'] = df['Name'].str.strip()
         df['Country'] = df['Country'].str.strip()
 
         name = df.Month.unique()
@@ -46,7 +46,7 @@ class data_cleaner():
         if names_years is False:
             return df
 
-        country_codes = np.asarray(pd.unique(df.Code))
+        country_codes = np.asarray(pd.unique(df.Country))
         years = np.asarray(pd.unique(df.Year))
 
         return df, country_codes, years
@@ -116,6 +116,7 @@ class data_cleaner():
         df_inflow['Country'] = coco.convert(names = df_inflow['Country'], to = 'ISO3')
         df_inflow = df_inflow.pivot(index = 'Country', columns = 'Variable Name', values = 'Value').rename(columns = {'Water resources: total external renewable':'Total external renewable water resources (ERWR)'})
         df_inflow = df_inflow[['Total internal renewable water resources (IRWR)','Total external renewable water resources (ERWR)','Total renewable water resources','Dependency ratio','Total exploitable water resources']]
+        df_inflow['Country'] = df_inflow.index
 
         return df_rain, df_inflow
 
