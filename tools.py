@@ -104,44 +104,59 @@ class data_cleaner():
 
         return df_aqua, df_unicef
 
-    def climate_factors(self, rainfall_file_name, water_inflow_file_name):
+    def climate_factors(self, rainfall_file_name, temperature_file_name, water_resources_file_name):
+        
         """Imports and cleans the climate factor dataset"""
-
+        
+        # Rainfall - 2013-2017
         df_rain = pd.read_csv(rainfall_file_name, skipinitialspace = True).rename(columns = {'Rainfall - (MM)':'Total Rainfall (mm)'})
         df_rain.replace(to_replace = 'Congo (Republic of the)', value = 'Congo', inplace = True)
         df_rain['Country'] = coco.convert(names = df_rain['Country'], to = 'ISO3')
+        df_rain = df_rain.rename(columns={'Statistics':'Month'})
+        df_rain['Month'] = df_rain['Month'].map(lambda x: x.split(' ')[0])
+        df_rain = df_rain[['Country','Year','Month','Total Rainfall (mm)']]
+        df_rain = df_rain.groupby(['Country','Year']).sum()
+        df_rain.reset_index(inplace=True)
+        df_rain = df_rain[(df_rain['Year'] > 2012) & (df_rain['Year'] < 2018)].groupby('Country')['Total Rainfall (mm)'].mean()
+        
+        # Temperature - 2013-2017
+        df_temp=pd.read_csv(temperature_file_name,skipinitialspace=True).rename(columns={'Temperature - (Celsius)':'Temperature (°C)'})
+        df_temp.replace(to_replace = 'Congo (Republic of the)', value = 'Congo', inplace = True)
+        df_temp['Country'] = coco.convert(names=df_temp['Country'], to='ISO3')
+        df_temp = df_temp.rename(columns={'Statistics':'Month'})
+        df_temp['Month'] = df_temp['Month'].map(lambda x: x.split(' ')[0])
+        df_temp = df_temp[['Country','Year','Month','Temperature (°C)']]
+        weights = {'Jan':31, 'Feb':28, 'Mar':31, 'Apr':30, 'May':31, 'Jun':30,'Jul':31, 'Aug':31, 'Sep':30, 'Oct':31, 'Nov':30, 'Dec':31}
+        df_temp['Weight'] = df_temp['Month'].map(weights)
+        df_temp = df_temp.groupby(['Country','Year']).apply(lambda x: (x['Temperature (°C)'] * x['Weight']).sum() / x['Weight'].sum())
+        df_temp = pd.DataFrame(df_temp).rename(columns={0:'Temperature (°C)'})
+        df_temp.reset_index(inplace=True)
+        df_temp = df_temp[(df_temp['Year'] > 2012) & (df_temp['Year'] < 2018)].groupby('Country')['Temperature (°C)'].mean()
 
-        df_inflow = pd.read_csv(water_inflow_file_name, nrows = 835, index_col = False).rename(columns = {'Area':'Country'})
-        df_inflow.replace(to_replace = 'Grenade', value = 'Grenada', inplace = True)
-        df_inflow['Country'] = coco.convert(names = df_inflow['Country'], to = 'ISO3')
-        df_inflow = df_inflow.pivot(index = 'Country', columns = 'Variable Name', values = 'Value').rename(columns = {'Water resources: total external renewable':'Total external renewable water resources (ERWR)'})
-        df_inflow = df_inflow[['Total internal renewable water resources (IRWR)','Total external renewable water resources (ERWR)','Total renewable water resources','Dependency ratio','Total exploitable water resources']]
-        df_inflow['Country'] = df_inflow.index
+        # Water Resources - 2013-2017
+        df_water = pd.read_csv(water_resources_file_name, nrows = 835, index_col = False).rename(columns = {'Area':'Country'})
+        df_water.replace(to_replace = 'Grenade', value = 'Grenada', inplace = True)
+        df_water['Country'] = coco.convert(names = df_water['Country'], to = 'ISO3')
+        df_water = df_water.pivot(index = 'Country', columns = 'Variable Name', values = 'Value').rename(columns = {'Water resources: total external renewable':'Total external renewable water resources (ERWR)'})
+        df_water = df_water[['Total internal renewable water resources (IRWR)','Total external renewable water resources (ERWR)','Total renewable water resources','Dependency ratio','Total exploitable water resources']]
+        
+        # Merge Factors
+        df_climate_factors = pd.merge(df_temp,df_rain,left_index=True,right_index=True)
+        df_climate_factors = pd.merge(df_climate_factors,df_water,left_index=True,right_index=True,how='outer')
+        df_climate_factors.reset_index(inplace=True)
+        
+        return df_rain, df_temp, df_water, df_climate_factors
+        
+    def water_stress(self, water_stress_filename):
+        
+        # Water stress indicators - 2017
+        df_waterstress = pd.read_csv(water_stress_filename,nrows=1970,index_col=False).rename(columns={'Area':'Country'})
+        df_waterstress.replace(to_replace = 'Grenade', value = 'Grenada', inplace = True)
+        df_waterstress['Country'] = coco.convert(names = df_waterstress['Country'], to='ISO3')
+        df_waterstress = df_waterstress[df_waterstress['Year']==2017]
+        df_waterstress = df_waterstress.pivot(index='Country', columns='Variable Name', values='Value').rename(columns={'MDG 7.5. Freshwater withdrawal as % of total renewable water resources':'Water stress (MDG)','SDG 6.4.2. Water Stress':'Water stress (SDG)','SDG 6.4.1. Water Use Efficiency':'Water use efficiency (SDG)' })    
+        df_waterstress.reset_index(inplace=True)
+             
+        return df_waterstress
 
-        return df_rain, df_inflow
-
-
-def rainfall_time(df_rain, adjustment = None):
-    possible_adjustment = ['Monthly', 'Yearly', 'Average']
-
-    if adjustment not in possible_adjustment:
-        raise ValueError('adjustment must be one of - Monthly, Yearly, Average')
-
-    df_monthly = df_rain[['Country', 'Year', 'Statistics', 'Total Rainfall (mm)']]
-    df_monthly = df_monthly.rename(columns = {'Statistics':'Month'})
-    df_monthly['Month'] = df_monthly['Month'].map(lambda x: x.split(' ')[0])
-    df_monthly.set_index(['Country','Year','Month'],inplace = True)
-
-    if adjustment is 'Monthly':
-         return df_monthly
-
-    df_yearly = df_monthly.groupby(['Country', 'Year']).sum()
-
-    if adjustment is 'Yearly':
-        return df_yearly
-
-    if adjustment is 'Average':
-        df_average = df_yearly.groupby(['Country']).mean()
-        df_average['Standard Deviation'] = df_yearly.groupby(['Country']).std()
-
-        return df_average
+   
