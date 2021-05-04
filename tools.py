@@ -75,9 +75,6 @@ class data_cleaner():
 
         df_aqua = df_aqua[df_aqua['Country'].isin(C_shared)]
         df_unicef = df_unicef[df_unicef['Country'].isin(C_shared)]
-
-        df_aqua.reset_index()
-        df_unicef.reset_index()
         
         # Pivot tables + subset for 2013-2017
         df_unicef = df_unicef.pivot(index=['Country','Time'],columns='Indicator',values='Value')
@@ -90,8 +87,14 @@ class data_cleaner():
         df_aqua.reset_index(inplace=True)
         
         # Merge aqua and unicef
+        df_aqua.set_index('Country',inplace=True)
+        df_unicef.set_index('Country',inplace=True)
         df_socioec_factors = pd.merge(df_aqua,df_unicef,left_index=True,right_index=True)
-
+        
+        df_aqua.reset_index(inplace=True)
+        df_unicef.reset_index(inplace=True)
+        df_socioec_factors.reset_index(inplace=True)
+        
         return df_aqua, df_unicef, df_socioec_factors
 
     def climate_factors(self, rainfall_file_name, temperature_file_name, water_resources_file_name):
