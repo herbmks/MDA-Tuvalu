@@ -134,8 +134,8 @@ class data_cleaner():
         df_water = df_water[['Total internal renewable water resources (IRWR)','Total external renewable water resources (ERWR)','Total renewable water resources','Dependency ratio','Total exploitable water resources']]
         
         # Merge Factors
-        df_climate_factors = pd.merge(df_temp,df_rain,left_index=True,right_index=True)
-        df_climate_factors = pd.merge(df_climate_factors,df_water,left_index=True,right_index=True,how='outer')
+        df_climate_factors = pd.merge(df_temp,df_rain, on = 'Country', how = 'outer')
+        df_climate_factors = pd.merge(df_climate_factors,df_water,on = 'Country',how='outer')
         df_climate_factors.reset_index(inplace=True)
         
         return df_rain, df_temp, df_water, df_climate_factors
