@@ -144,6 +144,7 @@ class data_cleaner():
         # Recalculate water resource variables
         df_climate_factors['IRWR'].fillna(0,inplace=True)
         df_climate_factors['ERWR'].fillna(0,inplace=True)
+        df_climate_factors[df_climate_factors['ERWR']<0] = 0
         df_climate_factors['TRWR'] = df_climate_factors['IRWR']+df_climate_factors['ERWR']
         df_climate_factors['Dep_ratio'] = df_climate_factors['ERWR']/df_climate_factors['TRWR']
         
