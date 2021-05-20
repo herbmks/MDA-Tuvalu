@@ -24,14 +24,11 @@ import pandas as pd
 from graphs import make_plot
 
 
-app = dash.Dash(__name__, title = 'Water scarcity', external_stylesheets = [dbc.themes.BOOTSTRAP])
-
+app = dash.Dash(__name__, title='Water scarcity', external_stylesheets = [dbc.themes.BOOTSTRAP])
 
 server = app.server
 
-
 # Plots
-
 fig1 = make_subplots(rows = 1, cols = 1)
 
 
@@ -58,7 +55,7 @@ drop_climate = dcc.Dropdown(
         {"label": 'Optimistic', 'value': ''}],
     value = '')
 
-# Input group for the changes in 
+# Input group for the changes in
 ins_changes = dbc.Row(dbc.Col(
     html.Div([
     dbc.InputGroup([
@@ -97,7 +94,7 @@ app.layout = dbc.Container([
 
 
 
-
+'''
 @app.callback(
     Output(),
     [Input('id_target_var', 'value'),
@@ -105,10 +102,10 @@ app.layout = dbc.Container([
     Input('id_sel_climate', 'value')
     ]
 )
-
+'''
 
 
 #def update_plot(target_var, country, climate):
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run_server(debug=True)
