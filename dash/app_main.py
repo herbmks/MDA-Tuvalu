@@ -21,7 +21,6 @@ import plotly.graph_objects as go
 import numpy as np
 import pandas as pd
 
-from graphs import make_plot
 
 
 app = dash.Dash(__name__, title='Water scarcity', external_stylesheets = [dbc.themes.BOOTSTRAP])
@@ -58,6 +57,9 @@ drop_climate = dcc.Dropdown(
 # Input group for the changes in
 ins_changes = dbc.Row(dbc.Col(
     html.Div([
+    drop_trgt,
+    drop_country,
+    drop_climate,
     dbc.InputGroup([
         dbc.InputGroupAddon("Population change", addon_type="prepend"),
         dbc.Input(id='ch_pop', type="number", value=1.1, min=-10, max=10, step=0.1)
@@ -74,7 +76,7 @@ ins_changes = dbc.Row(dbc.Col(
         dbc.InputGroupAddon("Mortality rate change", addon_type="prepend"),
         dbc.Input(id='ch_mort', type="number", value=0, min=-5, max=5, step=0.1)
         ]),
-    dropdown])
+    ])
 ))
 
 
