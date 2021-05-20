@@ -28,8 +28,14 @@ app = dash.Dash(__name__, title='Water scarcity', external_stylesheets = [dbc.th
 server = app.server
 
 # Plots
-fig1 = make_subplots(rows = 1, cols = 1)
+fig = make_subplots(rows = 1, cols = 1)
 
+fig.add_trace(
+    go.Scatter(x = np.arange(0, 10, 1),
+        y = np.arange(80, 90, 1),
+        name = 'Test'),
+    row=1, col=1)
+fig.update_layout(width = 1000)
 
 ### INPUT SELECTIONS ###
 
@@ -37,14 +43,14 @@ fig1 = make_subplots(rows = 1, cols = 1)
 drop_trgt = dcc.Dropdown(
     id = 'id_target_var',
     options = [{"label": 'Water Scarcity', 'value': 'WS'},
-        {"label": 'Water USe Efficiency', 'value': 'WUE'}],
-    value = 'WS')
+        {"label": 'Water Use Efficiency', 'value': 'WUE'}],
+    placeholder = "Select water scarcity indicator")
 
 # Country selection
 drop_country = dcc.Dropdown(
     id = 'id_sel_country',
-    options = [{"label": 'Work in pregress', 'value': 'GBR'}], ### Need to create dictionary with full names of countries and their corresponding country codes
-    value = 'BEL')
+    options = [{"label": 'Work in progress', 'value': 'GBR'}], ### Need to create dictionary with full names of countries and their corresponding country codes
+    placeholder = "Select country")
 
 # Climate prediciton selection
 drop_climate = dcc.Dropdown(
@@ -52,7 +58,7 @@ drop_climate = dcc.Dropdown(
     options = [{"label": 'Pessimistic', 'value': ''},
         {"label": 'Neutral', 'value': ''},
         {"label": 'Optimistic', 'value': ''}],
-    value = '')
+    placeholder = "Select the climate scenario")
 
 # Input group for the changes in
 ins_changes = dbc.Row(dbc.Col(
@@ -89,9 +95,10 @@ app.layout = dbc.Container([
         ),
     html.Hr(),
     dbc.Row([
-        dbc.Col(ins_changes)
-        ])
-])
+        dbc.Col(ins_changes),
+        dbc.Col(dcc.Graph(id = 'pl_main', figure = fig))
+        ], align = "center")
+], fluid = True)
 
 
 
