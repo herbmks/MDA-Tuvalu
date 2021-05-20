@@ -35,7 +35,7 @@ fig.add_trace(
         y = np.arange(80, 90, 1),
         name = 'Test'),
     row=1, col=1)
-fig.update_layout(width = 1000)
+fig.update_layout(width = 800)
 
 ### INPUT SELECTIONS ###
 
@@ -67,7 +67,7 @@ ins_changes = dbc.Row(dbc.Col(
     drop_country,
     drop_climate,
     dbc.InputGroup([
-        dbc.InputGroupAddon("Population change", addon_type="prepend"),
+        dbc.InputGroupAddon("Population", addon_type="prepend"),
         dbc.Input(id='ch_pop', type="number", value=1.1, min=-10, max=10, step=0.1)
         ]),
     dbc.InputGroup([
@@ -75,11 +75,11 @@ ins_changes = dbc.Row(dbc.Col(
         dbc.Input(id='ch_urban', type="number", value=1.5, min=-5, max=5, step=0.1)
         ]),
     dbc.InputGroup([
-        dbc.InputGroupAddon("GDP change", addon_type="preprend"),
+        dbc.InputGroupAddon("GDP", addon_type="preprend"),
         dbc.Input(id='ch_gdp', type="number", value=2, min=-10, max=10, step=0.1)
         ]),
     dbc.InputGroup([
-        dbc.InputGroupAddon("Mortality rate change", addon_type="prepend"),
+        dbc.InputGroupAddon("Mortality rate", addon_type="prepend"),
         dbc.Input(id='ch_mort', type="number", value=0, min=-5, max=5, step=0.1)
         ]),
     ])
@@ -94,8 +94,14 @@ app.layout = dbc.Container([
             ]
         ),
     html.Hr(),
+    html.H4("Simulate future water scarcity levels for each country, with different cliamte and socio economic scenarios."),
+    html.Div("All scenario setting are in terms of year-on-year percentage change."),
+    html.Hr(),
     dbc.Row([
-        dbc.Col(ins_changes),
+        dbc.Col([
+            dbc.Row(html.Div("Select settings:")),
+            dbc.Row(ins_changes)
+            ]),
         dbc.Col(dcc.Graph(id = 'pl_main', figure = fig))
         ], align = "center")
 ], fluid = True)
@@ -103,7 +109,7 @@ app.layout = dbc.Container([
 
 
 
-'''
+
 @app.callback(
     Output(),
     [Input('id_target_var', 'value'),
@@ -111,10 +117,14 @@ app.layout = dbc.Container([
     Input('id_sel_climate', 'value')
     ]
 )
-'''
+
 
 
 #def update_plot(target_var, country, climate):
+
+
+
+
 
 if __name__ == "__main__":
     app.run_server(debug=True)
