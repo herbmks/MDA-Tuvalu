@@ -47,8 +47,7 @@ drop_trgt = dcc.Dropdown(
 # Country selection
 drop_country = dcc.Dropdown(
     id = 'id_sel_country',
-    options = [], ### Need to create dictionary with full names of countries and their corresponding country codes
-    
+    options = [{"label": 'Work in pregress', 'value': 'GBR'}], ### Need to create dictionary with full names of countries and their corresponding country codes
     value = 'BEL')
 
 # Climate prediciton selection
@@ -90,7 +89,9 @@ app.layout = dbc.Container([
             ]
         ),
     html.Hr(),
-    dbc.Row([])
+    dbc.Row([
+        dbc.Col(ins_changes)
+        ])
 ])
 
 
@@ -107,7 +108,7 @@ app.layout = dbc.Container([
 
 
 
-def update_plot(target_var, country, climate, )
+#def update_plot(target_var, country, climate):
 
-
-
+if __name__ == '__main__':
+    app.run_server(debug=True)
