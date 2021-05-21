@@ -29,7 +29,7 @@ app = dash.Dash(__name__, title='Water scarcity', external_stylesheets = [dbc.th
 
 server = app.server
 
-backend = tools.PredModel()
+backend = tools.PredModels()
 
 # Plots
 fig = make_subplots(rows = 1, cols = 1)
@@ -46,8 +46,9 @@ fig.update_layout(width = 800)
 # Target variable
 drop_trgt = dcc.Dropdown(
     id = 'id_target_var',
-    options = [{"label": 'Water Scarcity', 'value': 'WS'},
-        {"label": 'Water Use Efficiency', 'value': 'WUE'}],
+    options = [{"label": 'Water Scarcity (MDG)', 'value': 'WS_MDG'},
+        {"label": 'Water Use Efficiency', 'value': 'WUE_SDG'},
+        {"label": 'Water Scarcity (SDG)', 'value': 'WS_SDG'}],
     placeholder = "Select water scarcity indicator")
 
 # Country selection
