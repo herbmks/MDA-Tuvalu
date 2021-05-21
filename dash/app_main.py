@@ -21,11 +21,15 @@ import plotly.graph_objects as go
 import numpy as np
 import pandas as pd
 
+import tools
+
 
 
 app = dash.Dash(__name__, title='Water scarcity', external_stylesheets = [dbc.themes.BOOTSTRAP])
 
 server = app.server
+
+backend = tools.PredModel()
 
 # Plots
 fig = make_subplots(rows = 1, cols = 1)
@@ -49,7 +53,7 @@ drop_trgt = dcc.Dropdown(
 # Country selection
 drop_country = dcc.Dropdown(
     id = 'id_sel_country',
-    options = [{"label": 'Work in progress', 'value': 'GBR'}], ### Need to create dictionary with full names of countries and their corresponding country codes
+    options = backend.get_country_dict(), ### Need to create dictionary with full names of countries and their corresponding country codes
     placeholder = "Select country")
 
 # Climate prediciton selection
@@ -109,7 +113,7 @@ app.layout = dbc.Container([
 
 
 
-
+'''
 @app.callback(
     Output(),
     [Input('id_target_var', 'value'),
@@ -121,7 +125,7 @@ app.layout = dbc.Container([
 
 
 def update_plot(target_var, country, climate):
-    
+'''
     
 
 
