@@ -95,7 +95,7 @@ app.layout = dbc.Container([
         ),
     html.Hr(),
     html.H4("Simulate future water scarcity levels for each country, with different cliamte and socio economic scenarios."),
-    html.Div("All scenario setting are in terms of year-on-year percentage change."),
+    html.Div("All scenario settings are in terms of year-on-year percentage change."),
     html.Hr(),
     dbc.Row([
         dbc.Col([
@@ -120,7 +120,9 @@ app.layout = dbc.Container([
 
 
 
-#def update_plot(target_var, country, climate):
+def update_plot(target_var, country, climate):
+    
+    
 
 
 
