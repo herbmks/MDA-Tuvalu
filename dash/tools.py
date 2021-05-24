@@ -79,14 +79,22 @@ class PredModels():
 
         return model_ws_mdg, model_wue_sdg, model_ws_sdg
 
-    def get_pred(self, params):
+    def get_pred(self, target, country, climate, population, urban, gdp, mort, life_exp):
         """Creates future predicitons for the scenario provided using the inputs."""
         
         # current values for country in question
-        current = self.df_full[]
-
+        '''
+        current = np.asarray(self.df_full.loc[self.df_full['Country'] == country, 4:22])
+        
+        
+        # population
+        cur_pop = current[6] + current[7]
+        
+        
+        '''
+        
         # changes = [temp, rain, IRWR, ERWR, TRWR, dep_ratio, rural_pop, urban_pop, HDI, r_u, r_u_access, pop_growth, mort_rate, GDP_pcp, life_ex, IRWR_capita, ERWR_capita, TRWR_capita]        
-        changes = [0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0]        
+        changes = [0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1 + 0.01*mortality, 1 + 0.01*gdp, 1 + 0.01*life_exp, 0, 0, 0]        
         
         return print("w.i.p.")
 

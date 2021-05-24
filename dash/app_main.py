@@ -26,7 +26,7 @@ Geeneral set up of the necessary tools for the app to functions.
 '''
 app = dash.Dash(__name__, title='Water scarcity', external_stylesheets = [dbc.themes.BOOTSTRAP])
 server = app.server
-backend = tools.PredModels()
+modelbackend = tools.PredModels()
 
 
 # Plots
@@ -53,7 +53,7 @@ drop_trgt = dcc.Dropdown(
 
 drop_country = dcc.Dropdown(
     id = 'id_sel_country',
-    options = backend.get_country_dict(), ### Need to create dictionary with full names of countries and their corresponding country codes
+    options = modelbackend.get_country_dict(), ### Need to create dictionary with full names of countries and their corresponding country codes
     placeholder = "Select country")
 
 drop_climate = dcc.Dropdown(
@@ -84,6 +84,10 @@ ins_changes = dbc.Row(dbc.Col(
         dbc.InputGroupAddon("Mortality rate", addon_type="prepend"),
         dbc.Input(id='ch_mort', type="number", value=0, min=-5, max=5, step=0.1)
         ]),
+    dbc.InputGroup([
+        dbc.InputGroupAddon("Life expectancy", addon_type="prepend"),
+        dbc.Input(id='ch_life_exp', type="number", value=0, min=-5, max=5, step=0.05)
+        ]),
     ])
 ))
 
@@ -106,7 +110,8 @@ app.layout = dbc.Container([
         html.Li("Rate of population growth."),
         html.Li("Urbanisation: percentage increase in the urban population with corresponding decrease in the rural population."),
         html.Li("GDP per capita: percentage increase in the GDP per capita."),
-        html.Li("Mortality rate: percentage change in the infant mortality rate.")
+        html.Li("Mortality rate: percentage change in the infant mortality rate."),
+        html.Li("Life expectancy: percentage change in the life expectancy.")
         ]),
     html.Hr(),
     dbc.Row([
@@ -133,15 +138,21 @@ App interactivity
 '''
 @app.callback(
     Output('id_plt_main', 'figure'),
-    [Input('id_target_var', 'value'),
+    Input('id_target_var', 'value'),
     Input('id_sel_country', 'value'),
-    Input('id_sel_climate', 'value')
-    ]
+    Input('id_sel_climate', 'value'),
+    Input('id_pop', 'value'),
+    Input('id_urban', 'value'),
+    Input('id_gdp', 'value'),
+    Input('id_mort', 'value'),
+    Input('id_life_exp', 'value')
 )
 
 
 
-def update_plot(target_var, country, climate):
+def update_plot(target_var, country, climate, population, urban, gdp, mort, life_exp):
+    
+    preds = modelbackend.get_pred(target_var, country, climate, population, urban, gdp, mort, life_exp)
     
     
     
