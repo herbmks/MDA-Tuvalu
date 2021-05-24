@@ -100,7 +100,7 @@ app.layout = dbc.Container([
         children=[
             html.H1(children='Water scarcity'),
             html.H2(children='Predict the water scarcity in your country over the next years.')
-            ]
+            ], style = {'textAlign':'center', 'color':'blue'}
         ),
     html.Hr(),
     html.H4("Simulate future water scarcity levels for each country, with different climate and socio economic scenarios."),
@@ -124,8 +124,8 @@ app.layout = dbc.Container([
     html.Footer(
         children = [
             html.Hr(),
-            html.Div("KU Leuven: Modern Data Analystics, Team Tuvalu project, May 2021.", align = 'end')
-        ])
+            html.H6("KU Leuven: Modern Data Analystics, Team Tuvalu project, May 2021.")
+        ], style = {'textAlign':'center'})
 ], fluid = True)
 
 
