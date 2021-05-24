@@ -1,6 +1,6 @@
 '''
 
-Backend functions for the app.
+This script includes the backend functionality of the Dash app.
 
 '''
 import pandas as pd
@@ -15,15 +15,20 @@ from sklearn.model_selection import GridSearchCV
 
 
 class PredModels():
-
+    """
+    This class includes all the functionality of the main plot for the app.
+    """
+    
+    
     def __init__(self):
+        """Creates the self objects for the data and the predicitve models."""
         self.df_full, self.df_pred, self.df_target = self.import_data()
 
         #self.model_ws_mdg, self.model_wue_sdg, self.model_ws_sdg = self.make_models()
 
 
     def import_data(self):
-        '''Imports the dataset'''
+        """Imports the dataset and creates the necessary dataframes"""
         df = pd.read_csv('final_data.csv', index_col = 0)
 
         df['IRWR_capita'] = df['IRWR'] / ((df['urban_pop'] + df['rural_pop']) * 1000)
@@ -36,7 +41,7 @@ class PredModels():
         return df, df_pred, df_target
 
     def make_models(self):
-
+        """Creates and trains the predicitve model pipes for the target variables."""
         logscaler = FunctionTransformer(log_transform)
 
         scaler = ColumnTransformer(remainder = 'passthrough',
@@ -75,6 +80,11 @@ class PredModels():
         return model_ws_mdg, model_wue_sdg, model_ws_sdg
 
     def get_pred(self, params):
+        """Creates future predicitons for the scenario provided using the inputs."""
+        
+        # changes = [temp, rain, IRWR, ERWR, TRWR, dep_ratio, rural_pop, urban_pop, HDI, r_u, r_u_access, pop_growth, mort_rate, GDP_pcp, life_ex, IRWR_capita, ERWR_capita, TRWR_capita]
+        
+        changes = [0, 0, 0, 0, 0, 0, 1 + , 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0]
         
         
         
@@ -82,11 +92,12 @@ class PredModels():
         return print("w.i.p.")
 
     def make_plot(self):
-
+        """Creates a plot of the future predicitons."""
+        
         return print("w.i.p.")
 
     def get_country_dict(self):
-
+        """Generates dictionary used in country choice input field."""
         codes = self.df_full.iloc[:, 0]
         codes = list(codes)
         
