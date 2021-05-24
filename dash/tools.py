@@ -68,16 +68,16 @@ class PredModels():
             'regressor__alpha': alphas_test
             }]
         
-        gridsearch_ws_mdg = GridSearchCV(model_pipe, test_params, verbose=1, n_jobs=-1).fit(np.asarray(self.df_pred), np.asarray(self.df_target['WS_MDG']))
-        gridsearch_wue_sdg = GridSearchCV(model_pipee, test_params, verbose=1, n_jobs=-1).fit(np.asarray(self.df_pred), np.asarray(self.df_target['WUE_SDG']))
-        gridsearch_ws_sdg = GridSearchCV(model_pipe, test_params, verbose=1, n_jobs=-1).fit(np.asarray(self.df_pred), np.asarray(self.df_target['WS_SDG']))
+        gridsearch_ws_mdg = GridSearchCV(model_pipe, test_params, verbose=1, n_jobs=-1).fit(self.df_pred, self.df_target['WS_MDG'])
+        gridsearch_wue_sdg = GridSearchCV(model_pipee, test_params, verbose=1, n_jobs=-1).fit(self.df_pred, self.df_target['WUE_SDG'])
+        gridsearch_ws_sdg = GridSearchCV(model_pipe, test_params, verbose=1, n_jobs=-1).fit(self.df_pred, self.df_target['WS_SDG'])
         
         model_ws_mdg = gridsearch_ws_mdg.best_estimator_
-        model_ws_mdg.fit(np.asarray(self.df_pred), np.asarray(self.df_target['WS_MDG']))
+        model_ws_mdg.fit(self.df_pred, self.df_target['WS_MDG'])
         model_wue_sdg = gridsearch_wue_sdg.best_estimator_
-        model_wue_sdg.fit(np.asarray(self.df_pred), np.asarray(self.df_target['WUE_SDG']))
+        model_wue_sdg.fit(self.df_pred, self.df_target['WUE_SDG'])
         model_ws_sdg = gridsearch_ws_sdg.best_estimator_
-        model_ws_sddg.fit(np.asarray(self.df_pred), np.asarray(self.df_target['WS_SDG']))
+        model_ws_sddg.fit(self.df_pred, self.df_target['WS_SDG'])
 
         return model_ws_mdg, model_wue_sdg, model_ws_sdg
 
@@ -112,6 +112,9 @@ class PredModels():
         
         
         x_scenario = current * mx_changes
+        
+        cols = self.df_pred.columns
+        x_scenario = pd.DataFrame(x_scenario, columns = cols)
         
         if target == 'WS_MDG':
             y_pred = self.model_ws_mdg.predict(x_scenario)
