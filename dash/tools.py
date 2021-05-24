@@ -53,7 +53,7 @@ class PredModels():
         n_comp_test = np.arange(3, 15)
 
         model = Ridge()
-        alphas_test = np.power(10, np.arange(-2, 0, 0.02))
+        alphas_test = np.arange(0.1, 20, 0.1)
 
         model_pipe = Pipeline([
             ('scaler', scaler),
@@ -62,9 +62,9 @@ class PredModels():
         ])
         
         test_params = [{
-            'scaler': scaler,
+            'scaler': [scaler],
             'reduce_dim__n_components': n_comp_test,
-            'regressor': model,
+            'regressor': [model],
             'regressor__alpha': alphas_test
             }]
         
