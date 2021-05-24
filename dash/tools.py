@@ -82,12 +82,11 @@ class PredModels():
     def get_pred(self, params):
         """Creates future predicitons for the scenario provided using the inputs."""
         
-        # changes = [temp, rain, IRWR, ERWR, TRWR, dep_ratio, rural_pop, urban_pop, HDI, r_u, r_u_access, pop_growth, mort_rate, GDP_pcp, life_ex, IRWR_capita, ERWR_capita, TRWR_capita]
-        
-        changes = [0, 0, 0, 0, 0, 0, 1 + , 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0]
-        
-        
-        
+        # current values for country in question
+        current = self.df_full[]
+
+        # changes = [temp, rain, IRWR, ERWR, TRWR, dep_ratio, rural_pop, urban_pop, HDI, r_u, r_u_access, pop_growth, mort_rate, GDP_pcp, life_ex, IRWR_capita, ERWR_capita, TRWR_capita]        
+        changes = [0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0]        
         
         return print("w.i.p.")
 

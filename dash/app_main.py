@@ -116,7 +116,11 @@ app.layout = dbc.Container([
             ]),
         dbc.Col(dcc.Graph(id = 'id_plt_main', figure = fig))
         ], align = "center"),
-    html.Footer("KU Leuven: Modern Data Analystics, Team Tuvalu project, May 2021.")
+    html.Footer(
+        children = [
+            html.Hr(),
+            html.Div("KU Leuven: Modern Data Analystics, Team Tuvalu project, May 2021.", align = 'end')
+        ])
 ], fluid = True)
 
 
