@@ -103,7 +103,7 @@ app.layout = dbc.Container([
             ], style = {'textAlign':'center', 'color':'blue'}
         ),
     html.Hr(),
-    html.H4("Simulate future water scarcity levels for each country, with different climate and socio economic scenarios."),
+    html.H5("Simulate future water scarcity levels for each country, with different climate and socio economic scenarios."),
     html.Div("All scenario settings are in terms of year-on-year percentage change."),
     html.Ul(children=[
         html.Li("Climate scenario: Corresponds to the level of increase in atmospheric CO2 levels."),
@@ -118,23 +118,19 @@ app.layout = dbc.Container([
         dbc.Col([
             dbc.Row(html.Div("Select settings:")),
             dbc.Row(ins_changes)
-            ]),
+            ], style = {'textAlign':'center'}),
         dbc.Col(dcc.Graph(id = 'id_plt_main', figure = fig))
         ], align = "center"),
     html.Footer(
         children = [
             html.Hr(),
-            html.H6("KU Leuven: Modern Data Analystics, Team Tuvalu project, May 2021.")
-        ], style = {'textAlign':'center'})
+            html.Div("KU Leuven: Modern Data Analystics - Team Tuvalu project - May 2021.")
+        ], style = {'textAlign':'right'})
 ], fluid = True)
 
 
 '''
 App interactivity 
-'''
-
-
-
 '''
 @app.callback(
     Output('id_plt_main', 'figure'),
@@ -148,22 +144,13 @@ App interactivity
     Input('id_life_exp', 'value')
 )
 
-
-
 def update_plot(target_var, country, climate, population, urban, gdp, mort, life_exp):
     
     preds = modelbackend.get_pred(target_var, country, climate, population, urban, gdp, mort, life_exp)
     
-    
+    fig = modelbackend.make_plot(preds)
     
     return fig
-    
-    
-'''
-    
-
-
-
 
 
 if __name__ == "__main__":

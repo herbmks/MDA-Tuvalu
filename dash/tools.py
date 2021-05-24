@@ -24,7 +24,7 @@ class PredModels():
         """Creates the self objects for the data and the predicitve models."""
         self.df_full, self.df_pred, self.df_target = self.import_data()
 
-        #self.model_ws_mdg, self.model_wue_sdg, self.model_ws_sdg = self.make_models()
+        self.model_ws_mdg, self.model_wue_sdg, self.model_ws_sdg = self.make_models()
 
 
     def import_data(self):
@@ -79,27 +79,61 @@ class PredModels():
 
         return model_ws_mdg, model_wue_sdg, model_ws_sdg
 
-    def get_pred(self, target, country, climate, population, urban, gdp, mort, life_exp):
+    def get_pred(self, target, country, climate, ch_pop, ch_urban, ch_gdp, ch_mort, ch_life_exp):
         """Creates future predicitons for the scenario provided using the inputs."""
         
         # current values for country in question
-        '''
         current = np.asarray(self.df_full.loc[self.df_full['Country'] == country, 4:22])
-        
-        
+                
         # population
-        cur_pop = current[6] + current[7]
-        
-        
-        '''
+        current_pop = current[6] + current[7]
+        current_urban_pc = current[7] / current_pop
         
         # changes = [temp, rain, IRWR, ERWR, TRWR, dep_ratio, rural_pop, urban_pop, HDI, r_u, r_u_access, pop_growth, mort_rate, GDP_pcp, life_ex, IRWR_capita, ERWR_capita, TRWR_capita]        
-        changes = [0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1 + 0.01*mortality, 1 + 0.01*gdp, 1 + 0.01*life_exp, 0, 0, 0]        
+        changes = [0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1 + 0.01*ch_mort, 1 + 0.01*ch_gdp, 1 + 0.01*ch_life_exp, 0, 0, 0]        
         
-        return print("w.i.p.")
+        mx_change = np.zeros((10, len(changes)))
+        pop = np.zeros((10,))
+        urban_pc = np.zeros((10,))
+        
+        for i in range(10):
+            mx_change[i] = changes**i
+            pop[i] = current_pop * (1+0.01*ch_pop)**i
+            urban_pc[i] = current_urban_pc * (1+0.01*ch_urban)**i
+            
+        mx_changes[:, 7] = pop * urban_pc
+        mx_changes[:, 6] = pop * (1 - urban_pc)
+        
+        mx_changes[:, 15] = current[15] / (pop * 100)
+        mx_changes[:, 16] = current[16] / (pop * 100)
+        mx_changes[:, 17] = current[17] / (pop * 100)
+        
+        
+        x_scenario = current * mx_changes
+        
+        if target == 'WS_MDG':
+            y_pred = self.model_ws_mdg.predict(x_scenario)
+        
+        elif target == 'WUE_SDG':
+            y_pred = self.model_wue_sdg.predict(x_scenario)
+            
+        elif target == 'WS_SDG':
+            y_pred = self.model_ws_sdg.predict(x_scenario)
+        
+        return y_pred
 
-    def make_plot(self):
+    def make_plot(self, pred_data):
         """Creates a plot of the future predicitons."""
+        
+        fig = make_subplots(rows = 1, cols = 1)
+
+        fig.add_trace(
+            go.Scatter(x = pred_data,
+            y = np.arange(2020, 2030, 1),
+            name = 'Prediction'),
+        row=1, col=1)
+        
+        fig.update_layout(width = 800)
         
         return print("w.i.p.")
 
