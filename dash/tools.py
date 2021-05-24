@@ -50,10 +50,10 @@ class PredModels():
             ])
 
         pca_pred = PCA()
-        n_comp_test = np.arange(3, 15)
+        #n_comp_test = np.arange(3, 15)
 
         model = Ridge()
-        alphas_test = np.arange(0.1, 20, 0.1)
+        #alphas_test = np.arange(0.1, 20, 0.1)
 
         model_pipe = Pipeline([
             ('scaler', scaler),
@@ -61,6 +61,7 @@ class PredModels():
             ('regressor', model)
         ])
         
+        '''
         test_params = [{
             'scaler': [scaler],
             'reduce_dim__n_components': n_comp_test,
@@ -69,7 +70,7 @@ class PredModels():
             }]
         
         gridsearch_ws_mdg = GridSearchCV(model_pipe, test_params, verbose=1, n_jobs=-1).fit(self.df_pred, self.df_target['WS_MDG'])
-        gridsearch_wue_sdg = GridSearchCV(model_pipee, test_params, verbose=1, n_jobs=-1).fit(self.df_pred, self.df_target['WUE_SDG'])
+        gridsearch_wue_sdg = GridSearchCV(model_pipe, test_params, verbose=1, n_jobs=-1).fit(self.df_pred, self.df_target['WUE_SDG'])
         gridsearch_ws_sdg = GridSearchCV(model_pipe, test_params, verbose=1, n_jobs=-1).fit(self.df_pred, self.df_target['WS_SDG'])
         
         model_ws_mdg = gridsearch_ws_mdg.best_estimator_
@@ -77,8 +78,31 @@ class PredModels():
         model_wue_sdg = gridsearch_wue_sdg.best_estimator_
         model_wue_sdg.fit(self.df_pred, self.df_target['WUE_SDG'])
         model_ws_sdg = gridsearch_ws_sdg.best_estimator_
-        model_ws_sddg.fit(self.df_pred, self.df_target['WS_SDG'])
-
+        model_ws_sdg.fit(self.df_pred, self.df_target['WS_SDG'])
+        '''
+        
+        model_ws_mdg = model_pipe
+        model_ws_mdg.fit(self.df_pred, self.df_target['WS_MDG'], {'reduce_dim__n_components': 12, 'regressor': Ridge(alpha=3.8000000000000003), 'regressor__alpha': 3.8000000000000003, 'scaler': ColumnTransformer(remainder='passthrough',
+                  transformers=[('logscaler',
+                                 logscaler,
+                                 ['Rain', 'IRWR', 'ERWR', 'TRWR', 'IRWR_capita',
+                                  'ERWR_capita', 'TRWR_capita', 'rural_pop',
+                                  'urban_pop', 'GDP_pcp'])])})
+        model_wue_sdg = model_pipe
+        model_wue_sdg.fit(self.df_pred, self.df_target['WUE_SDG'], {'reduce_dim__n_components': 14, 'regressor': Ridge(alpha=2.7), 'regressor__alpha': 2.7, 'scaler': ColumnTransformer(remainder='passthrough',
+                  transformers=[('logscaler',
+                                 logscaler,
+                                 ['Rain', 'IRWR', 'ERWR', 'TRWR', 'IRWR_capita',
+                                  'ERWR_capita', 'TRWR_capita', 'rural_pop',
+                                  'urban_pop', 'GDP_pcp'])])})
+        model_ws_sdg = model_pipe
+        model_ws_sdg.fit(self.df_pred, self.df_target['WS_SDG'], {'reduce_dim__n_components': 12, 'regressor': Ridge(alpha=2.8000000000000003), 'regressor__alpha': 2.8000000000000003, 'scaler': ColumnTransformer(remainder='passthrough',
+                  transformers=[('logscaler',
+                                 logscaler,
+                                 ['Rain', 'IRWR', 'ERWR', 'TRWR', 'IRWR_capita',
+                                  'ERWR_capita', 'TRWR_capita', 'rural_pop',
+                                  'urban_pop', 'GDP_pcp'])])})
+        
         return model_ws_mdg, model_wue_sdg, model_ws_sdg
 
     def get_pred(self, target, country, climate, ch_pop, ch_urban, ch_gdp, ch_mort, ch_life_exp):
