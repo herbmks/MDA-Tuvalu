@@ -62,7 +62,9 @@ class PredModels():
         ])
         
         test_params = [{
-            'reduce__n_components': n_comp_test,
+            'scaler': scaler,
+            'reduce_dim__n_components': n_comp_test,
+            'regressor': model,
             'regressor__alpha': alphas_test
             }]
         
