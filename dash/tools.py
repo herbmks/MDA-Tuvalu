@@ -82,26 +82,11 @@ class PredModels():
         '''
         
         model_ws_mdg = model_pipe
-        model_ws_mdg.fit(self.df_pred, self.df_target['WS_MDG'], {'reduce_dim__n_components': 12, 'regressor': Ridge(alpha=3.8000000000000003), 'regressor__alpha': 3.8000000000000003, 'scaler': ColumnTransformer(remainder='passthrough',
-                  transformers=[('logscaler',
-                                 logscaler,
-                                 ['Rain', 'IRWR', 'ERWR', 'TRWR', 'IRWR_capita',
-                                  'ERWR_capita', 'TRWR_capita', 'rural_pop',
-                                  'urban_pop', 'GDP_pcp'])])})
+        model_ws_mdg.fit(self.df_pred, self.df_target['WS_MDG'], {'reduce_dim__n_components': 12,'regressor__alpha': 3.8000000000000003})
         model_wue_sdg = model_pipe
-        model_wue_sdg.fit(self.df_pred, self.df_target['WUE_SDG'], {'reduce_dim__n_components': 14, 'regressor': Ridge(alpha=2.7), 'regressor__alpha': 2.7, 'scaler': ColumnTransformer(remainder='passthrough',
-                  transformers=[('logscaler',
-                                 logscaler,
-                                 ['Rain', 'IRWR', 'ERWR', 'TRWR', 'IRWR_capita',
-                                  'ERWR_capita', 'TRWR_capita', 'rural_pop',
-                                  'urban_pop', 'GDP_pcp'])])})
+        model_wue_sdg.fit(self.df_pred, self.df_target['WUE_SDG'], {'reduce_dim__n_components': 14, 'regressor__alpha': 2.7})
         model_ws_sdg = model_pipe
-        model_ws_sdg.fit(self.df_pred, self.df_target['WS_SDG'], {'reduce_dim__n_components': 12, 'regressor': Ridge(alpha=2.8000000000000003), 'regressor__alpha': 2.8000000000000003, 'scaler': ColumnTransformer(remainder='passthrough',
-                  transformers=[('logscaler',
-                                 logscaler,
-                                 ['Rain', 'IRWR', 'ERWR', 'TRWR', 'IRWR_capita',
-                                  'ERWR_capita', 'TRWR_capita', 'rural_pop',
-                                  'urban_pop', 'GDP_pcp'])])})
+        model_ws_sdg.fit(self.df_pred, self.df_target['WS_SDG'], {'reduce_dim__n_components': 12, 'regressor__alpha': 2.8000000000000003})
         
         return model_ws_mdg, model_wue_sdg, model_ws_sdg
 
