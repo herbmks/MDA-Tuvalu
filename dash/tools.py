@@ -82,14 +82,14 @@ class PredModels():
         '''
         
         model_ws_mdg = model_pipe
-        args = {'reduce_dim__n_components': 12,'regressor__alpha': 3.8000000000000003}
-        model_ws_mdg.fit(self.df_pred, self.df_target['WS_MDG'], args)
+        model_ws_mdg.set_params({'reduce_dim__n_components': 12,'regressor__alpha': 3.8000000000000003})
+        model_ws_mdg.fit(self.df_pred, self.df_target['WS_MDG'])
         model_wue_sdg = model_pipe
-        args = {'reduce_dim__n_components': 14, 'regressor__alpha': 2.7}
-        model_wue_sdg.fit(self.df_pred, self.df_target['WUE_SDG'], args)
+        model_wue_sdg.set_params({'reduce_dim__n_components': 14, 'regressor__alpha': 2.7})
+        model_wue_sdg.fit(self.df_pred, self.df_target['WUE_SDG'])
         model_ws_sdg = model_pipe
-        args = {'reduce_dim__n_components': 12, 'regressor__alpha': 2.8000000000000003}
-        model_ws_sdg.fit(self.df_pred, self.df_target['WS_SDG'], args)
+        model_ws_sdg.set_params({'reduce_dim__n_components': 12, 'regressor__alpha': 2.8000000000000003})
+        model_ws_sdg.fit(self.df_pred, self.df_target['WS_SDG'])
         
         return model_ws_mdg, model_wue_sdg, model_ws_sdg
 
