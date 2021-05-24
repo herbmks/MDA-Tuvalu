@@ -70,23 +70,23 @@ ins_changes = dbc.Row(dbc.Col(
     drop_climate,
     dbc.InputGroup([
         dbc.InputGroupAddon("Population", addon_type="prepend"),
-        dbc.Input(id='ch_pop', type="number", value=1.1, min=-10, max=10, step=0.1)
+        dbc.Input(id='id_ch_pop', type="number", value=1.1, min=-10, max=10, step=0.1)
         ]),
     dbc.InputGroup([
         dbc.InputGroupAddon("Urbanisation", addon_type="prepend"),
-        dbc.Input(id='ch_urban', type="number", value=1.5, min=-5, max=5, step=0.1)
+        dbc.Input(id='id_ch_urban', type="number", value=1.5, min=-5, max=5, step=0.1)
         ]),
     dbc.InputGroup([
         dbc.InputGroupAddon("GDP per capita", addon_type="preprend"),
-        dbc.Input(id='ch_gdp', type="number", value=2, min=-10, max=10, step=0.1)
+        dbc.Input(id='id_ch_gdp', type="number", value=2, min=-10, max=10, step=0.1)
         ]),
     dbc.InputGroup([
         dbc.InputGroupAddon("Mortality rate", addon_type="prepend"),
-        dbc.Input(id='ch_mort', type="number", value=0, min=-5, max=5, step=0.1)
+        dbc.Input(id='id_ch_mort', type="number", value=0, min=-5, max=5, step=0.1)
         ]),
     dbc.InputGroup([
         dbc.InputGroupAddon("Life expectancy", addon_type="prepend"),
-        dbc.Input(id='ch_life_exp', type="number", value=0, min=-5, max=5, step=0.05)
+        dbc.Input(id='id_ch_life_exp', type="number", value=0, min=-5, max=5, step=0.05)
         ]),
     ])
 ))
@@ -137,11 +137,11 @@ App interactivity
     Input('id_target_var', 'value'),
     Input('id_sel_country', 'value'),
     Input('id_sel_climate', 'value'),
-    Input('id_pop', 'value'),
-    Input('id_urban', 'value'),
-    Input('id_gdp', 'value'),
-    Input('id_mort', 'value'),
-    Input('id_life_exp', 'value')
+    Input('id_ch_pop', 'value'),
+    Input('id_ch_urban', 'value'),
+    Input('id_ch_gdp', 'value'),
+    Input('id_ch_mort', 'value'),
+    Input('id_ch_life_exp', 'value')
 )
 
 def update_plot(target_var, country, climate, population, urban, gdp, mort, life_exp):
