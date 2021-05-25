@@ -97,33 +97,41 @@ class PredModels():
         """Creates future predicitons for the scenario provided using the inputs."""
         
         # current values for country in question
-        current = np.asarray(self.df_full.loc[self.df_full['Country'] == country, 4:22])
+        current = np.asarray(self.df_full.iloc[self.df_full['Country'] == country, 4:22])
                 
         # population
         current_pop = current[6] + current[7]
         current_urban_pc = current[7] / current_pop
         
         # changes = [temp, rain, IRWR, ERWR, TRWR, dep_ratio, rural_pop, urban_pop, HDI, r_u, r_u_access, pop_growth, mort_rate, GDP_pcp, life_ex, IRWR_capita, ERWR_capita, TRWR_capita]        
-        changes = [0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1 + 0.01*ch_mort, 1 + 0.01*ch_gdp, 1 + 0.01*ch_life_exp, 0, 0, 0]        
+        changes = [0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1 + 0.01*ch_mort, 1 + 0.01*ch_gdp, 1 + 0.01*ch_life_exp, 0, 0, 0]        
+        
         
         mx_change = np.zeros((10, len(changes)))
         pop = np.zeros((10,))
         urban_pc = np.zeros((10,))
         
         for i in range(10):
-            mx_change[i] = changes**i
-            pop[i] = current_pop * (1+0.01*ch_pop)**i
-            urban_pc[i] = current_urban_pc * (1+0.01*ch_urban)**i
-            
-        mx_changes[:, 7] = pop * urban_pc
-        mx_changes[:, 6] = pop * (1 - urban_pc)
-        
-        mx_changes[:, 15] = current[15] / (pop * 100)
-        mx_changes[:, 16] = current[16] / (pop * 100)
-        mx_changes[:, 17] = current[17] / (pop * 100)
-        
+            mx_change[i] = changes**(i+3)
+            pop[i] = current_pop * (1+0.01*ch_pop)**(i+3)
+            urban_pc[i] = current_urban_pc * (1+0.01*ch_urban)**(i+3)
         
         x_scenario = current * mx_changes
+        
+        # values for positions 0, 1, 6, 7, 9, 11, 15, 16, 17
+        x_scenario[:, 0] = np.repeat(current[0], 10)
+        x_scenario[:, 1] = np.repeat(current[1], 10)
+        
+        x_scenario[:, 6] = pop * (1 - urban_pc)
+        x_scenario[:, 7] = pop * urban_pc
+        
+        x_scenario[:, 9] = (pop * (1 - urban_pc))/(pop * urban_pc)
+        
+        x_scenario[:, 11] = np.repeat(ch_pop, 10)
+        
+        x_scenario[:, 15] = current[2] / (pop * 1000)
+        x_scenario[:, 16] = current[3] / (pop * 1000)
+        x_scenario[:, 17] = current[4] / (pop * 1000)
         
         cols = self.df_pred.columns
         x_scenario = pd.DataFrame(x_scenario, columns = cols)
