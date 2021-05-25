@@ -134,6 +134,7 @@ class PredModels():
 
         cols = self.df_pred.columns
         x_scenario = pd.DataFrame(x_scenario, columns = cols)
+        x_scenario.reset_index()
 
         if target == 'WS_MDG':
             y_pred = self.model_ws_mdg.predict(x_scenario)

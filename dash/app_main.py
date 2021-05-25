@@ -100,13 +100,13 @@ app.layout = dbc.Container([
         children=[
             html.H1(children='Water scarcity'),
             html.H2(children='Predict the water scarcity in your country over the next years.')
-            ], style = {'textAlign':'center', 'color':'SlateGrey', 'backgroundColor':'LightCyan'}
+            ], style = {'textAlign':'center', 'color':'SlateGrey'}
         ),
     html.Hr(),
     html.H5("Simulate future water scarcity levels for each country, with different climate and socio economic scenarios.",
-        style = {'textAlign':'center', 'color':'SlateGrey', 'backgroundColor':'LightCyan'}),
+        style = {'textAlign':'center', 'color':'SlateGrey'}),
     html.Div("All scenario percentage changes should be provided on a yearly basis.",
-        style = {'textAlign':'left', 'color':'SlateGrey', 'backgroundColor':'LightCyan'}),
+        style = {'textAlign':'left', 'color':'SlateGrey'}),
     html.Ul(children=[
         html.Li("Climate scenario: Level of increase in atmospheric CO2 levels."),
         html.Li("Population: Rate of population growth."),
@@ -114,7 +114,7 @@ app.layout = dbc.Container([
         html.Li("GDP per capita: percentage change in the GDP per capita."),
         html.Li("Mortality rate: percentage change in the infant mortality rate."),
         html.Li("Life expectancy: percentage change in the life expectancy.")
-        ], style = {'textAlign':'left', 'color':'SlateGrey', 'backgroundColor':'LightCyan'}),
+        ], style = {'textAlign':'left', 'color':'SlateGrey'}),
     html.Hr(),
     dbc.Row([
         dbc.Col([
@@ -122,13 +122,13 @@ app.layout = dbc.Container([
             dbc.Row(ins_changes)
             ], style = {'textAlign':'center'}),
         dbc.Col(dcc.Graph(id = 'id_plt_main', figure = fig))
-        ], align = "center", style = {'backgroundColor':'AliceBlue'}),
+        ], align = "center"),
     html.Footer(
         children = [
             html.Hr(),
             html.Div("KU Leuven: Modern Data Analystics - Team Tuvalu project - May 2021.")
-        ], style = {'textAlign':'right', 'color':'WhiteSmoke', 'backgroundColor':'Black'})
-], fluid = True)
+        ], style = {'textAlign':'right'})
+], fluid = True, style = {'backgroundColor':'AliceBlue'})
 
 
 '''
