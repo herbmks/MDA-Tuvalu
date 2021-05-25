@@ -104,9 +104,9 @@ app.layout = dbc.Container([
         ),
     html.Hr(),
     html.H5("Simulate future water scarcity levels for each country, with different climate and socio economic scenarios.",
-        style = {'textAlign':'center', 'color':'SlateGrey', 'backgroundColor':'LightCyan'})),
+        style = {'textAlign':'center', 'color':'SlateGrey', 'backgroundColor':'LightCyan'}),
     html.Div("All scenario percentage changes should be provided on a yearly basis.",
-        style = {'textAlign':'left', 'color':'SlateGrey', 'backgroundColor':'LightCyan'})),
+        style = {'textAlign':'left', 'color':'SlateGrey', 'backgroundColor':'LightCyan'}),
     html.Ul(children=[
         html.Li("Climate scenario: Level of increase in atmospheric CO2 levels."),
         html.Li("Population: Rate of population growth."),
