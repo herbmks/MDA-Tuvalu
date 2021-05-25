@@ -104,7 +104,7 @@ class PredModels():
         current_urban_pc = current[7] / current_pop
 
         # changes = [temp, rain, IRWR, ERWR, TRWR, dep_ratio, rural_pop, urban_pop, HDI, r_u, r_u_access, pop_growth, mort_rate, GDP_pcp, life_ex, IRWR_capita, ERWR_capita, TRWR_capita]
-        changes = [0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1 + 0.01*ch_mort, 1 + 0.01*ch_gdp, 1 + 0.01*ch_life_exp, 0, 0, 0]
+        changes = np.asarray([0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1 + 0.01*ch_mort, 1 + 0.01*ch_gdp, 1 + 0.01*ch_life_exp, 0, 0, 0])
 
         mx_change = np.zeros((10, len(changes)))
         pop = np.zeros((10,))
