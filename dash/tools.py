@@ -97,7 +97,7 @@ class PredModels():
         """Creates future predicitons for the scenario provided using the inputs."""
 
         # current values for country in question
-        current = np.asarray(self.df_full.iloc[(self.df_full['Country'] == country).values, 4:22])
+        current = np.asarray(self.df_full.iloc[(self.df_full['Country'] == country).values, 4:22])[0]
 
         # population
         current_pop = current[6] + current[7]
