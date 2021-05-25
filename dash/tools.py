@@ -131,7 +131,9 @@ class PredModels():
         x_scenario[:, 15] = current[2] / (pop * 1000)
         x_scenario[:, 16] = current[3] / (pop * 1000)
         x_scenario[:, 17] = current[4] / (pop * 1000)
-
+        
+        x_scenario = np.around(x_scenario, decimals = 10)
+        
         cols = self.df_pred.columns
         x_scenario = pd.DataFrame(x_scenario, columns = cols)
         x_scenario.reset_index()
