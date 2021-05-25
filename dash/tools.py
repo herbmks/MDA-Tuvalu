@@ -18,8 +18,8 @@ class PredModels():
     """
     This class includes all the functionality of the main plot for the app.
     """
-    
-    
+
+
     def __init__(self):
         """Creates the self objects for the data and the predicitve models."""
         self.df_full, self.df_pred, self.df_target = self.import_data()
@@ -60,7 +60,7 @@ class PredModels():
             ('reduce_dim', pca_pred),
             ('regressor', model)
         ])
-        
+
         '''
         test_params = [{
             'scaler': [scaler],
@@ -68,11 +68,11 @@ class PredModels():
             'regressor': [model],
             'regressor__alpha': alphas_test
             }]
-        
+
         gridsearch_ws_mdg = GridSearchCV(model_pipe, test_params, verbose=1, n_jobs=-1).fit(self.df_pred, self.df_target['WS_MDG'])
         gridsearch_wue_sdg = GridSearchCV(model_pipe, test_params, verbose=1, n_jobs=-1).fit(self.df_pred, self.df_target['WUE_SDG'])
         gridsearch_ws_sdg = GridSearchCV(model_pipe, test_params, verbose=1, n_jobs=-1).fit(self.df_pred, self.df_target['WS_SDG'])
-        
+
         model_ws_mdg = gridsearch_ws_mdg.best_estimator_
         model_ws_mdg.fit(self.df_pred, self.df_target['WS_MDG'])
         model_wue_sdg = gridsearch_wue_sdg.best_estimator_
@@ -80,7 +80,7 @@ class PredModels():
         model_ws_sdg = gridsearch_ws_sdg.best_estimator_
         model_ws_sdg.fit(self.df_pred, self.df_target['WS_SDG'])
         '''
-        
+
         model_ws_mdg = model_pipe
         model_ws_mdg.set_params(**{'reduce_dim__n_components': 12,'regressor__alpha': 3.8000000000000003})
         model_ws_mdg.fit(self.df_pred, self.df_target['WS_MDG'])
@@ -90,66 +90,65 @@ class PredModels():
         model_ws_sdg = model_pipe
         model_ws_sdg.set_params(**{'reduce_dim__n_components': 12, 'regressor__alpha': 2.8000000000000003})
         model_ws_sdg.fit(self.df_pred, self.df_target['WS_SDG'])
-        
+
         return model_ws_mdg, model_wue_sdg, model_ws_sdg
 
     def get_pred(self, target, country, climate, ch_pop, ch_urban, ch_gdp, ch_mort, ch_life_exp):
         """Creates future predicitons for the scenario provided using the inputs."""
-        
+
         # current values for country in question
-        current = np.asarray(self.df_full.iloc[self.df_full['Country'] == country, 4:22])
-                
+        current = np.asarray(self.df_full.iloc[(self.df_full['Country'] == country).values, 4:22])
+
         # population
         current_pop = current[6] + current[7]
         current_urban_pc = current[7] / current_pop
-        
-        # changes = [temp, rain, IRWR, ERWR, TRWR, dep_ratio, rural_pop, urban_pop, HDI, r_u, r_u_access, pop_growth, mort_rate, GDP_pcp, life_ex, IRWR_capita, ERWR_capita, TRWR_capita]        
-        changes = [0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1 + 0.01*ch_mort, 1 + 0.01*ch_gdp, 1 + 0.01*ch_life_exp, 0, 0, 0]        
-        
-        
+
+        # changes = [temp, rain, IRWR, ERWR, TRWR, dep_ratio, rural_pop, urban_pop, HDI, r_u, r_u_access, pop_growth, mort_rate, GDP_pcp, life_ex, IRWR_capita, ERWR_capita, TRWR_capita]
+        changes = [0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1 + 0.01*ch_mort, 1 + 0.01*ch_gdp, 1 + 0.01*ch_life_exp, 0, 0, 0]
+
         mx_change = np.zeros((10, len(changes)))
         pop = np.zeros((10,))
         urban_pc = np.zeros((10,))
-        
+
         for i in range(10):
             mx_change[i] = changes**(i+3)
             pop[i] = current_pop * (1+0.01*ch_pop)**(i+3)
             urban_pc[i] = current_urban_pc * (1+0.01*ch_urban)**(i+3)
-        
+
         x_scenario = current * mx_changes
-        
+
         # values for positions 0, 1, 6, 7, 9, 11, 15, 16, 17
         x_scenario[:, 0] = np.repeat(current[0], 10)
         x_scenario[:, 1] = np.repeat(current[1], 10)
-        
+
         x_scenario[:, 6] = pop * (1 - urban_pc)
         x_scenario[:, 7] = pop * urban_pc
-        
+
         x_scenario[:, 9] = (pop * (1 - urban_pc))/(pop * urban_pc)
-        
+
         x_scenario[:, 11] = np.repeat(ch_pop, 10)
-        
+
         x_scenario[:, 15] = current[2] / (pop * 1000)
         x_scenario[:, 16] = current[3] / (pop * 1000)
         x_scenario[:, 17] = current[4] / (pop * 1000)
-        
+
         cols = self.df_pred.columns
         x_scenario = pd.DataFrame(x_scenario, columns = cols)
-        
+
         if target == 'WS_MDG':
             y_pred = self.model_ws_mdg.predict(x_scenario)
-        
+
         elif target == 'WUE_SDG':
             y_pred = self.model_wue_sdg.predict(x_scenario)
-            
+
         elif target == 'WS_SDG':
             y_pred = self.model_ws_sdg.predict(x_scenario)
-        
+
         return y_pred
 
     def make_plot(self, pred_data):
         """Creates a plot of the future predicitons."""
-        
+
         fig = make_subplots(rows = 1, cols = 1)
 
         fig.add_trace(
@@ -157,18 +156,18 @@ class PredModels():
             y = np.arange(2020, 2030, 1),
             name = 'Prediction'),
         row=1, col=1)
-        
+
         fig.update_layout(width = 800)
-        
+
         return print("w.i.p.")
 
     def get_country_dict(self):
         """Generates dictionary used in country choice input field."""
         codes = self.df_full.iloc[:, 0]
         codes = list(codes)
-        
+
         countries = coco.convert(names = codes, to = 'name_short')
-        
+
         dict_list = []
         for i in range(len(codes)):
             iter = {"label": countries[i], 'value': codes[i]}
