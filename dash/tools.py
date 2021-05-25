@@ -12,7 +12,7 @@ from sklearn.decomposition import PCA
 from sklearn.linear_model import Ridge
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import GridSearchCV
-
+from plotly.subplots import make_subplots
 
 class PredModels():
     """
@@ -162,7 +162,7 @@ class PredModels():
 
         fig.update_layout(width = 800)
 
-        return print("w.i.p.")
+        return fig
 
     def get_country_dict(self):
         """Generates dictionary used in country choice input field."""
