@@ -6,13 +6,16 @@ This script includes the backend functionality of the Dash app.
 import pandas as pd
 import numpy as np
 import country_converter as coco
+
 from sklearn.preprocessing import FunctionTransformer
 from sklearn.compose import ColumnTransformer
 from sklearn.decomposition import PCA
 from sklearn.linear_model import Ridge
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import GridSearchCV
+
 from plotly.subplots import make_subplots
+import plotly.graph_objects as go
 
 class PredModels():
     """
