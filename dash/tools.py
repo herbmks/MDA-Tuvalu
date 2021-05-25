@@ -132,11 +132,11 @@ class PredModels():
         x_scenario[:, 16] = current[3] / (pop * 1000)
         x_scenario[:, 17] = current[4] / (pop * 1000)
         
-        x_scenario = np.around(x_scenario, decimals = 10)
+        x_scenario = np.around(x_scenario, decimals = 7)
         
-        cols = self.df_pred.columns
+        cols = list(self.df_pred.columns)
         x_scenario = pd.DataFrame(x_scenario, columns = cols)
-        x_scenario.reset_index()
+        #x_scenario.reset_index()
 
         if target == 'WS_MDG':
             y_pred = self.model_ws_mdg.predict(x_scenario)
