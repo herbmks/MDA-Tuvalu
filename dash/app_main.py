@@ -100,19 +100,21 @@ app.layout = dbc.Container([
         children=[
             html.H1(children='Water scarcity'),
             html.H2(children='Predict the water scarcity in your country over the next years.')
-            ], style = {'textAlign':'center', 'color':'blue'}
+            ], style = {'textAlign':'center', 'color':'SlateGrey', 'backgroundColor':'LightCyan'}
         ),
     html.Hr(),
-    html.H5("Simulate future water scarcity levels for each country, with different climate and socio economic scenarios."),
-    html.Div("All scenario settings are in terms of year-on-year percentage change."),
+    html.H5("Simulate future water scarcity levels for each country, with different climate and socio economic scenarios.",
+        style = {'textAlign':'center', 'color':'SlateGrey', 'backgroundColor':'LightCyan'})),
+    html.Div("All scenario percentage changes should be provided on a yearly basis.",
+        style = {'textAlign':'left', 'color':'SlateGrey', 'backgroundColor':'LightCyan'})),
     html.Ul(children=[
-        html.Li("Climate scenario: Corresponds to the level of increase in atmospheric CO2 levels."),
-        html.Li("Rate of population growth."),
-        html.Li("Urbanisation: percentage increase in the urban population with corresponding decrease in the rural population."),
-        html.Li("GDP per capita: percentage increase in the GDP per capita."),
+        html.Li("Climate scenario: Level of increase in atmospheric CO2 levels."),
+        html.Li("Population: Rate of population growth."),
+        html.Li("Urbanisation: percentage change in the share of urban population."),
+        html.Li("GDP per capita: percentage change in the GDP per capita."),
         html.Li("Mortality rate: percentage change in the infant mortality rate."),
         html.Li("Life expectancy: percentage change in the life expectancy.")
-        ]),
+        ], style = {'textAlign':'left', 'color':'SlateGrey', 'backgroundColor':'LightCyan'}),
     html.Hr(),
     dbc.Row([
         dbc.Col([
@@ -120,12 +122,12 @@ app.layout = dbc.Container([
             dbc.Row(ins_changes)
             ], style = {'textAlign':'center'}),
         dbc.Col(dcc.Graph(id = 'id_plt_main', figure = fig))
-        ], align = "center"),
+        ], align = "center", style = {'backgroundColor':'AliceBlue'}),
     html.Footer(
         children = [
             html.Hr(),
             html.Div("KU Leuven: Modern Data Analystics - Team Tuvalu project - May 2021.")
-        ], style = {'textAlign':'right'})
+        ], style = {'textAlign':'right', 'color':'WhiteSmoke', 'backgroundColor':'Black'})
 ], fluid = True)
 
 

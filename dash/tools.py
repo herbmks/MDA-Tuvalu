@@ -106,12 +106,12 @@ class PredModels():
         # changes = [temp, rain, IRWR, ERWR, TRWR, dep_ratio, rural_pop, urban_pop, HDI, r_u, r_u_access, pop_growth, mort_rate, GDP_pcp, life_ex, IRWR_capita, ERWR_capita, TRWR_capita]
         changes = np.asarray([0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1 + 0.01*ch_mort, 1 + 0.01*ch_gdp, 1 + 0.01*ch_life_exp, 0, 0, 0])
 
-        mx_change = np.zeros((10, len(changes)))
+        mx_changes = np.zeros((10, len(changes)))
         pop = np.zeros((10,))
         urban_pc = np.zeros((10,))
 
         for i in range(10):
-            mx_change[i] = changes**(i+3)
+            mx_changes[i] = changes**(i+3)
             pop[i] = current_pop * (1+0.01*ch_pop)**(i+3)
             urban_pc[i] = current_urban_pc * (1+0.01*ch_urban)**(i+3)
 
@@ -152,8 +152,8 @@ class PredModels():
         fig = make_subplots(rows = 1, cols = 1)
 
         fig.add_trace(
-            go.Scatter(x = pred_data,
-            y = np.arange(2020, 2030, 1),
+            go.Scatter(x = np.arange(2020, 2030, 1),
+            y = pred_data,
             name = 'Prediction'),
         row=1, col=1)
 
