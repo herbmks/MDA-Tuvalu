@@ -27,7 +27,7 @@ class PredModels():
         """Creates the self objects for the data and the predictive models."""
         self.df_full, self.df_pred, self.df_target = self.import_main_data()
         
-        self.df_pred_temp, self.df_pred_rain = self.import_climate_pred_data()
+        self.df_temp_pred, self.df_rain_pred = self.import_climate_pred_data()
 
         self.model_ws_mdg, self.model_wue_sdg, self.model_ws_sdg = self.make_models()
 
@@ -90,6 +90,8 @@ class PredModels():
         # Create input matrix with future values
         # changes = [temp, rain, IRWR, ERWR, TRWR, dep_ratio, rural_pop, urban_pop, HDI, r_u, r_u_access, pop_growth, mort_rate, GDP_pcp, life_ex, IRWR_capita, ERWR_capita, TRWR_capita]
         current = np.asarray(self.df_full.iloc[(self.df_full['Country'] == country).values, 4:22])[0]
+        temp_pred = np.asarray(self.df_temp_pred.iloc[((self.df_temp_pred['Country'] == country) & (self.df_temp_pred['type'] == climate)), 1:11])[0]
+        rain_pred = np.asarray(self.df_rain_pred.iloc[((self.df_rain_pred['Country'] == country) & (self.df_rain_pred['type'] == climate)), 1:11])[0]
         
         current_pop = current[6] + current[7]
         current_urban_pc = current[7] / current_pop
@@ -107,8 +109,8 @@ class PredModels():
 
         x_scenario = current * mx_changes
 
-        x_scenario[:, 0] = np.repeat(current[0], 10)
-        x_scenario[:, 1] = np.repeat(current[1], 10)
+        x_scenario[:, 0] = temp_pred
+        x_scenario[:, 1] = rain_pred
 
         x_scenario[:, 6] = pop * (1 - urban_pc)
         x_scenario[:, 7] = pop * urban_pc
