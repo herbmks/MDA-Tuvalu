@@ -24,13 +24,15 @@ class PredModels():
 
 
     def __init__(self):
-        """Creates the self objects for the data and the predicitve models."""
-        self.df_full, self.df_pred, self.df_target = self.import_data()
+        """Creates the self objects for the data and the predictive models."""
+        self.df_full, self.df_pred, self.df_target = self.import_main_data()
+        
+        self.df_pred_temp, self.df_pred_rain = self.import_climate_pred_data()
 
         self.model_ws_mdg, self.model_wue_sdg, self.model_ws_sdg = self.make_models()
 
 
-    def import_data(self):
+    def import_main_data(self):
         """Imports the dataset and creates the necessary dataframes"""
         df = pd.read_csv('final_data.csv', index_col = 0)
 
@@ -43,47 +45,33 @@ class PredModels():
 
         return df, df_pred, df_target
 
-    def make_models(self):
-        """Creates and trains the predicitve model pipes for the target variables."""
-        logscaler = FunctionTransformer(log_transform)
+    def import_climate_pred_data(self):
+        """Imports the datasets with climate prediction values for temperature and rain"""
+        
+        df_temp = pd.read_csv('temperature_predicitons.csv', index_col = 0)
+        df_rain = pd.read_csv('rainfall_predictions.csv', index_col = 0)
+        
+        
+        return df_temp, df_rain
 
+    def make_models(self):
+        """Creates and trains the predictive model pipes for the target variables."""
+        
+        # Creating pipe
+        logscaler = FunctionTransformer(log_transform)
         scaler = ColumnTransformer(remainder = 'passthrough',
             transformers = [
                 ("logscaler", logscaler, ['Rain', 'IRWR', 'ERWR', 'TRWR', 'IRWR_capita', 'ERWR_capita', 'TRWR_capita','rural_pop', 'urban_pop', 'GDP_pcp'])
             ])
-
         pca_pred = PCA()
-        #n_comp_test = np.arange(3, 15)
-
         model = Ridge()
-        #alphas_test = np.arange(0.1, 20, 0.1)
-
         model_pipe = Pipeline([
             ('scaler', scaler),
             ('reduce_dim', pca_pred),
             ('regressor', model)
         ])
 
-        '''
-        test_params = [{
-            'scaler': [scaler],
-            'reduce_dim__n_components': n_comp_test,
-            'regressor': [model],
-            'regressor__alpha': alphas_test
-            }]
-
-        gridsearch_ws_mdg = GridSearchCV(model_pipe, test_params, verbose=1, n_jobs=-1).fit(self.df_pred, self.df_target['WS_MDG'])
-        gridsearch_wue_sdg = GridSearchCV(model_pipe, test_params, verbose=1, n_jobs=-1).fit(self.df_pred, self.df_target['WUE_SDG'])
-        gridsearch_ws_sdg = GridSearchCV(model_pipe, test_params, verbose=1, n_jobs=-1).fit(self.df_pred, self.df_target['WS_SDG'])
-
-        model_ws_mdg = gridsearch_ws_mdg.best_estimator_
-        model_ws_mdg.fit(self.df_pred, self.df_target['WS_MDG'])
-        model_wue_sdg = gridsearch_wue_sdg.best_estimator_
-        model_wue_sdg.fit(self.df_pred, self.df_target['WUE_SDG'])
-        model_ws_sdg = gridsearch_ws_sdg.best_estimator_
-        model_ws_sdg.fit(self.df_pred, self.df_target['WS_SDG'])
-        '''
-
+        # Creating prediction models
         model_ws_mdg = model_pipe
         model_ws_mdg.set_params(**{'reduce_dim__n_components': 12,'regressor__alpha': 3.8000000000000003})
         model_ws_mdg.fit(self.df_pred, self.df_target['WS_MDG'])
@@ -98,15 +86,14 @@ class PredModels():
 
     def get_pred(self, target, country, climate, ch_pop, ch_urban, ch_gdp, ch_mort, ch_life_exp):
         """Creates future predicitons for the scenario provided using the inputs."""
-
-        # current values for country in question
+        
+        # Create input matrix with future values
+        # changes = [temp, rain, IRWR, ERWR, TRWR, dep_ratio, rural_pop, urban_pop, HDI, r_u, r_u_access, pop_growth, mort_rate, GDP_pcp, life_ex, IRWR_capita, ERWR_capita, TRWR_capita]
         current = np.asarray(self.df_full.iloc[(self.df_full['Country'] == country).values, 4:22])[0]
-
-        # population
+        
         current_pop = current[6] + current[7]
         current_urban_pc = current[7] / current_pop
 
-        # changes = [temp, rain, IRWR, ERWR, TRWR, dep_ratio, rural_pop, urban_pop, HDI, r_u, r_u_access, pop_growth, mort_rate, GDP_pcp, life_ex, IRWR_capita, ERWR_capita, TRWR_capita]
         changes = np.asarray([0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1 + 0.01*ch_mort, 1 + 0.01*ch_gdp, 1 + 0.01*ch_life_exp, 0, 0, 0])
 
         mx_changes = np.zeros((10, len(changes)))
@@ -120,7 +107,6 @@ class PredModels():
 
         x_scenario = current * mx_changes
 
-        # values for positions 0, 1, 6, 7, 9, 11, 15, 16, 17
         x_scenario[:, 0] = np.repeat(current[0], 10)
         x_scenario[:, 1] = np.repeat(current[1], 10)
 
@@ -137,10 +123,12 @@ class PredModels():
         
         x_scenario = np.around(x_scenario, decimals = 7)
         
+        # Turn into pandas df
         cols = list(self.df_pred.columns)
         x_scenario = pd.DataFrame(x_scenario, columns = cols)
-        #x_scenario.reset_index()
-
+        
+        
+        # Generate prediction
         if target == 'WS_MDG':
             y_pred = self.model_ws_mdg.predict(x_scenario)
 
