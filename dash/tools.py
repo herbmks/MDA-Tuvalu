@@ -90,8 +90,8 @@ class PredModels():
         # Create input matrix with future values
         # changes = [temp, rain, IRWR, ERWR, TRWR, dep_ratio, rural_pop, urban_pop, HDI, r_u, r_u_access, pop_growth, mort_rate, GDP_pcp, life_ex, IRWR_capita, ERWR_capita, TRWR_capita]
         current = np.asarray(self.df_full.iloc[(self.df_full['Country'] == country).values, 4:22])[0]
-        temp_pred = np.asarray(self.df_temp_pred.iloc[((self.df_temp_pred['Country'] == country) & (self.df_temp_pred['type'] == climate)), 1:11])[0]
-        rain_pred = np.asarray(self.df_rain_pred.iloc[((self.df_rain_pred['Country'] == country) & (self.df_rain_pred['type'] == climate)), 1:11])[0]
+        temp_pred = np.asarray(self.df_temp_pred.iloc[((self.df_temp_pred['Country'] == country) & (self.df_temp_pred['type'] == climate)).values, 1:11])[0]
+        rain_pred = np.asarray(self.df_rain_pred.iloc[((self.df_rain_pred['Country'] == country) & (self.df_rain_pred['type'] == climate)).values, 1:11])[0]
         
         current_pop = current[6] + current[7]
         current_urban_pc = current[7] / current_pop
