@@ -48,7 +48,7 @@ class PredModels():
     def import_climate_pred_data(self):
         """Imports the datasets with climate prediction values for temperature and rain"""
         
-        df_temp = pd.read_csv('temperature_predicitons.csv', index_col = 0)
+        df_temp = pd.read_csv('temperature_predictions.csv', index_col = 0)
         df_rain = pd.read_csv('rainfall_predictions.csv', index_col = 0)
         
         
