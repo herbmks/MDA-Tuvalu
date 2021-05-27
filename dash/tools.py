@@ -112,7 +112,7 @@ class PredModels():
         x_scenario[:, 0] = temp_pred
         x_scenario[:, 1] = rain_pred
         
-        urban_pc = np.clip(urban_pc, 0.001, 0.999)
+        urban_pc = np.clip(urban_pc, 0.0001, 0.9999)
         x_scenario[:, 6] = pop * (1 - urban_pc)
         x_scenario[:, 7] = pop * urban_pc
 

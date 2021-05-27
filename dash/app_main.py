@@ -104,8 +104,8 @@ app.layout = dbc.Container([
         ),
     html.Hr(
         ),
-    html.H5("How this application works.",
-        style = {'textAlign':'center', 'color':'SlateGrey'}),
+    html.H4("How this application works.",
+        style = {'textAlign':'center', 'color':'SlateGrey', 'marginTop':25}),
     html.Div(children = (
         "Our predictive models include many different explanatory variables. "
         "They can be split into two categories: climate and socio-economic based. "
@@ -113,23 +113,23 @@ app.layout = dbc.Container([
         "These changes should be provided with a yearly basis in mind. "
         "Below is an explanation of each of the customisable variables."
         ),
-        style = {'textAlign':'left', 'color':'SlateGrey'}),
+        style = {'textAlign':'left', 'color':'SlateGrey', 'fontSize':17, 'marginBottom':20}),
     html.Ul(children=[
-        html.Li("Climate: Predicted temperatures and rain levels, based on models with different projected C02 levels."),
+        html.Li("Climate: Predicted temperatures and rain levels, based on models with different projected CO2 levels."),
         html.Li("Population: Rate of population growth (%)."),
         html.Li("Urbanisation: Increase in the percentage of the population living in urban areas (value is added to the current percentage)."),
         html.Li("GDP per capita: Percentage change in the GDP per capita."),
         html.Li("Mortality rate: Percentage change in the infant mortality rate."),
         html.Li("Life expectancy: Percentage change in the life expectancy.")
-        ], style = {'textAlign':'left', 'color':'SlateGrey'}),
+        ], style = {'textAlign':'left', 'color':'SlateGrey', 'fontSize':14}),
     html.Div(
         "NOTE: All the provided scenario change values are treated as the yearly changes (not the total over the entire prediction range).",
-        style = {'textAlign':'left', 'fontSize':8, 'color':'Indigo'}
+        style = {'textAlign':'left', 'fontSize':8, 'color':'Indigo', 'marginBottom':10, 'marginTop':-10, 'marginLeft':30}
         ),
     html.Div(children =
         ("There is a selection of three different water scarcity metric that can be selected as the target variable of the models."
         "Each target variable has its own prediction model, but all the models use the same input variables."),
-        style = {'textAlign':'left', 'color':'SlateGrey'})
+        style = {'textAlign':'left', 'color':'SlateGrey', 'fontSize':17}),
     html.Hr(
         ),
     dbc.Row([
@@ -143,7 +143,7 @@ app.layout = dbc.Container([
         children = [
             html.Hr(),
             html.Div("KU Leuven: Modern Data Analystics - Team Tuvalu project - May 2021.")
-        ], style = {'textAlign':'right', 'color':'DarkSlateBlue'})
+        ], style = {'textAlign':'right', 'color':'WhiteSmoke', 'backgroundColor':'MidnightBlue', 'marginLeft':-50})
 ], fluid = True, style = {'backgroundColor':'AliceBlue'})
 
 
