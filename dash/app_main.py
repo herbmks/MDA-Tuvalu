@@ -126,7 +126,7 @@ app.layout = dbc.Container([
         "NOTE: All the provided scenario change values are treated as the yearly changes (not the total change over the entire prediction range).",
         style = {'textAlign':'left', 'fontSize':10, 'color':'Grey', 'marginBottom':10, 'marginTop':-10, 'marginLeft':30}),
     html.Div(children =
-        ("There is a selection of three different water scarcity metric that can be selected as the target variable of the models."
+        ("There is a selection of three different water scarcity metrics that can be selected as the target variable of the models. "
         "Each target variable has its own prediction model, but all the models use the same input variables."),
         style = {'textAlign':'left', 'color':'SlateGrey', 'fontSize':17}),
     html.Hr(
