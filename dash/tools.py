@@ -84,7 +84,7 @@ class PredModels():
 
         return model_ws_mdg, model_wue_sdg, model_ws_sdg
 
-    def get_pred(self, target, country, climate, ch_pop, ch_urban, ch_gdp, ch_mort, ch_life_exp):
+    def get_pred(self, target, country, climate, ch_pop, ch_urban, ch_gdp, ch_mort, ch_life_exp, years = 13):
         """Creates future predicitons for the scenario provided using the inputs."""
         
         # Create input matrix with future values
@@ -98,19 +98,22 @@ class PredModels():
 
         changes = np.asarray([0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1 + 0.01*ch_mort, 1 + 0.01*ch_gdp, 1 + 0.01*ch_life_exp, 0, 0, 0])
 
-        mx_changes = np.zeros((10, len(changes)))
-        pop = np.zeros((10,))
-        urban_pc = np.zeros((10,))
+        mx_changes = np.zeros((years, len(changes)))
+        pop = np.zeros((years,))
+        urban_pc = np.zeros((years,))
 
-        for i in range(10):
-            mx_changes[i] = changes**(i+3)
-            pop[i] = current_pop * (1+0.01*ch_pop)**(i+3)
-            urban_pc[i] = current_urban_pc + ch_urban*(i+3)
+        for i in range(years):
+            mx_changes[i] = changes**(i)
+            pop[i] = current_pop * ((1+0.01*ch_pop)**(i))
+            urban_pc[i] = current_urban_pc + (ch_urban*(i))
 
         x_scenario = current * mx_changes
-
-        x_scenario[:, 0] = temp_pred
-        x_scenario[:, 1] = rain_pred
+        
+        x_scenario[0:3, 0] = np.repeat(current[0], 3)
+        x_scenario[0:3, 1] = np.repeat(current[1], 3)
+        
+        x_scenario[3:, 0] = temp_pred
+        x_scenario[3:, 1] = rain_pred
         
         urban_pc = np.clip(urban_pc, 0.0001, 0.9999)
         x_scenario[:, 6] = pop * (1 - urban_pc)
@@ -118,7 +121,7 @@ class PredModels():
 
         x_scenario[:, 9] = (pop * (1 - urban_pc))/(pop * urban_pc)
 
-        x_scenario[:, 11] = np.repeat(ch_pop, 10)
+        x_scenario[:, 11] = np.repeat(ch_pop, years)
         
         x_scenario[:, 12] = np.clip(x_scenario[:, 12], 0, 1000)
         
@@ -151,7 +154,7 @@ class PredModels():
         fig = make_subplots(rows = 1, cols = 1)
 
         fig.add_trace(
-            go.Scatter(x = np.arange(2020, 2030, 1),
+            go.Scatter(x = np.arange(2017, 2030, 1),
             y = pred_data,
             name = 'Prediction'),
         row=1, col=1)
@@ -163,7 +166,7 @@ class PredModels():
             yaxis_title = ("Water Scarcity Indicator (" + indicator + ")"),
             xaxis = dict(
                 tickmode = 'linear',
-                tick0 = 2020,
+                tick0 = 2017,
                 dtick = 1
             )
         )

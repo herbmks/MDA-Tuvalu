@@ -35,7 +35,7 @@ modelbackend = tools.PredModels()
 fig = make_subplots(rows = 1, cols = 1)
 
 fig.add_trace(
-    go.Scatter(x = np.arange(0, 10, 1),
+    go.Scatter(x = np.arange(2017, 2030, 1),
         y = np.repeat(0, 10),
         name = 'Test'),
     row=1, col=1)
@@ -103,7 +103,7 @@ app.layout = dbc.Container([
         children=[
             html.H1(children='Water Scarcity'),
             html.H2(children='Predict water scarcity in your country.')
-            ], style = {'textAlign':'center', 'backgroundColor':'LightBlue', 'color':'black', 'marginLeft':-50, 'marginRight':-50}
+            ], style = {'textAlign':'center', 'backgroundColor':'LightBlue', 'color':'black', 'marginLeft':-50, 'marginRight':-10}
         ),
     html.Hr(
         ),
