@@ -17,7 +17,6 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import numpy as np
 import pandas as pd
-from collections import OrderedDict
 from operator import itemgetter
 
 import tools
@@ -57,7 +56,7 @@ drop_trgt = dcc.Dropdown(
 
 drop_country = dcc.Dropdown(
     id = 'id_sel_country',
-    options = OrderedDict(sorted(country_dict.items(), key = itemgetter(1))),
+    options = sorted(country_dict, key = itemgetter("label")),
     placeholder = "Select country")
 
 drop_climate = dcc.Dropdown(
