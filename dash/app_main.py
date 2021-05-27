@@ -133,14 +133,15 @@ app.layout = dbc.Container([
         ),
     dbc.Row([
         dbc.Col([
-            dbc.Row(html.Div("Select scenario settings:")),
+            dbc.Row(html.Div("Select Scenario Settings"),
+            style = {'textAlign':'center'}),
             dbc.Row(ins_changes)
             ], style = {'textAlign':'center', 'marginLeft':10}),
         dbc.Col(dcc.Graph(id = 'id_plt_main', figure = fig))
         ], align = "center", no_gutters = True),
     html.Hr(),
     html.Div(children = [
-        html.H4("Some limitations remarks."),
+        html.H4("Some limitations and remarks."),
         html.Div(("The socio-economic data from which the preditions are made is from 2017. "
             "This means that the 2020 indicator \"starting\" value will change as the scenario is changed, "
             "as the values of the socio-economic values for 2020 are calculated using the scenario settings.")),
