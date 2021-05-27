@@ -105,20 +105,23 @@ class PredModels():
         for i in range(10):
             mx_changes[i] = changes**(i+3)
             pop[i] = current_pop * (1+0.01*ch_pop)**(i+3)
-            urban_pc[i] = current_urban_pc * (1+0.01*ch_urban)**(i+3)
+            urban_pc[i] = current_urban_pc + ch_urban*(i+3)
 
         x_scenario = current * mx_changes
 
         x_scenario[:, 0] = temp_pred
         x_scenario[:, 1] = rain_pred
-
+        
+        urban_pc = np.clip(urban_pc, 0.001, 0.999)
         x_scenario[:, 6] = pop * (1 - urban_pc)
         x_scenario[:, 7] = pop * urban_pc
 
         x_scenario[:, 9] = (pop * (1 - urban_pc))/(pop * urban_pc)
 
         x_scenario[:, 11] = np.repeat(ch_pop, 10)
-
+        
+        x_scenario[:, 12] = np.clip(x_scenario[:, 12], 0, 1000)
+        
         x_scenario[:, 15] = current[2] / (pop * 1000)
         x_scenario[:, 16] = current[3] / (pop * 1000)
         x_scenario[:, 17] = current[4] / (pop * 1000)
@@ -142,7 +145,7 @@ class PredModels():
 
         return y_pred
 
-    def make_plot(self, pred_data):
+    def make_plot(self, pred_data, indicator):
         """Creates a plot of the future predicitons."""
 
         fig = make_subplots(rows = 1, cols = 1)
@@ -153,7 +156,17 @@ class PredModels():
             name = 'Prediction'),
         row=1, col=1)
 
-        fig.update_layout(width = 800)
+        fig.update_layout(
+            width = 800,
+            title = "Prediction",
+            xaxis_title = "Year",
+            yaxis_title = ("Water Scarcity Indicator (" + indicator + ")"),
+            xaxis = dict(
+                tickmode = 'linear',
+                tick0 = 2020,
+                dtick = 1
+            )
+        )
 
         return fig
 

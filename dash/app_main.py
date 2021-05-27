@@ -34,7 +34,7 @@ fig = make_subplots(rows = 1, cols = 1)
 
 fig.add_trace(
     go.Scatter(x = np.arange(0, 10, 1),
-        y = np.arange(80, 90, 1),
+        y = np.repeat(0, 10),
         name = 'Test'),
     row=1, col=1)
 fig.update_layout(width = 800)
@@ -70,15 +70,15 @@ ins_changes = dbc.Row(dbc.Col(
     drop_climate,
     dbc.InputGroup([
         dbc.InputGroupAddon("Population", addon_type="prepend"),
-        dbc.Input(id='id_ch_pop', type="number", value=1.1, min=-10, max=10, step=0.1)
+        dbc.Input(id='id_ch_pop', type="number", value=0, min=-10, max=10, step=0.1)
         ]),
     dbc.InputGroup([
         dbc.InputGroupAddon("Urbanisation", addon_type="prepend"),
-        dbc.Input(id='id_ch_urban', type="number", value=1.5, min=-5, max=5, step=0.1)
+        dbc.Input(id='id_ch_urban', type="number", value=0, min=-2, max=2, step=0.1)
         ]),
     dbc.InputGroup([
         dbc.InputGroupAddon("GDP per capita", addon_type="preprend"),
-        dbc.Input(id='id_ch_gdp', type="number", value=2, min=-10, max=10, step=0.1)
+        dbc.Input(id='id_ch_gdp', type="number", value=0, min=-10, max=10, step=0.1)
         ]),
     dbc.InputGroup([
         dbc.InputGroupAddon("Mortality rate", addon_type="prepend"),
@@ -98,27 +98,43 @@ Creating the app layout and including the necessary content
 app.layout = dbc.Container([
     html.Div(
         children=[
-            html.H1(children='Water scarcity'),
-            html.H2(children='Predict the water scarcity in your country over the next years.')
+            html.H1(children='Water Scarcity'),
+            html.H2(children='Predict water scarcity in your country.')
             ], style = {'textAlign':'center', 'color':'SlateGrey'}
         ),
-    html.Hr(),
-    html.H5("Simulate future water scarcity levels for each country, with different climate and socio economic scenarios.",
+    html.Hr(
+        ),
+    html.H5("How this application works.",
         style = {'textAlign':'center', 'color':'SlateGrey'}),
-    html.Div("All scenario percentage changes should be provided on a yearly basis.",
+    html.Div(children = (
+        "Our predictive models include many different explanatory variables. "
+        "They can be split into two categories: climate and socio-economic based. "
+        "It is possible to investigate different future scenarios by providing estimates for changes in some of these variables. "
+        "These changes should be provided with a yearly basis in mind. "
+        "Below is an explanation of each of the customisable variables."
+        ),
         style = {'textAlign':'left', 'color':'SlateGrey'}),
     html.Ul(children=[
-        html.Li("Climate scenario: Level of increase in atmospheric CO2 levels."),
-        html.Li("Population: Rate of population growth."),
-        html.Li("Urbanisation: percentage change in the share of urban population."),
-        html.Li("GDP per capita: percentage change in the GDP per capita."),
-        html.Li("Mortality rate: percentage change in the infant mortality rate."),
-        html.Li("Life expectancy: percentage change in the life expectancy.")
+        html.Li("Climate: Predicted temperatures and rain levels, based on models with different projected C02 levels."),
+        html.Li("Population: Rate of population growth (%)."),
+        html.Li("Urbanisation: Increase in the percentage of the population living in urban areas (value is added to the current percentage)."),
+        html.Li("GDP per capita: Percentage change in the GDP per capita."),
+        html.Li("Mortality rate: Percentage change in the infant mortality rate."),
+        html.Li("Life expectancy: Percentage change in the life expectancy.")
         ], style = {'textAlign':'left', 'color':'SlateGrey'}),
-    html.Hr(),
+    html.Div(
+        "NOTE: All the provided scenario change values are treated as the yearly changes (not the total over the entire prediction range).",
+        style = {'textAlign':'left', 'fontSize':8, 'color':'Indigo'}
+        ),
+    html.Div(children =
+        ("There is a selection of three different water scarcity metric that can be selected as the target variable of the models."
+        "Each target variable has its own prediction model, but all the models use the same input variables."),
+        style = {'textAlign':'left', 'color':'SlateGrey'})
+    html.Hr(
+        ),
     dbc.Row([
         dbc.Col([
-            dbc.Row(html.Div("Select settings:")),
+            dbc.Row(html.Div("Select scenario settings:")),
             dbc.Row(ins_changes)
             ], style = {'textAlign':'center'}),
         dbc.Col(dcc.Graph(id = 'id_plt_main', figure = fig))
@@ -127,7 +143,7 @@ app.layout = dbc.Container([
         children = [
             html.Hr(),
             html.Div("KU Leuven: Modern Data Analystics - Team Tuvalu project - May 2021.")
-        ], style = {'textAlign':'right'})
+        ], style = {'textAlign':'right', 'color':'DarkSlateBlue'})
 ], fluid = True, style = {'backgroundColor':'AliceBlue'})
 
 
@@ -150,7 +166,7 @@ def update_plot(target_var, country, climate, population, urban, gdp, mort, life
     
     preds = modelbackend.get_pred(target_var, country, climate, population, urban, gdp, mort, life_exp)
     
-    fig = modelbackend.make_plot(preds)
+    fig = modelbackend.make_plot(preds, target_var)
     
     return fig
 
