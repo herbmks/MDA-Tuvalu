@@ -17,8 +17,11 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import numpy as np
 import pandas as pd
+from collections import OrderedDict
+from operator import itemgetter
 
 import tools
+
 
 
 '''
@@ -37,12 +40,13 @@ fig.add_trace(
         y = np.repeat(0, 10),
         name = 'Test'),
     row=1, col=1)
-fig.update_layout(width = 800)
+fig.update_layout(width = 1000)
 
 
 '''
 Creating the input fields for the different variables.
 '''
+country_dict = modelbackend.get_country_dict()
 
 drop_trgt = dcc.Dropdown(
     id = 'id_target_var',
@@ -53,7 +57,7 @@ drop_trgt = dcc.Dropdown(
 
 drop_country = dcc.Dropdown(
     id = 'id_sel_country',
-    options = modelbackend.get_country_dict(), ### Need to create dictionary with full names of countries and their corresponding country codes
+    options = OrderedDict(sorted(country_dict.items(), key = itemgetter(1))),
     placeholder = "Select country")
 
 drop_climate = dcc.Dropdown(
@@ -100,7 +104,7 @@ app.layout = dbc.Container([
         children=[
             html.H1(children='Water Scarcity'),
             html.H2(children='Predict water scarcity in your country.')
-            ], style = {'textAlign':'center', 'color':'SlateGrey'}
+            ], style = {'textAlign':'center', 'backgroundColor':'LightBlue', 'color':'black', 'marginLeft':-50, 'marginRight':-50}
         ),
     html.Hr(
         ),
@@ -136,19 +140,19 @@ app.layout = dbc.Container([
         dbc.Col([
             dbc.Row(html.Div("Select scenario settings:")),
             dbc.Row(ins_changes)
-            ], style = {'textAlign':'center'}),
+            ], style = {'textAlign':'center', 'marginLeft':10}),
         dbc.Col(dcc.Graph(id = 'id_plt_main', figure = fig))
-        ], align = "center"),
+        ], align = "center", no_gutters = True),
     html.Footer(
         children = [
             html.Hr(),
             html.Div("KU Leuven: Modern Data Analystics - Team Tuvalu project - May 2021.")
-        ], style = {'textAlign':'right', 'color':'WhiteSmoke', 'backgroundColor':'MidnightBlue', 'marginLeft':-50})
+        ], style = {'textAlign':'center', 'color':'WhiteSmoke', 'backgroundColor':'MidnightBlue', 'marginLeft':-50, 'marginRight':-50})
 ], fluid = True, style = {'backgroundColor':'AliceBlue'})
 
 
 '''
-App interactivity 
+App interactivity
 '''
 @app.callback(
     Output('id_plt_main', 'figure'),
@@ -163,11 +167,11 @@ App interactivity
 )
 
 def update_plot(target_var, country, climate, population, urban, gdp, mort, life_exp):
-    
+
     preds = modelbackend.get_pred(target_var, country, climate, population, urban, gdp, mort, life_exp)
-    
+
     fig = modelbackend.make_plot(preds, target_var)
-    
+
     return fig
 
 

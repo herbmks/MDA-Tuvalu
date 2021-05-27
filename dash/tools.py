@@ -157,7 +157,7 @@ class PredModels():
         row=1, col=1)
 
         fig.update_layout(
-            width = 800,
+            width = 1000,
             title = "Prediction",
             xaxis_title = "Year",
             yaxis_title = ("Water Scarcity Indicator (" + indicator + ")"),
