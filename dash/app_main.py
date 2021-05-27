@@ -35,7 +35,7 @@ modelbackend = tools.PredModels()
 fig = make_subplots(rows = 1, cols = 1)
 
 fig.add_trace(
-    go.Scatter(x = np.arange(2017, 2030, 1),
+    go.Scatter(x = np.arange(2020, 2030, 1),
         y = np.repeat(0, 10),
         name = 'Test'),
     row=1, col=1)
@@ -103,7 +103,7 @@ app.layout = dbc.Container([
         children=[
             html.H1(children='Water Scarcity'),
             html.H2(children='Predict water scarcity in your country.')
-            ], style = {'textAlign':'center', 'backgroundColor':'LightBlue', 'color':'black', 'marginLeft':-50, 'marginRight':-10}
+            ], style = {'textAlign':'center', 'backgroundColor':'LightBlue', 'color':'black', 'marginLeft':-10, 'marginRight':-10}
         ),
     html.Hr(
         ),
@@ -115,20 +115,18 @@ app.layout = dbc.Container([
         "It is possible to investigate different future scenarios by providing estimates for changes in some of these variables. "
         "These changes should be provided with a yearly basis in mind. "
         "Below is an explanation of each of the customisable variables."
-        ),
-        style = {'textAlign':'left', 'color':'SlateGrey', 'fontSize':17, 'marginBottom':20}),
+        ), style = {'textAlign':'left', 'color':'SlateGrey', 'fontSize':17, 'marginBottom':20}),
     html.Ul(children=[
         html.Li("Climate: Predicted temperatures and rain levels, based on models with different projected CO2 levels."),
         html.Li("Population: Rate of population growth (%)."),
-        html.Li("Urbanisation: Increase in the percentage of the population living in urban areas (value is added to the current percentage)."),
+        html.Li("Urbanisation: Percentage change in the urban population (at cost of the rural population)."),
         html.Li("GDP per capita: Percentage change in the GDP per capita."),
         html.Li("Mortality rate: Percentage change in the infant mortality rate."),
         html.Li("Life expectancy: Percentage change in the life expectancy.")
         ], style = {'textAlign':'left', 'color':'SlateGrey', 'fontSize':14}),
     html.Div(
         "NOTE: All the provided scenario change values are treated as the yearly changes (not the total over the entire prediction range).",
-        style = {'textAlign':'left', 'fontSize':8, 'color':'Indigo', 'marginBottom':10, 'marginTop':-10, 'marginLeft':30}
-        ),
+        style = {'textAlign':'left', 'fontSize':10, 'color':'Grey', 'marginBottom':10, 'marginTop':-10, 'marginLeft':30}),
     html.Div(children =
         ("There is a selection of three different water scarcity metric that can be selected as the target variable of the models."
         "Each target variable has its own prediction model, but all the models use the same input variables."),
@@ -142,11 +140,17 @@ app.layout = dbc.Container([
             ], style = {'textAlign':'center', 'marginLeft':10}),
         dbc.Col(dcc.Graph(id = 'id_plt_main', figure = fig))
         ], align = "center", no_gutters = True),
+    html.Hr(),
+    html.Div(children = [
+        html.H4("Some limitations"),
+        html.Div(("The urbanisation rate is limited between 0.1% and 100% of the population, this is due to operations that are performed using the value. "
+            "If the rate could de set to 0, devisions by zero would occur."))
+        ]),
     html.Footer(
         children = [
             html.Hr(),
             html.Div("KU Leuven: Modern Data Analystics - Team Tuvalu project - May 2021.")
-        ], style = {'textAlign':'center', 'color':'WhiteSmoke', 'backgroundColor':'MidnightBlue', 'marginLeft':-50, 'marginRight':-50})
+        ], style = {'textAlign':'center', 'color':'WhiteSmoke', 'backgroundColor':'MidnightBlue', 'marginLeft':-10, 'marginRight':-10})
 ], fluid = True, style = {'backgroundColor':'AliceBlue'})
 
 
