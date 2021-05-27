@@ -158,7 +158,7 @@ class PredModels():
 
         fig.update_layout(
             width = 1000,
-            title = "Prediction",
+            title = "Prediction of water scarcity for selected scenario.",
             xaxis_title = "Year",
             yaxis_title = ("Water Scarcity Indicator (" + indicator + ")"),
             xaxis = dict(

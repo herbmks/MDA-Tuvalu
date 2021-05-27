@@ -105,8 +105,6 @@ app.layout = dbc.Container([
             html.H2(children='Predict water scarcity in your country.')
             ], style = {'textAlign':'center', 'backgroundColor':'LightBlue', 'color':'black', 'marginLeft':-10, 'marginRight':-10}
         ),
-    html.Hr(
-        ),
     html.H4("How this application works.",
         style = {'textAlign':'center', 'color':'SlateGrey', 'marginTop':25}),
     html.Div(children = (
@@ -125,7 +123,7 @@ app.layout = dbc.Container([
         html.Li("Life expectancy: Percentage change in the life expectancy.")
         ], style = {'textAlign':'left', 'color':'SlateGrey', 'fontSize':14}),
     html.Div(
-        "NOTE: All the provided scenario change values are treated as the yearly changes (not the total over the entire prediction range).",
+        "NOTE: All the provided scenario change values are treated as the yearly changes (not the total change over the entire prediction range).",
         style = {'textAlign':'left', 'fontSize':10, 'color':'Grey', 'marginBottom':10, 'marginTop':-10, 'marginLeft':30}),
     html.Div(children =
         ("There is a selection of three different water scarcity metric that can be selected as the target variable of the models."
@@ -142,10 +140,13 @@ app.layout = dbc.Container([
         ], align = "center", no_gutters = True),
     html.Hr(),
     html.Div(children = [
-        html.H4("Some limitations"),
+        html.H4("Some limitations remarks."),
+        html.Div(("The socio-economic data from which the preditions are made is from 2017. "
+            "This means that the 2020 indicator \"starting\" value will change as the scenario is changed, "
+            "as the values of the socio-economic values for 2020 are calculated using the scenario settings.")),
         html.Div(("The urbanisation rate is limited between 0.1% and 100% of the population, this is due to operations that are performed using the value. "
-            "If the rate could de set to 0, devisions by zero would occur."))
-        ]),
+            "If the rate could be set to 0, divisions by zero would occur in calculations."))
+        ], style = {'textAlign':'left', 'color':'SlateGrey'}),
     html.Footer(
         children = [
             html.Hr(),
