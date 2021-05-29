@@ -138,13 +138,13 @@ class PredModels():
 
 
         # Generate prediction
-        if (target == 'WS_MDG'):
+        if target == 'WS_MDG':
             y_pred = self.model_ws_mdg.predict(x_scenario)
 
-        elif (target == 'WUE_SDG'):
+        elif target == 'WUE_SDG':
             y_pred = self.model_wue_sdg.predict(x_scenario)
 
-        elif (target == 'WS_SDG'):
+        elif target == 'WS_SDG':
             y_pred = self.model_ws_sdg.predict(x_scenario)
 
         return y_pred
@@ -154,23 +154,17 @@ class PredModels():
 
         fig = make_subplots(rows = 1, cols = 1)
 
-        fig.add_trace(
-            go.Scatter(x = np.arange(2020, (2020+years), 1),
-            y = pred_data,
-            name = 'Prediction'),
-        row=1, col=1)
-
         fig.update_layout(
             width = 1000,
             title = "Prediction of water scarcity for selected scenario.",
             xaxis_title = "Year",
-            yaxis_title = ("Water Scarcity Indicator (" + indicator + ")"),
-            xaxis = dict(
-                tickmode = 'linear',
-                tick0 = 2020,
-                dtick = 1
-            )
+            yaxis_title = ("Water Scarcity Indicator (" + indicator + ")")
         )
+        
+        fig.add_trace(
+            go.Scatter(x = np.arange(2020, (2020+years), 1),
+            y = pred_data),
+        row=1, col=1)
 
         return fig
 
