@@ -77,7 +77,7 @@ ins_changes = dbc.Row(dbc.Col(
         ]),
     dbc.InputGroup([
         dbc.InputGroupAddon("Urbanisation", addon_type="prepend"),
-        dbc.Input(id='id_ch_urban', type="number", value=0, min=-2, max=2, step=0.1)
+        dbc.Input(id='id_ch_urban', type="number", value=0, min=-5, max=5, step=0.1)
         ]),
     dbc.InputGroup([
         dbc.InputGroupAddon("GDP per capita", addon_type="preprend"),
@@ -85,7 +85,7 @@ ins_changes = dbc.Row(dbc.Col(
         ]),
     dbc.InputGroup([
         dbc.InputGroupAddon("HDI", addon_type="preprend"),
-        dbc.Input(id='id_ch_HDI', type="number", value=0, min=-0.01, max=0.01, step=0.001)
+        dbc.Input(id='id_ch_hdi', type="number", value=0, min=-0.02, max=0.02, step=0.001)
         ]),
     dbc.InputGroup([
         dbc.InputGroupAddon("Rural access", addon_type="preprend"),
@@ -185,7 +185,7 @@ App interactivity
     Input('id_ch_pop', 'value'),
     Input('id_ch_urban', 'value'),
     Input('id_ch_gdp', 'value'),
-    Input('id_ch_HDI', 'value'),
+    Input('id_ch_hdi', 'value'),
     Input('id_ch_ru_access', 'value'),
     Input('id_ch_mort', 'value'),
     Input('id_ch_life_exp', 'value')
@@ -193,7 +193,7 @@ App interactivity
 
 def update_plot(target_var, country, climate, population, urban, gdp, HDI, ru_access, mort, life_exp):
 
-    preds = modelbackend.get_pred(target_var, country, climate, population, urban, gdp, HDI, mort, life_exp)
+    preds = modelbackend.get_pred(target_var, country, climate, population, urban, gdp, HDI, ru_access, mort, life_exp)
 
     fig = modelbackend.make_plot(preds, target_var)
 
