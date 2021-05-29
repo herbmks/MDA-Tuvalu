@@ -84,6 +84,14 @@ ins_changes = dbc.Row(dbc.Col(
         dbc.Input(id='id_ch_gdp', type="number", value=0, min=-10, max=10, step=0.1)
         ]),
     dbc.InputGroup([
+        dbc.InputGroupAddon("HDI", addon_type="preprend"),
+        dbc.Input(id='id_ch_HDI', type="number", value=0, min=-0.01, max=0.01, step=0.001)
+        ]),
+    dbc.InputGroup([
+        dbc.InputGroupAddon("Rural access", addon_type="preprend"),
+        dbc.Input(id='id_ch_ru_access', type="number", value=0, min=-5, max=5, step=0.1)
+        ]),
+    dbc.InputGroup([
         dbc.InputGroupAddon("Mortality rate", addon_type="prepend"),
         dbc.Input(id='id_ch_mort', type="number", value=0, min=-5, max=5, step=0.1)
         ]),
@@ -101,16 +109,16 @@ Creating the app layout and including the necessary content
 app.layout = dbc.Container([
     html.Div(
         children=[
-            html.H1(children='Water Scarcity'),
-            html.H2(children='Predict water scarcity in your country.')
+            html.H1(children='Water Security'),
+            html.H2(children='Predict water security in your country.')
             ], style = {'textAlign':'center', 'backgroundColor':'LightBlue', 'color':'black', 'marginLeft':-10, 'marginRight':-10}
         ),
     html.H4("How this application works.",
         style = {'textAlign':'center', 'color':'SlateGrey', 'marginTop':25}),
     html.Div(children = (
-        "Our predictive models include many different explanatory variables. "
+        "Our predictive models includes many different explanatory variables. "
         "They can be split into two categories: climate and socio-economic based. "
-        "It is possible to investigate different future scenarios by providing estimates for changes in some of these variables. "
+        "It is possible to investigate different future scenarios by providing estimates for changes in these variables. "
         "These changes should be provided with a yearly basis in mind. "
         "Below is an explanation of each of the customisable variables."
         ), style = {'textAlign':'left', 'color':'SlateGrey', 'fontSize':17, 'marginBottom':20}),
@@ -119,6 +127,8 @@ app.layout = dbc.Container([
         html.Li("Population: Rate of population growth (%)."),
         html.Li("Urbanisation: Percentage change in the urban population (at cost of the rural population)."),
         html.Li("GDP per capita: Percentage change in the GDP per capita."),
+        html.Li("HDI: Change in HDI score value, by raw value."),
+        html.Li("Rural access: Percentage change in the proportion of the rural population with access to safe drinking water."),
         html.Li("Mortality rate: Percentage change in the infant mortality rate."),
         html.Li("Life expectancy: Percentage change in the life expectancy.")
         ], style = {'textAlign':'left', 'color':'SlateGrey', 'fontSize':14}),
@@ -126,9 +136,17 @@ app.layout = dbc.Container([
         "NOTE: All the provided scenario change values are treated as the yearly changes (not the total change over the entire prediction range).",
         style = {'textAlign':'left', 'fontSize':10, 'color':'Grey', 'marginBottom':10, 'marginTop':-10, 'marginLeft':30}),
     html.Div(children =
-        ("There is a selection of three different water scarcity metrics that can be selected as the target variable of the models. "
-        "Each target variable has its own prediction model, but all the models use the same input variables."),
+        ("There is a selection of different water security metrics that can be selected as the target variable of the models. "
+        "Each target variable has its own prediction model, but all the models use the same input variables. "),
         style = {'textAlign':'left', 'color':'SlateGrey', 'fontSize':17}),
+    html.Ul(children = [
+        html.Li("Water stress: Freshwater withdrawal as % of total renewable water resources."),
+        html.Ul(children = [
+            html.Li("SDG: Sustainable Development Goals methodology"),
+            html.Li("MDG: Millennium Development Goals methodology")
+        ]),
+        html.Li("Water use efficiency: Costs per unit of water used expressed in USD/m3")
+    ], style = {'textAlign':'left', 'color':'SlateGrey', 'fontSize':14}),
     html.Hr(
         ),
     dbc.Row([
@@ -167,13 +185,15 @@ App interactivity
     Input('id_ch_pop', 'value'),
     Input('id_ch_urban', 'value'),
     Input('id_ch_gdp', 'value'),
+    Input('id_ch_HDI', 'value'),
+    Input('id_ch_ru_access', 'value'),
     Input('id_ch_mort', 'value'),
     Input('id_ch_life_exp', 'value')
 )
 
-def update_plot(target_var, country, climate, population, urban, gdp, mort, life_exp):
+def update_plot(target_var, country, climate, population, urban, gdp, HDI, ru_access, mort, life_exp):
 
-    preds = modelbackend.get_pred(target_var, country, climate, population, urban, gdp, mort, life_exp)
+    preds = modelbackend.get_pred(target_var, country, climate, population, urban, gdp, HDI, mort, life_exp)
 
     fig = modelbackend.make_plot(preds, target_var)
 
