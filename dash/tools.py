@@ -63,22 +63,33 @@ class PredModels():
             transformers = [
                 ("logscaler", logscaler, ['Rain', 'IRWR', 'ERWR', 'TRWR', 'IRWR_capita', 'ERWR_capita', 'TRWR_capita','rural_pop', 'urban_pop', 'GDP_pcp'])
             ])
-        pca_pred = PCA()
-        model = Ridge()
-        model_pipe = Pipeline([
-            ('scaler', scaler),
-            ('reduce_dim', pca_pred),
-            ('regressor', model)
-        ])
-
+        pca_pred1 = PCA()
+        model1 = Ridge()
+        pca_pred2 = PCA()
+        model2 = Ridge()
+        pca_pred3 = PCA()
+        model3 = Ridge()
+        
         # Creating prediction models
-        model_ws_mdg = model_pipe
+        model_ws_mdg = Pipeline([
+            ('scaler', scaler),
+            ('reduce_dim', pca_pred1),
+            ('regressor', model1)
+        ])
         model_ws_mdg.set_params(**{'reduce_dim__n_components': 12,'regressor__alpha': 3.8000000000000003})
         model_ws_mdg.fit(self.df_pred, self.df_target['WS_MDG'])
-        model_wue_sdg = model_pipe
+        model_wue_sdg = Pipeline([
+            ('scaler', scaler),
+            ('reduce_dim', pca_pred2),
+            ('regressor', model2)
+        ])
         model_wue_sdg.set_params(**{'reduce_dim__n_components': 14, 'regressor__alpha': 2.7})
         model_wue_sdg.fit(self.df_pred, self.df_target['WUE_SDG'])
-        model_ws_sdg = model_pipe
+        model_ws_sdg = Pipeline([
+            ('scaler', scaler),
+            ('reduce_dim', pca_pred3),
+            ('regressor', model3)
+        ])
         model_ws_sdg.set_params(**{'reduce_dim__n_components': 12, 'regressor__alpha': 2.8000000000000003})
         model_ws_sdg.fit(self.df_pred, self.df_target['WS_SDG'])
 
