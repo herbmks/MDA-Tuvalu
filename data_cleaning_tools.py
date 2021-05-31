@@ -11,23 +11,6 @@ import country_converter as coco
 class data_cleaner():
     # Class that includes different methods which import and perform data cleaning on specific datasets.
 
-    def temp_proj(self, file_name):
-        # Imports and cleans the forecasted temperatures
-
-        df = pd.read_csv('raw data/tas_2020_2039_mavg_rcp26_AFG_CAF.csv', sep = ',', header = 0, skipinitialspace = True, usecols = range(0,6))
-        df.rename({df.columns[0]: "Temperature (°C)", df.columns[1]: "Year", df.columns[2]: "Model", df.columns[3]: "Month", df.columns[4]: "Name", df.columns[5]: "Country"}, axis = 1, inplace = True)
-        df = df[['Country','Month','Temperature (°C)']]
-        df['Month'] = df['Month'].map(lambda x: x.split(' ')[0])
-        df = df[['Country','Month','Temperature (°C)']]
-        weights = {'Jan':31, 'Feb':28, 'Mar':31, 'Apr':30, 'May':31, 'Jun':30,'Jul':31, 'Aug':31, 'Sep':30, 'Oct':31, 'Nov':30, 'Dec':31}
-        df['Weight'] = df['Month'].map(weights)
-        df = df.groupby('Country').apply(lambda x: (x['Temperature (°C)'] * x['Weight']).sum() / x['Weight'].sum())
-        df = pd.DataFrame(df).rename(columns={0:'Temperature (°C)'})
-        
-        df.reset_index(inplace=True)
-        
-        return df
-
     def socioecon_factors(self, aquastat_file_name, unicef_file_name):
         # Imports and cleans the socioeconimic factor datasets - aquastat and unicef
         
@@ -167,4 +150,21 @@ class data_cleaner():
              
         return df_waterstress
 
-   
+    
+## This can be removed?
+    def temp_proj(self, file_name):
+        # Imports and cleans the forecasted temperatures
+
+        df = pd.read_csv(file_name, sep = ',', header = 0, skipinitialspace = True, usecols = range(0,6))
+        df.rename({df.columns[0]: "Temperature (°C)", df.columns[1]: "Year", df.columns[2]: "Model", df.columns[3]: "Month", df.columns[4]: "Name", df.columns[5]: "Country"}, axis = 1, inplace = True)
+        df = df[['Country','Month','Temperature (°C)']]
+        df['Month'] = df['Month'].map(lambda x: x.split(' ')[0])
+        df = df[['Country','Month','Temperature (°C)']]
+        weights = {'Jan':31, 'Feb':28, 'Mar':31, 'Apr':30, 'May':31, 'Jun':30,'Jul':31, 'Aug':31, 'Sep':30, 'Oct':31, 'Nov':30, 'Dec':31}
+        df['Weight'] = df['Month'].map(weights)
+        df = df.groupby('Country').apply(lambda x: (x['Temperature (°C)'] * x['Weight']).sum() / x['Weight'].sum())
+        df = pd.DataFrame(df).rename(columns={0:'Temperature (°C)'})
+        
+        df.reset_index(inplace=True)
+        
+        return df
